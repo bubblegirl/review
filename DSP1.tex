@@ -309,7 +309,7 @@ In contrast, a recent study of CTX-like toxicity using mouse neuroblastoma assay
 These case studies show that while bioassays are important to indicate toxicity, LC-MS studies of every species need to be conducted to define their toxin profiles.
 
 \section{Dinoflagellate genetics and transcriptomics}
-Dinoflaggelates have some unique genetic features in both structure and regulation. Their genetic material extensively features repetitive genomic elements, high gene copy number and a large genome size ranging betweeb 1.5 and 245 Gb (cite). These features have confounded current sequencing technologies as assembly becomes unfeasable. DNA resides in a crystalised, permanently condensed state throughout the cell cycle except during DNA replication with loops of active regions extending for access by polymerases. Histones play a minor role in DNA packaging for dinoflaggelates.
+Dinoflaggelates have some unique genetic features in both structure and regulation. Their genetic material extensively features repetitive genomic elements, high gene copy number and a large genome size ranging betweeb 1.5 and 245 Gb \cite{lin2011genomic}. These features have confounded current sequencing technologies as assembly becomes unfeasable. DNA resides in a crystalised, permanently condensed state throughout the cell cycle except during DNA replication with loops of active regions extending for access by polymerases. Histones play a minor role in DNA packaging for dinoflaggelates.
 
 While such large genomes cannot readily be sequenced, transcriptomics can be used for gene discovery and for examining genetic regulation \cite{murray2012transcriptomics}. This method involves the extraction of mRNA from an organism, which due to its instability, is then reverse transcribed into complimentary DNA (cDNA) which can then be explored. This allows a glimpse into the actively used genes of the organism and traverses the truncated or inactive copies of that gene.
 
@@ -405,9 +405,45 @@ G18'R    & GCATCACAGACCTGTTATTG & Sequencing &  \cite{litaker2005reclassificatio
 
 \subsubsection{Sequence alignment and phylogenetic analysis}
 Phylogenetic analysis and sequence checking and manipulation was carried out using Geneious 8.2.1.
-The rRNA sequences were aligned using MUSCLE against publicly available sequences from the NCBI database with a maximum of 8 iterations. The alignment was manually screened and adjusted. The 5' and 3' ends were truncated to render all sequences of the same length leaving D1-D3, D10-D8 and SSU at xx bp, 791 bp and 1699 bp respectively. Outliers for LSU and SSU alignments were \emph{Alexandrium tamarense} AY831407.1 and \emph{Prorocentrum lima} AB189780.1 respectively.
-PHYML was used for Maximum Likelyhood (ML) tree generation with 1000 bootstraps in the general-time-reversal model.
---- insert phylo tree SSU + LSU
+The rRNA sequences were aligned using MUSCLE against publicly available sequences from the NCBI database with a maximum of 8 iterations. The alignment was manually screened and adjusted. The 5' and 3' ends were truncated to render all sequences of the same length leaving D1-D3, D10-D8 and SSU at xx bp. Outliers for LSU and SSU alignments were \emph{Alexandrium tamarense} AY831407.1 or \emph{Prorocentrum lima} AB189780.1.
+PHYML was used for Maximum Likelyhood (ML) tree generation with 1000 bootstraps in the general-time-reversal model. \\
+
+
+
+\begin{figure} 
+\includegraphics[scale=.7]{HG_D8D10_phylo.jpg} 
+\caption{Maximum Likelyhood phylogeny of Heron Island \textit{Gambierdiscus} isolates using sequences amplified from the D8D10 LSU region.} 
+\end{figure} 
+\FloatBarrier 
+\newpage
+
+\begin{figure} 
+\includegraphics[scale=.7]{HG_SSU_phylo.jpg} 
+\caption{Maximum Likelyhood phylogeny of Heron Island \textit{Gambierdiscus} isolates using sequences amplified from the SSU region.} 
+\end{figure} 
+\FloatBarrier 
+\newpage
+
+The D8D10 LSU (fig x) and SSU (fig. y) phylogenies of the Heron Island isolates HG1, HG4, HG6, HG7 and HG26 fall into their own well supported clade. These isolates appear to be members of a new species , of the proposed name \emph{Gambierdiscus ludi} sp. nov.\\
+In the D8D10 LSU phylogeny (fig. xx), HG5 comes out between \emph{G. silvae} and the not yet characterised \emph{Gambierdiscus} sp. 4. whereas in the SSU phylogeny (fig. xx) HG5 comes out amidst \emph{G. polynesiensis}. This indicates a problem with the \emph{G. polynesiensis} sequences obtained from NCBI. SSU sequences for \emph{G. silvae} and \emph{Gambierdiscus} sp. 4 are not available from NCBI, hence it is not possible to determine whether HG5 is actually as closely related to \emph{G. polynesiensis} as this phylogeny suggests.\\
+
+\begin{figure} 
+\includegraphics[scale=.85]{CG_D1D3_phylo.jpg} 
+\caption{Maximum Likelyhood phylogeny of Cook Island \textit{Gambierdiscus} isolates using sequences amplified from the D1D3 LSU region.} 
+\end{figure} 
+\FloatBarrier 
+\newpage
+
+\begin{figure} 
+\includegraphics[scale=.75]{CG_D8D10_phylo.jpg} 
+\caption{Maximum Likelyhood phylogeny of Cook Island \textit{Gambierdiscus} isolates using sequences amplified from the D8D10 LSU region.} 
+\end{figure} 
+\FloatBarrier 
+
+CG14 and CG15 are consistently located amidst \emph{G. polynesiensis} reference sequences with high support in both D1D3 and D8D10 LSU alignments (fig. xx and fig. yy). Alas it is likely that these isolates are members of that species.\\
+Likewise, CG61 is consistently placed with \emph{G. australes} with high support in both analyses (fig. xx and fig. yy).
+
+
 
 \subsubsection{Morphology}
 Scanning electron microscopy (SEM) was conducted by Mona Hoppenrath at the xxx institute, Germany. The plate structure of isolates HG5 and HG7 was elucidated from the images as per xx.\\
@@ -418,7 +454,7 @@ Toxin profile analysis for HG4, HG5, HG6 and HG7 was conducted by Tim Harwood at
 Toxicity of HG4, HG6 and HG7 is currently under investigation via MBA by i. p. injection by Rex Munday at the Cawthorne Institute, Nelson, New Zealand.
  
 
-\%subsection{Phylogeny of \emph{Gonyaulacales}}
+\subsection{Phylogeny of \emph{Gonyaulacales}}
 
 \subsubsection{RNA extraction and analysis}
 Cells from HG4, HG5, HG6 and HG7 were harvested from 1.2L cultures on day 13 during the late exponential phase, using 5 $\mu$m Durapore filters. Cells were washed off filters with F/10 and pelleted by centrifugation at xx for 10 minutes. The cell pellet was washed thrice with PBS and cells broken down with Zirkonium beads by bead beating (setting 6, 30s, name of machine). The lysate wss extracted with Tri-Reagent (Life Technologies) as per manufacturer's protocol. The RNA was purified with the RNeasy Plant mini kit (Qiagen, Limberg, Netherlands) as per the manufacturer's protocol. The eluent was treated with the TURBO DNA-free Kit (Life Technologies) to remove residual DNA. RNA quantity and quality was measured by Nanodrop (name) and the integrity by Agilent 2100 Bioanalyser  at the Ramaciotti centre.
@@ -447,11 +483,11 @@ Cells from HG4, HG5, HG6 and HG7 were harvested from 1.2L cultures on day 13 dur
 \section{Future work and potential obstacles}
 
 \subsection{qPCR primer development}
-An easily accessible solution for sample screening for and enumeration of \emph{Gambierdiscus} spp. is  semi-quantitative PCR. A complete set of published qPCR primers for \emph{Gambierdiscus} spp. would be an adequate screening tool and could serve as an early detection system for ciguatera outbreaks when coupled with toxicological data. Development of such a set of qPCR primers is goal XXX of the global ciguatera strategy plan (cite). \\
+An easily accessible solution for sample screening for and enumeration of \emph{Gambierdiscus} spp. is  semi-quantitative PCR. A complete set of published qPCR primers for \emph{Gambierdiscus} spp. would be an adequate screening tool and could serve as an early detection system for ciguatera outbreaks when coupled with toxicological data. Development of such a set of qPCR primers is part of Element 1 of the global ciguatera strategy plan \cite{globalcig}. \\
 Species specific PCR primers need to be developed. The design requires three steps - initially identification of species specific variable sites though sequence allignment and comparison to all other known \emph{Gambierdiscus} spp. in SSU or LSU region. Secondly the primer set is tested against the target species. If amplification is successful, the primer set is tested against at least the closest relatives of the target species as negative controls to rule out cross reactivity. \\
 A roadblock in this part of the project will be acquiring DNA samples to test qPCR primers on as a negative control as well as getting permission from the suppliers of the target DNA extracts to develop qPCR primers.
 
-Vandersea et al have published qPCR primers for \emph{G. belizeanus}, \emph{G. caribaeus}, \emph{G. carpenteri}, \emph{G. carolinianus}, \emph{F. rutzleri} and \emph{Gambierdiscus} sp. ribotype 2 (cite). Litaker and Chinain are in the process of publishing qPCR primers for \emph{G. australes}, \emph{G. pacificus}, \emph{G. polynesiensis} and \emph{G. toxicus} (pers. comm. with W. Litaker).
+Vandersea et al have published qPCR primers for \emph{G. belizeanus}, \emph{G. caribaeus}, \emph{G. carpenteri}, \emph{G. carolinianus}, \emph{F. rutzleri} and \emph{Gambierdiscus} sp. ribotype 2 \cite{vandersea2012development}. Litaker and Chinain are in the process of publishing qPCR primers for \emph{G. australes}, \emph{G. pacificus}, \emph{G. polynesiensis} and \emph{G. toxicus} (pers. comm. with W. Litaker).
 
 \subsection{Phylogeny of \emph{Gonyaulacales}}
 Transcriptomics is the solution for elucidating the phylogeny of \emph{Gonyaulaceles} as it focuses on the actively transcribed gene copies (cite). Ideally, every genus should be represented. However the limiting factor is access to transcriptomes. The main source for transcriptomes will be from the MMETSP, available online at xxxx. Transcriptomes retrieved by this database will be supplemented by transcriptomes available from published studies. Nucleotide sequences will be converted to AA sequences which masks silent mutation that have no impact on gene function (cite Bachvaroff '14). The methodology for sequence preparation and concatenation will be adapted from large scale, transcriptome based phylogenetc studies conducted by Bachvaroff et al and Genetaki et al (cite Bachvaroff and Genetaki).\\
@@ -498,10 +534,15 @@ To address whether PKS expression is affected by environmental factors, RNA is e
 How the differential expression will be quantified depends on the outcome of the previous section. Microarray is an option, as is qPCR. These options will be explored closer to execution of this experiment.
 \subsection{Proposed project timeline for the next year} 
 
-
-\includegraphics[natwidth=1bp,natheight=227bp]{Timeline_DSP1.png}
-
+\FloatBarrier
+\begin{figure} 
+\includegraphics[scale=.9]{Timeline_DSP1_smaller.png} 
+\caption{.} 
+\end{figure} 
+\FloatBarrier 
+c
 \newpage
+
 \bibliographystyle{plain}
 \bibliography{review_ref.bib}
 
