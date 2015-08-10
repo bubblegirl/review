@@ -414,7 +414,7 @@ The samples were taken while snorkelling around the Heron Island research statio
 \end{figure} 
 \FloatBarrier
  
-The Cook Islands are a hot spot for CFP,  as is the adjacent island nation of French Polynesia (cite - chinnain??). \emph{G. polynesiensis} has been isolated from Rarotonga previously, and CTX production confirmed via LC-MS \cite{rhodes2014production}.
+The Cook Islands are a hot spot for CFP,  as is the adjacent island nation of French Polynesia \cite{chinain2010ciguatera}. \emph{G. polynesiensis} has been isolated from Rarotonga previously, and CTX production confirmed via LC-MS \cite{rhodes2014production}.
 MTX producing isolates of \emph{G. australes} and \emph{G. pacificus} were also isolated in the same study \cite{rhodes2014production}.
 As the presence of both CTX and MTX producing \emph{Gambierdiscus} spp. has been confirmed at Rarotonga, this this sampling site was chosen to search for toxin producing \emph{Gambierdiscus} spp. for aims 3 and 4 of this project.\\
 
@@ -482,7 +482,7 @@ G18'R    & GCATCACAGACCTGTTATTG & Sequencing &  \cite{litaker2005reclassificatio
 \FloatBarrier
 
 \subsubsection{Sequence alignment and phylogenetic analysis}
-The rRNA sequences were aligned using MUSCLE against publicly available sequences from the NCBI database with a maximum of 8 iterations. The alignment was manually screened and adjusted. The 5' and 3' ends were truncated to render all sequences of the same length leaving D1-D3, D10-D8 and SSU at xx bp. Outliers for LSU and SSU alignments were \emph{Alexandrium tamarense} AY831407.1 or \emph{Prorocentrum lima} AB189780.1.
+The rRNA sequences were aligned using MUSCLE against publicly available sequences from the NCBI database with a maximum of 8 iterations. The alignment was manually screened and adjusted. The 5' and 3' ends were truncated to render all sequences of the same length leaving D1-D3, D10-D8 and SSU. Outliers for LSU and SSU alignments were \emph{Alexandrium tamarense} AY831407.1 or \emph{Prorocentrum lima} AB189780.1.
 PHYML was used for Maximum Likelihood (ML) tree generation with 1000 bootstraps in the general-time-reversal model. \\
 
 
@@ -543,9 +543,18 @@ The toxin profile for the Cook Island isolates will be conducted later on in the
 \subsection{Phylogeny of \emph{Gonyaulacales}}
 
 \subsubsection{RNA extraction and analysis}
-Cells from HG4, HG5, HG6 and HG7 were harvested from 1.2L cultures on day 13 during the late exponential phase, using 5 $\mu$m Durapore filters. Cells were washed off filters with F/10 and pelleted by centrifugation at ma for 10 minutes. The cell pellet was washed thrice with PBS and cells broken down with Zirkonium beads by bead beating (setting 6, 30s, name of machine). The lysate wss extracted with Tri-Reagent (Life Technologies) as per manufacturer's protocol. The RNA was purified with the RNeasy Plant mini kit (Qiagen, Limberg, Netherlands) as per the manufacturer's protocol. The eluent was treated with the TURBO DNA-free Kit (Life Technologies) to remove residual DNA. RNA quantity and quality was measured by Nanodrop (name) and the integrity by Agilent 2100 Bioanalyser  at the Ramaciotti centre (UNSW).
+Cells from HG4, HG5, HG6 and HG7 were harvested from 1.2L cultures on day 13 during the late exponential phase, using 5 $\mu$m Durapore filters. Cells were washed off filters with F/10 and pelleted by centrifugation at 15000 rpm for 10 minutes. The cell pellet was washed thrice with PBS and cells broken down with Zirkonium beads by bead beating. The lysate was extracted with Tri-Reagent (Life Technologies) as per manufacturer's protocol. The RNA was purified with the RNeasy Plant mini kit (Qiagen, Limberg, Netherlands) as per the manufacturer's protocol. The eluent was treated with the TURBO DNA-free Kit (Life Technologies) to remove residual DNA. RNA quantity and quality was measured by Nanodrop (Thermo Fischer, NanoDrop 2000) and the integrity by Agilent 2100 Bioanalyser  at the Ramaciotti centre (UNSW).
 
-HG4 and HG5 were chosen for further processing as they represent two distinct clades in the \emph{Gambierdiscus} phylogeny (fig. ~\ref{fig:HGSSU}) and the bioanalyser showed well defined 18S and 28S peaks. The cDNA library was assembled by Ramaciotti using NextSeq with 75bp pair ends and 250bp inserts.
+HG4 and HG5 were chosen for further processing as they represent two distinct clades in the \emph{Gambierdiscus} phylogeny (fig. ~\ref{fig:HGSSU}) and the bioanalyser showed well defined 18S and 28S peaks (fig. ~\ref{fig:bioan}. The cDNA library was sequenced by Ramaciotti with 75bp pair ends and 250bp inserts.
+
+\begin{figure} 
+\includegraphics[scale=.3]{Bioan.png} 
+\caption{Bioanalyzer results for \textit{Gambierdiscus} isolates HG4 (A) and HG5 (B).} 
+\label{fig:bioan}
+\end{figure} 
+\FloatBarrier 
+Bioan.png
+
 
 %\subsubsection{Transcriptomic databases used}
 %Microbial marine eukaryote transcriptome project (MMETSP)
@@ -618,9 +627,13 @@ The methodology for this study may be adapted for this project.
 \subsection{Search for PKS genes in \emph{Gambierdiscus} transcriptomes}
 The aim of exploring the differential transcriptome of MTX and CTX producing isolates of \emph{Gambierdiscus}, in comparison to non-toxic gonyaulacales is designed to explore which PKS are involved in toxin production. \\
 
-The transcriptomes 
+How high the coverage is of the transcriptomes extracted will be determined by matching the transcripts against the non-redundant (nr) database curated by NCBI using the HPC cluster at UTS. The results will be screened for essential proteins as an indicator of sequencing depth. Furthermore, the transcriptomes will be matched against the known dinoSL sequences as an indication of how many transcripts were covered.\\
 
-The search for PKS will be conducted with the aid of the HPCC at UTS. The transcriptomes will be manipulated with Geneious \cite{kearse2012geneious}, then transcripts will be run against a hmmer library assembled with the minimum necessary catalytic domains of PKSs. Results will be verified with NCBI's Conserved Domain Database (CDD).
+The search for PKS will be conducted with the aid of the HPC cluster. The transcriptomes will be manipulated with Geneious \cite{kearse2012geneious}, then transcripts will be run against a hmmer library assembled with the minimum necessary catalytic domains of PKSs. Results will be verified with NCBI's Conserved Domain Database (CDD).\\
+
+The results from this part of the project will be used to build a phylogeny of PKS found in \emph{Gambierdiscus} spp., to be matched against the phylogeny from the concatenated phylogeny of \emph{Gambierdiscus}. This will give an indication of how the toxin production has evolved in this organism - whether it is confined to a clade or if toxin production was present in a common ancestor and has been lost in some species as was found in saxitoxin production in \emph{Alexandrium} \cite{murray2015gene}. This will give an indicator whether closely related genera, as ascertained by the gonyaulacales phylogeny, may also be CTX or MTX producers. 
+
+
 
 \subsection{PKS expression in \emph{Gambierdiscus} strains}
 The experimental design for this section is still under construction. To address whether PKS expression is affected by environmental factors, RNA will extracted from cultures subjected to different conditions. How the differential expression will be quantified depends on the outcome of the previous section. Microarray is an option, as is qPCR. These options will be explored closer to execution of this experiment.
@@ -635,7 +648,7 @@ Two ideas for the differential culturing conditions to are:
 The proposed time line for the next year (fig. ~\ref{fig:timeline}) includes designing and working on experiments for all four thesis chapters. Predicted completion of experiments for Chapter 1 and hence draft of first manuscript.
 \FloatBarrier
 \begin{figure} 
-\includegraphics[scale=.9]{Timeline_DSP1.png} 
+\includegraphics[scale=.9]{Timeline_DSP1_smaller.png} 
 \caption{Proposed work plan for second stage of DSP, by chapter.} 
 \label{fig:timeline}
 \end{figure} 
