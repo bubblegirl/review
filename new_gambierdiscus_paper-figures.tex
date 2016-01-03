@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[hcentering,bindingoffset=20mm]{geometry}
+\usepackage{placeins}
+\usepackage[numbib]{tocbibind}
+\usepackage{rotating}
+\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\linespread{1.3}
+%\fontsize{8cm}{1.3em}\selectfont
+\usepackage{gensymb}
+\usepackage{longtable}
+\usepackage{lscape}
+
+\addtolength{\textwidth}{2cm}
+\addtolength{\hoffset}{-1cm}
+
+
+\addtolength{\textheight}{2cm}
+\addtolength{\voffset}{-1cm}
+\setlength{\parindent}{0pt}
+
+\title{Figures}
+\begin{document}
+\begin{figure} 
+\includegraphics[scale=.85]{oz-gamb-grey-map.png} 
+\caption{Sites where Gambierdiscus isolates have been reported in Australia. Site 1 indicates Raine Island, QLD; site 2 indicates Townsville, QLD; Site 3 indicates Heron Island, QLD; Site 4 indicated Platypus Bay, QLD; site 5 indicates Wapengo Lagoon, NSW; site 6 indicates Merimbula, NSW; site 7 indicates Eden, NSW; and site 8 indicates Exmouth, WA.​} 
+\label{fig:OzSites}
+\end{figure} 
+
+\FloatBarrier 
+\begin{figure} 
+%\includegraphics[scale=.4]{HG_D8D10_phylo.jpg} 
+\caption{Sample collection site at Heron Island - Arjun.} 
+\label{fig:HeronMap}
+\end{figure} 
+\FloatBarrier 
+
+\FloatBarrier 
+\begin{figure} 
+\includegraphics[scale=.65]{size_chart-grey.png} 
+\caption{Visual representation of the size difference between \emph{Gambierdiscus} species (table ~\ref{fig:SizeGraph}). Error bars denote standard deviation of meassurements for \emph{G. petramus}. Data taken from publications as follows: a) Chinain et al \cite{chinain1999morphology}; b) Fraga et al \cite{fraga2014genus}; c) Faust et al \cite{faust1995observation}; d) Gomez et al \cite{gomez2015fukuyoa}; e) Litaker et al \cite{litaker2009taxonomy}; f) Nishimura et al \cite{nishimura2014morphology}; and g) Xu et al \cite{xu2014distribution}} 
+\label{fig:SizeGraph}
+\end{figure} 
+\FloatBarrier 
+
+\begin{figure} 
+\includegraphics[scale=.5]{SSU_complex_geo_merge-f.png} 
+\caption{Maximum likelihood phylogeny of \textit{Gambierdiscus} species/phylotypes of the SSU rDNA region. Nodal support are Bayesian posterior probability (pp) and bootstrap (bt) values obtained from Bayesian inference analysis and maximum likelihood analysis, respectively. Nodes with strong support (pp/bt = 1.00 / 100) are shown as thick lines. Clades I to V are shown on the right, as per Nishimura et al \cite{nishimura2013genetic}}
+\label{fig:HGSSU} 
+\end{figure} 
+\FloatBarrier 
+
+\newpage
+\begin{figure} 
+\includegraphics[scale=.5]{D8D10_complex_geo_merge-F.png} 
+\caption{Bayesian Inference phylogeny of Heron Island \textit{Gambierdiscus} isolates using 799nt long sequences amplified from the D8D10 LSU region.} 
+\label{fig:HGD8D10}
+\end{figure} 
+\FloatBarrier 
+\newpage
+\bibliographystyle{acm}
+\bibliography{references.bib}
+\end{document}
