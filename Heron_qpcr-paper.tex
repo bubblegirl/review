@@ -91,7 +91,7 @@ The PCR cycling comprised of an initial 10 min step at 94 $^{\circ}$C, followed 
 \end{table}
 
 \subsection{Evaluation of primer specificity}
-To verify primer set specificity as listed in Table ~\ref{tbl:PrimerTable}, DNA was extracted via CTAB from \emph{G. belizeanus} (CCMP401), \emph{G. australes} (CCMP1650 and CG61) and \emph{G. pacificus} (CAWD149). Cross reactivity for \emph{G. scabrosus} was checked against 8 strains, DNA extracted using DNeasy Plant Mini Kit (Quiagen, Tokyo, Japan),according to the manufacturer's protocol. For all extracted samples, the presence and integrity of genomic DNA was  assessed on 1\% agarose gel. Primer sets designed for \emph{G. lapillus} and \emph{G. polynesiensis} were tested for cross-reactivity against all other \emph{Gambierdiscus} spp. available via PCR. PCR amplicons were visually assessed on 1\% agarose gel.
+To verify primer set specificity as listed in Table ~\ref{tbl:PrimerTable}, DNA was extracted via CTAB from \emph{G. belizeanus} (CCMP401), \emph{G. australes} (CCMP1650 and CG61) and \emph{G. pacificus} (CAWD149). Cross reactivity for \emph{G. scabrosus} () was tested with DNA extracted using DNeasy Plant Mini Kit (Quiagen, Tokyo, Japan),according to the manufacturer's protocol. For all extracted samples, the presence and integrity of genomic DNA was  assessed on 1\% agarose gel. Primer sets designed for \emph{G. lapillus} and \emph{G. polynesiensis} were tested for cross-reactivity against all other \emph{Gambierdiscus} spp. available via PCR. PCR amplicons were visually assessed on 1\% agarose gel.
 
 \subsection{Evaluation of primer sensitivity}
  The qPCR reaction mixture contained 10 $\mu$l SYBR Select Master Mix (Thermo Fisher Scientific), 7 $\mu$l MilliQ water, 0.5 $\mu$M forward and reverse primers and 2 - 20 ng DNA template, for a final volume of 20 $\mu$l.
@@ -121,12 +121,33 @@ A total of 33 macroalgal sites around Heron Island were targeted, in tripplicate
 \begin{table}
 \caption{Cross-reactivity of qPCR primer sets.}
 \label{tbl:CrossreactTable}
-\begin{tabular}{  | p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{7cm} | }
+\begin{tabular}{  | p{4cm} | p{3cm} | p{2cm} | p{2.5cm} | p{2.5cm} | }
 \hline
 \textbf{Template} & \textbf{Strain name} & \textbf{gDNA gel band} & \textbf{GlapSSU2F-GlapSSU2R} & \textbf{GpolySSUF-GpolySSUR}  \\
   \hline
-\emph{G. australes} & CCMP1650 & & & \\
- & CG61 &&& \\
+\emph{G. australes} & CCMP1650 &+&-&- \\
+  \hline
+ & CG61 &+&-&- \\
+   \hline
+ \emph{G. belizeanus}&CCMP401&+&-&-\\
+   \hline
+ \emph{G. lapillus}&HG1&+&+&-\\
+   \hline
+ &HG4&+&+&-\\
+   \hline
+ &HG6&+&+&-\\
+   \hline
+   &HG7&+&+&-\\
+   \hline
+   &HG26&+&+&-\\
+  \hline
+   \emph{G. pacificus}&CAWD149&+&-&-\\
+  \hline
+   \emph{G. polynesiensis}&CG14&+&-&+\\
+   \hline
+   &CG15&+&-&+\\
+  \hline
+  \emph{G. scabrosus}&&+&-&-\\
     \hline
  \end{tabular}
 \end{table}
@@ -138,7 +159,223 @@ A total of 33 macroalgal sites around Heron Island were targeted, in tripplicate
 \subsection{Quantification of SSU rDNA copy number per cell of \emph{G. lapullis} and \emph{G. polynesiensis}}
 
 \subsection{Screening environmental samples for \emph{G. lapullis} and \emph{G. polynesiensis} abundance}
+\FloatBarrier
+\begin{longtable}{ | p{1cm} | p{1cm} | p{3cm} | p{4cm} | p{4cm} | }
+\caption{Screening of macroalgal samples of \emph{G. lapillus} and \emph{G. polynesiensis}and cell density estimates via qPCR.}\\
+\hline
+\label{tbl:MacroalgaeTable}
+1&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+2&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+3&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+4&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+5&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+6&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+7&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+8&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+9&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+10&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+11&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+12&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+13&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+14&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+15&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+16&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+17&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+18&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+19&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+20&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+21&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+22&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+23&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+24&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+25&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+27&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+28&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+29&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+30&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+31&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+32&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+\hline
+33&A&&&\\
+\hline
+&B&&&\\
+\hline
+&C&&&\\
+ \hline
+\end{longtable}
+\FloatBarrier
 
+\FloatBarrier
+\begin{table}
+\caption{Screening of tow net samples of \emph{G. lapillus} and \emph{G. polynesiensis}and cell density estimates via qPCR.}
+\label{tbl:NetTable}
+\begin{tabular}{  | p{4cm} |  p{4cm} | p{4cm} | }
+\hline
+\textbf{Sample ID}  & \textbf{\emph{G. lapillus}} & \textbf{\emph{G. polynesiensis}}  \\
+\hline
+34 &&\\
+\hline
+35&&\\
+\hline
+36&&\\
+\hline
+ \end{tabular}
+\end{table}
+\FloatBarrier
 \newpage
 \section{Discussion}
 - RE normalization issue
