@@ -1,52 +1,49 @@
-
 \documentclass[12pt]{article}
- \usepackage[hcentering,bindingoffset=20mm]{geometry}
- \usepackage{placeins}
- \usepackage[numbib]{tocbibind}
- \usepackage{rotating}
+\usepackage[hcentering,bindingoffset=20mm]{geometry}
+\usepackage{placeins}
+\usepackage[numbib]{tocbibind}
+\usepackage{rotating}
 \usepackage[square,sort,comma,numbers]{natbib}
- \usepackage{graphicx}
- \usepackage{tabularx}
- \linespread{1.3}
- \usepackage{gensymb}
- \usepackage{longtable}
- \usepackage{lscape}
- \usepackage{url}
- \addtolength{\textwidth}{2cm}
- \addtolength{\hoffset}{-1cm}
- 
- 
- \addtolength{\textheight}{2cm}
- \addtolength{\voffset}{-1cm}
- \setlength{\parindent}{0pt}
- 
+\usepackage{graphicx}
+\usepackage{tabularx}
+\linespread{1.3}
+\usepackage{gensymb}
+\usepackage{longtable}
+\usepackage{lscape}
+\usepackage{url}
+\addtolength{\textwidth}{2cm}
+\addtolength{\hoffset}{-1cm}
+\addtolength{\textheight}{2cm}
+\addtolength{\voffset}{-1cm}
+\setlength{\parindent}{0pt}
 \title{Development of semi-quantitative PCR assays for the detection and enumeration of \emph{Gambierdiscus lapillus} and \emph{Gambierdiscus polynesiensis} (Gonyaulacales, Dinophyces) at the Great Barrier Reef, Australia.}
 \author{me}
 \date{}
-
 \begin{document}
 \maketitle
 \paragraph{}Anna Liza Kretzschmar\\
 Plant Functional Ecology and Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia, anna.kretzschmar@uts.edu.au
 \paragraph{}Arjun Verma \\
 Plant Functional Ecology and Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
-\paragraph{}Gurjeet Kohli\\ 
+\paragraph{}Gurjeet Kohli\\
 Plant Functional Ecology and Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
-\paragraph{}Shauna Murray\\ 
+\paragraph{}Shauna Murray\\
 Plant Functional Ecology and Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
 \newpage
 \section{Abstract}
-
 \newpage
 \section{Introduction}
-Benthic dinoflagellates of the genus \emph{Gambierdiscus} Adachi \& Fukuyo are the causative organism of ciguatera fish poisoning (CFP), as they produce the neurotoxic ciguatoxins (CTX) which bioaccumulate \citep{chinain1997intraspecific,holmes1998gambierdiscus}. The genus was discovered in 1977 with \emph{G. toxicus} Adachi \& Fukuyo  \citep{adachi1979thecal} and the taxon was considered monotypic till 1995, when \emph{G. belizeanus} Faust was discovered \citep{faust1995observation}. Since then the genus has expanded to 12 described species (13 with Kirsty) and 6 ribo/species types, with new species still discovered this year \citep{litaker2010global,adachi1979thecal,faust1995observation,chinain1999morphology,litaker2009taxonomy,nishimura2014morphology,fraga2011gambierdiscus,xu2014distribution,fraga2014genus} (ALK in prep). The species concept is still incomplete with the undescribed species-/ribotypes along with historic sampling data,which preceded new species discovery, causes species designation to be ambiguous \citep{berdalet2012global,nishimura2014morphology}. Molecular tools are essential in determining species designation for elucidating \emph{Gambierdiscus} phylogeography  and ciguatera risk \citep{litaker2010global}. Furthermore, which \emph{Gambierdiscus} spp. produce CTXs and need to be monitored to prevent CFP outbreaks, is not well understood \citep{globalcig}. Bioassays, such as MBA, N2A and FLIPR are good indicators of the toxicity of an organism, however toxin profile needs to be verified with LC-MS \citep{diogened2014chemistry}.
-CFP is a global threat due to expanding habitats of \emph{G.} spp. linked to extreme weather events and import/export of ciguateric fish to non-ciguateric regions (citep). The diagnosis and report is difficult due to the breadth of gastrointestinal, cardiovascular and neurological presentation of CFP and relies in specific training of the physician \citep{sims1987theoretical}. CFP was declared a neglected tropical disease by the United Nations Educational, Scientific and Cultural Organization and theur panel for harmful algal blooms devised the global ciguatera strategy \citep{globalcig}. Some of the focal points of the global ciguatera strategy were based on solidifying the species concept of \emph{Gambierdiscus}, elucidating which species produce CTX through LC-MS and developing efficient and reliable monitoring tools for the species of interest. Visual identification of \emph{Gambierdiscus} spp. is problematic due to intra-species variation \citep{kohli2014high}, (ALK in prep) and an alternative for toxic species identification and monitoring is necessary.\\
-qPCR is a rapid and accurate molecular tool, an alternative for species identification and enumeration with LM. Development of \emph{Gambierdiscus} spp. specific qPCR primers is part of Element 1 of the global ciguatera strategy plan \citep{globalcig}. Two major principles can be used to devise species specific qPCR methodologies: SYBR Green based assays or assays using TaqMan probes \citep{smith2009advantages}. The former relies on target specific primer design and flourometric meassurement of the chelating agent SYBR Green, which is directly proportional to the amount of PCR product present after each cycle. The latter relies on the release of a flourophore upon incoropration of a target specific probe, indexed to the PCR product present per cycle. Currently the qPCR assays available for  \emph{Gambierdiscus} spp. are from both methodologies. Vandersea et al. (2012) developed assays for \emph{G. belizeanus}, \emph{G. caribaeus} Vandersea, Litaker, Faust, Kibler, Holland \& Tester, \emph{G. carpenteri} Vandersea, Litaker, Faust, Kibler, Holland \& Tester, \emph{G. carolinianus} Vandersea, Litaker, Faust, Kibler, Holland \& Tester, \emph{Gambierdiscus} sp. ribotype 2 and \emph{G. (Fukoyoa) ruetzleri} (Faust, Litaker, Vandersea, Kibler, Holland \& Tester) G\`omez, Qiu, Lopes \& Lin utilising SYBR Green \citep{vandersea2012development}. Nishimura et al. (2016) developed TaqMan probes for  \emph{G. australes} Chinian \& Faust, \emph{G. scabrosus} Nishimura, Sato \& Adachi, \emph{Gambierdiscus} sp. type 2, \emph{Gambierdiscus} sp. type 3 and \emph{G. (Fukoyoa)} cf. \emph{yasumotoi} (Holmes) G\`omez, Qiu, Lopes \& Lin \citep{nishimura2016quantitative}. This constitutes 6 out of 12 (or 13 with Kirsty's) verified species specific qPCR primer sets for described \emph{Gambierdiscus} spp. and  3 out of 6 undescribed \emph{Gambierdiscus} sp. types/ribotypes , as well as 2 out of 3 qPCR primer sets for species of the genus \emph{Fukoyoa} (seceded from the genus \emph{Gambierdiscus} recently \citep{gomez2015fukuyoa}).\\
-Australia has CFP endemic areas, most notably the Great Barrier Reef, yet the cases are highly under reported with a predicted rate of 20\%  \citep{lewis2006ciguatera}. The country's coastline is expansive and sites sampled for the presence of \emph{Gambierdiscus} spp. are few and far in between (ALK in prep). The 5 species of \emph{Gambierdiscus} that have been identified from Queensland and New South Wales are as follows:  \emph{G. belizeanus}  \citep{murray2014molecular}, \emph{G. carpenteri} \citep{kohli2014high}, \emph{G. lapillus} (ALK in prep), \emph{G. toxicus} \citep{hallegraeff2010algae} and \emph{F. yasumotoi}  \citep{murray2014molecular}. Pyrosequencing identified \emph{Gambierdiscus} to the genus level in Western Australia \citep{kohli2014cob} , indicating that this is a coastline that should be examined further for CFP risk. A verified and consistently CTX producing species has not yet been identified as the basis for the ciguateric regions of Australia. 
+%genral species concept and background
+Benthic dinoflagellates of the genus \emph{Gambierdiscus} Adachi \& Fukuyo are the causative organism of ciguatera fish poisoning (CFP), as they produce the neurotoxic ciguatoxins (CTX) which bioaccumulate \citep{chinain1997intraspecific,holmes1998gambierdiscus}. The genus was discovered in 1977 with \emph{G. toxicus} Adachi \& Fukuyo \citep{adachi1979thecal} and the taxon was considered monotypic till 1995, when \emph{G. belizeanus} Faust was discovered \citep{faust1995observation}. Since then the genus has expanded to 12 described species (13 with Kirsty) and 6 ribo/species types, with new species still discovered this year \citep{litaker2010global,adachi1979thecal,faust1995observation,chinain1999morphology,litaker2009taxonomy,nishimura2014morphology,fraga2011gambierdiscus,xu2014distribution,fraga2014genus} (ALK in prep). The species concept is still incomplete with the undescribed species-/ribotypes along with historic sampling data,which preceded new species discovery, causes species designation to be ambiguous \citep{berdalet2012global,nishimura2014morphology}. Molecular tools are essential in determining species designation for elucidating \emph{Gambierdiscus} phylogeography and ciguatera risk \citep{litaker2010global}. Furthermore, which \emph{Gambierdiscus} spp. produce CTXs and need to be monitored to prevent CFP outbreaks, is not well understood \citep{globalcig}. Bioassays, such as MBA, N2A and FLIPR are good indicators of the toxicity of an organism, however species/strain specific toxin profiles needs to be elucidated with LC-MS \citep{diogened2014chemistry}.
+%CFP
+CFP is a global threat due to expanding habitats of \emph{G.} spp. linked to extreme weather events and import/export of ciguateric fish to non-ciguateric regions (citep). The diagnosis and report is difficult due to the breadth of gastrointestinal, cardiovascular and neurological presentation of CFP and relies in specific training of the physician \citep{sims1987theoretical}. CFP was declared a neglected tropical disease by the United Nations Educational, Scientific and Cultural Organization and theur panel for harmful algal blooms devised the global ciguatera strategy \citep{globalcig}. Some of the focal points of the global ciguatera strategy were based on solidifying the species concept of \emph{Gambierdiscus}, elucidating which species produce CTX through LC-MS and developing efficient and reliable monitoring tools for the species of interest. Visual identification of \emph{Gambierdiscus} spp. is problematic due to intra-species variation \citep{kohli2014high}, (ALK in prep) and an alternative for toxic species identification and monitoring is necessary.
+%qPCR
+qPCR is a rapid and accurate molecular tool, an alternative for species identification and enumeration with LM. Development of \emph{Gambierdiscus} spp. specific qPCR primers is part of Element 1 of the global ciguatera strategy plan \citep{globalcig}. Two major principles can be used to devise species specific qPCR methodologies: SYBR Green based assays or assays using TaqMan probes \citep{smith2009advantages}. The former relies on target specific primer design and flourometric meassurement of the chelating agent SYBR Green, which is directly proportional to the amount of PCR product present after each cycle. The latter relies on the release of a flourophore upon incoropration of a target specific probe, indexed to the PCR product present per cycle. Currently the qPCR assays available for \emph{Gambierdiscus} spp. are from both methodologies. Vandersea et al. (2012) developed assays for \emph{G. belizeanus}, \emph{G. caribaeus} Vandersea, Litaker, Faust, Kibler, Holland \& Tester, \emph{G. carpenteri} Vandersea, Litaker, Faust, Kibler, Holland \& Tester, \emph{G. carolinianus} Vandersea, Litaker, Faust, Kibler, Holland \& Tester, \emph{Gambierdiscus} sp. ribotype 2 and \emph{G. (Fukoyoa) ruetzleri} (Faust, Litaker, Vandersea, Kibler, Holland \& Tester) G\`omez, Qiu, Lopes \& Lin utilising SYBR Green \citep{vandersea2012development}. Nishimura et al. (2016) developed TaqMan probes for \emph{G. australes} Chinian \& Faust, \emph{G. scabrosus} Nishimura, Sato \& Adachi, \emph{Gambierdiscus} sp. type 2, \emph{Gambierdiscus} sp. type 3 and \emph{G. (Fukoyoa)} cf. \emph{yasumotoi} (Holmes) G\`omez, Qiu, Lopes \& Lin \citep{nishimura2016quantitative}. This constitutes 6 out of 12 (or 13 with Kirsty's) verified species specific qPCR primer sets for described \emph{Gambierdiscus} spp. and 3 out of 6 undescribed \emph{Gambierdiscus} sp. types/ribotypes , as well as 2 out of 3 qPCR primer sets for species of the genus \emph{Fukoyoa} (seceded from the genus \emph{Gambierdiscus} recently \citep{gomez2015fukuyoa}).
+%Australia
+Australia has CFP endemic areas, most notably the Great Barrier Reef, yet the cases are highly under reported with a predicted rate of 20\% \citep{lewis2006ciguatera}. The country's coastline is expansive and sites sampled for the presence of \emph{Gambierdiscus} spp. are few and far in between (ALK in prep). The 5 species of \emph{Gambierdiscus} that have been identified from Queensland and New South Wales are as follows: \emph{G. belizeanus} \citep{murray2014molecular}, \emph{G. carpenteri} \citep{kohli2014high}, \emph{G. lapillus} (ALK in prep), \emph{G. toxicus} \citep{hallegraeff2010algae} and \emph{F. yasumotoi} \citep{murray2014molecular}. Pyrosequencing identified \emph{Gambierdiscus} to the genus level in Western Australia \citep{kohli2014cob} , indicating that this is a coastline that should be examined further for CFP risk. A verified and consistently CTX producing species has not yet been identified as the basis for the ciguateric regions of Australia.
 QPCR primers for identifying and monitoring for monitoring \emph{G. belizeanus}, \emph{G. carpenteri} and \emph{F. yasumotoi} in Australia have been developed \citep{nishimura2016quantitative,vandersea2012development}.
-
+%aim
 The aim of this study was to develop qPCR primers, in line with the global ciguatera strategy, for screening environmental samples for the presence of \emph{G. lapillus} and \emph{G. polynesiensis} Chinain \& Faust. The latter is a species found in the Pacific Island nations that produces a suite of CTXs, identified by LC-MS, and would be a plausible causative agent of CFP in Australia. The latter is a recently identified species from the Great Barrier Reef whose toxin profile did not include any of the known CTXs but displayed an unusual peak in the CTX phase of the LC-MS which makes it a potentially important candidate to monitor. Flipr assay was conducted to investigate CTX specific toxicity and draw inferences for environmental relevance,
-
 \newpage
 \section{Materials and methods}
 \subsection{Clonal strains and culturing conditions}
@@ -55,146 +52,138 @@ Three strains of \emph{G. lapillus} and two strains of \emph{G. polynesiensis} w
 \begin{table}
 \caption{List of \emph{Gambierdiscus} clonal strains used for the qPCR assay.}
 \label{tbl:StrainTable}
-\begin{tabular}{  | p{2cm} | p{2cm} | p{2cm}| p{3cm} | p{3cm} | p{2cm} | }
+\begin{tabular}{ | p{2cm} | p{2cm} | p{2cm}| p{3cm} | p{3cm} | p{2cm} | }
 \hline
-\textbf{Species}  & \textbf{Collection site} &  \textbf{Collection date} &\textbf{Latitude} & \textbf{Longitude} & \textbf{Strain name} \\
-  \hline
-   \emph{G. lapillus}   &Heron Island, Australia &July 2014 &23$^{\circ}$ 4420' S&151$^{\circ}$ 9140' E  & HG4 \\
-   \hline
+\textbf{Species} & \textbf{Collection site} & \textbf{Collection date} &\textbf{Latitude} & \textbf{Longitude} & \textbf{Strain name} \\
+\hline
+\emph{G. lapillus} &Heron Island, Australia &July 2014 &23$^{\circ}$ 4420' S&151$^{\circ}$ 9140' E & HG4 \\
+\hline
 &&&&& HG6\\
- \hline
- &&&& &HG7\\
- \hline
-\emph{G. polynesiensis}&Rarotonga, Cook Islands&November 2014 &21$^{\circ}$ 2486' S&159$^{\circ}$ 7286' W  & CG14 \\
- \hline
+\hline
+&&&& &HG7\\
+\hline
+\emph{G. polynesiensis}&Rarotonga, Cook Islands&November 2014 &21$^{\circ}$ 2486' S&159$^{\circ}$ 7286' W & CG14 \\
+\hline
 &&&&&CG15\\
-    \hline
- \end{tabular}
+\hline
+\end{tabular}
 \end{table}
 \subsection{DNA extraction and species specific primer design}
 Genomic DNA was extracted using the CTAB method \citep{zhou1999analysis}. Purity and concentration of the extract was measured by Nanodrop (Nanodrop2000, Thermo Scientific), the integrity was visualised on 1\% agarose gel.
-Unique primer sets were designed for the small-subunit (SSU) rDNA region of  \emph{G. lapillus}, as reported by Kretzschmar et al., and \emph{G. polynesiensis}, as available in GenBank reference database. The target sequences were aligned against sequences of all other \emph{Gambierdiscus}spp. from GenBank reference database, with the MUSCLE algorithm (maximum of 8 iterations) \citep{edgar2004muscle} used through the Geneious software, version 8.1.7 \citep{kearse2012geneious}. Unique sites were determined manually (Table ~\ref{tbl:PrimerTable}). Primers were synthesised by Integrated DNA Technologies (IA, USA).
+Unique primer sets were designed for the small-subunit (SSU) rDNA region of \emph{G. lapillus}, as reported by Kretzschmar et al., and \emph{G. polynesiensis}, as available in GenBank reference database. The target sequences were aligned against sequences of all other \emph{Gambierdiscus}spp. from GenBank reference database, with the MUSCLE algorithm (maximum of 8 iterations) \citep{edgar2004muscle} used through the Geneious software, version 8.1.7 \citep{kearse2012geneious}. Unique sites were determined manually (Table ~\ref{tbl:PrimerTable}). Primers were synthesised by Integrated DNA Technologies (IA, USA).
 Primer sets were tested systematically for secondary product formation for all 3 strains of \emph{G. lapillus} and 2 strains of \emph{G. polynesiensis} (Table ~\ref{tbl:StrainTable}) via standard PCR in 25$\mu$l mixture in PCR tubes. The mixture contained 0.6 $\mu$M forward and reverse primer, 0.4 $\mu$M BSA, 2 - 20 ng DNA, 12.5 $\mu$l 2xEconoTaq (Lucigen) and 7.5 $\mu$l PCR grade water.
 The PCR cycling comprised of an initial 10 min step at 94 $^{\circ}$C, followed by 30 cycles of denaturing at 94 $^{\circ}$C for 30 sec, annealing at 60 $^{\circ}$C for 30 sec and extension at 72 $^{\circ}$C for 1 min, finalised with 3 minutes of extension at 72 $^{\circ}$C. Products were visualised on 1\% agarose gel.
 \FloatBarrier
 \begin{table}
-\caption{List of species specific  qPCR primer sets for SSU rDNA.}
+\caption{List of species specific qPCR primer sets for SSU rDNA.}
 \label{tbl:PrimerTable}
-\begin{tabular}{  | p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{7cm} | }
+\begin{tabular}{ | p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{7cm} | }
 \hline
-\textbf{DNA target} & \textbf{Amplicon size} & \textbf{Primer name} & \textbf{Synthesis direction of primer} & \textbf{Sequence (5'-3')}  \\
-  \hline
-   \emph{G. lapillus}   & &qGlapSSU2F & Forward & \\
-   \hline
- & &qGlapSSU2R & Reverse & \\
- \hline
+\textbf{DNA target} & \textbf{Amplicon size} & \textbf{Primer name} & \textbf{Synthesis direction of primer} & \textbf{Sequence (5'-3')} \\
+\hline
+\emph{G. lapillus} & &qGlapSSU2F & Forward & \\
+\hline
+& &qGlapSSU2R & Reverse & \\
+\hline
 \emph{G. polynesiensis}& &qGpolySSU2F& Forward & \\
- \hline
-  & &qGpolySSU2R & Reverse &   \\
-    \hline
- \end{tabular}
+\hline
+& &qGpolySSU2R & Reverse & \\
+\hline
+\end{tabular}
 \end{table}
-
 \subsection{Evaluation of primer specificity}
-To verify primer set specificity as listed in Table ~\ref{tbl:PrimerTable}, DNA was extracted via CTAB from \emph{G. belizeanus} (CCMP401), \emph{G. australes} (CCMP1650 and CG61) and \emph{G. pacificus} (CAWD149). sPIKEY 8A - \emph{G. xx} (CAWD232) DNA was extracted using a PowerSoil™ DNA isolation kit (Mo Bio Inc., CA, USA) by Dr. Kirsty Smith, Cawthron Institute, New Zealand. Cross reactivity for \emph{G. scabrosus} () DNA was extracted using DNeasy Plant Mini Kit (Quiagen, Tokyo, Japan) according to the manufacturer's protocol, by Dr. Nishimura, Kochi University, Japan. For all extracted samples, the presence and integrity of genomic DNA was  assessed on 1\% agarose gel. Primer sets designed for \emph{G. lapillus} and \emph{G. polynesiensis} were tested for cross-reactivity against all other \emph{Gambierdiscus} spp. available via PCR. PCR amplicons were visually assessed on 1\% agarose gel.
-
+To verify primer set specificity as listed in Table ~\ref{tbl:PrimerTable}, DNA was extracted via CTAB from \emph{G. belizeanus} (CCMP401), \emph{G. australes} (CCMP1650 and CG61) and \emph{G. pacificus} (CAWD149). sPIKEY 8A - \emph{G. xx} (CAWD232) DNA was extracted using a PowerSoil™ DNA isolation kit (Mo Bio Inc., CA, USA) by Dr. Kirsty Smith, Cawthron Institute, New Zealand. Cross reactivity for \emph{G. scabrosus} () DNA was extracted using DNeasy Plant Mini Kit (Quiagen, Tokyo, Japan) according to the manufacturer's protocol, by Dr. Nishimura, Kochi University, Japan. For all extracted samples, the presence and integrity of genomic DNA was assessed on 1\% agarose gel. Primer sets designed for \emph{G. lapillus} and \emph{G. polynesiensis} were tested for cross-reactivity against all other \emph{Gambierdiscus} spp. available via PCR. PCR amplicons were visually assessed on 1\% agarose gel.
 \subsection{Evaluation of primer sensitivity}
- The qPCR reaction mixture contained 10 $\mu$l SYBR Select Master Mix (Thermo Fisher Scientific), 7 $\mu$l MilliQ water, 0.5 $\mu$M forward and reverse primers and 2 - 20 ng DNA template, for a final volume of 20 $\mu$l.
-
+The qPCR reaction mixture contained 10 $\mu$l SYBR Select Master Mix (Thermo Fisher Scientific), 7 $\mu$l MilliQ water, 0.5 $\mu$M forward and reverse primers and 2 - 20 ng DNA template, for a final volume of 20 $\mu$l.
 \subsection{Calibration curve construction}
 Standard curves were constructed via two methods: (1) synthetic gene fragment based (henceforth referred to as gene based calibration) and (2) cell based calibration curves. The former was constructed from a 10-fold serial dilution of a synthesised fragment containing the SSU target sequence, forward and reverse primer sites and 50bp flanking both primer sites matching sequencing results. Cell-based standard curves were constructed using 10-fold dilutions of gDNA extract of known cell concentrations.
 \subsubsection{Gene based calibration curve}
 A synthetic gBlocks gene fragment spanning the target SSU sequence, primer sites and 50bp on either end was synthesised for both \emph{G. lapillus} and \emph{G. polynesiensis}.
 \subsubsection{Cell based calibration curve}
 Three cultures of \emph{G. lapillus} and two cultures of \emph{G. polynesiensis} (Table ~\ref{tbl:StrainTable}) were used to construct cell based standard curves. Cells were counted microscopically () with a Sedqick Rafter Counting Chamber. DNA was extracted using xx kit, as per the manufacturer's instructions. The gDNA extracts were 10-fold serial diluted.
-
 %\subsection{Quantification of SSU rDNA copy number per cell of \emph{G. lapullis} and \emph{G. polynesiensis}}
-
-%\subsection{Toxicity of \emph{G. lapillus}}
-
+\subsection{Toxicity of \emph{G. lapillus}}
+- if FLIPR assays work out
 \subsection{Screening environmental samples for \emph{G. lapullis} and \emph{G. polynesiensis} abundance}
-A total of 33 macroalgal sites around Heron Island were targeted, in tripplicate as biological replicates.
--fig showing sampling sites
--table showing samples, substrate, ID, result? 
-
+A total of 33 macroalgal sites around Heron Island were targeted, in tripplicate as biological replicates.\\
+-fig showing sampling sites\\
+-table showing samples, substrate, ID, result?
 \newpage
 \section{Results}
-\subsection{species specific primer design}
--
-
+\subsection{Evaluation of primer specificity}
+-picture of gel?
 \FloatBarrier
 \begin{table}
 \caption{Cross-reactivity of qPCR primer sets.}
 \label{tbl:CrossreactTable}
-\begin{tabular}{  | p{4cm} | p{3cm} | p{2cm} | p{2.5cm} | p{2.5cm} | }
+\begin{tabular}{ | p{4cm} | p{3cm} | p{2cm} | p{2.5cm} | p{2.5cm} | }
 \hline
-\textbf{Template} & \textbf{Strain name} & \textbf{gDNA gel band} & \textbf{GlapSSU2F-GlapSSU2R} & \textbf{GpolySSUF-GpolySSUR}  \\
-  \hline
+\textbf{Template} & \textbf{Strain name} & \textbf{gDNA gel band} & \textbf{GlapSSU2F-GlapSSU2R} & \textbf{GpolySSUF-GpolySSUR} \\
+\hline
 \emph{G. australes} & CCMP1650 &+&-&- \\
-  \hline
- & CG61 &+&-&- \\
-   \hline
- \emph{G. belizeanus}&CCMP401&+&-&-\\
-   \hline
- \emph{G. lapillus}&HG1&+&+&-\\
-   \hline
- &HG4&+&+&-\\
-   \hline
- &HG6&+&+&-\\
-   \hline
-   &HG7&+&+&-\\
-   \hline
-   &HG26&+&+&-\\
-  \hline
-   \emph{G. pacificus}&CAWD149&+&-&-\\
-  \hline
-   \emph{G. polynesiensis}&CG14&+&-&+\\
-   \hline
-   &CG15&+&-&+\\
-  \hline
-  \emph{G. scabrosus}&&+&-&-\\
-    \hline
- \end{tabular}
+\hline
+& CG61 &+&-&- \\
+\hline
+\emph{G. belizeanus}&CCMP401&+&-&-\\
+\hline
+\emph{G. lapillus}&HG1&+&+&-\\
+\hline
+&HG4&+&+&-\\
+\hline
+&HG6&+&+&-\\
+\hline
+&HG7&+&+&-\\
+\hline
+&HG26&+&+&-\\
+\hline
+\emph{G. pacificus}&CAWD149&+&-&-\\
+\hline
+\emph{G. polynesiensis}&CG14&+&-&+\\
+\hline
+&CG15&+&-&+\\
+\hline
+\emph{G. scabrosus}&&+&-&-\\
+\hline
+\end{tabular}
 \end{table}
-
-\subsection{Evaluation of primer specificity}
-
+\FloatBarrier
+ 
 \subsection{Evaluation of primer sensitivity}
 -figs qPCR std curves
-\FloatBarrier 
-\begin{figure} 
-%\includegraphics[scale=.22]{MH_variability.jpg} 
-\caption{qPCR standard curves of \emph{G. lapillus} strains HG4: (A) HG6: (B) HG7:(C). Error bars represent the deviation of technical replicates during reactions.} 
-\label{fig:lapiStd}
-\end{figure} 
 \FloatBarrier
-
-\FloatBarrier 
-\begin{figure} 
-%\includegraphics[scale=.22]{MH_variability.jpg} 
-\caption{qPCR standard curves of \emph{G. polynesiensis} strains CG14: (A) CG15: (B). Error bars represent the deviation of technical replicates during reactions.} 
+\begin{figure}
+%\includegraphics[scale=.22]{MH_variability.jpg}
+\caption{qPCR standard curves of \emph{G. lapillus} strains HG4: (A) HG6: (B) HG7:(C). Error bars represent the deviation of technical replicates during reactions.}
+\label{fig:lapiStd}
+\end{figure}
+\FloatBarrier
+\FloatBarrier
+\begin{figure}
+%\includegraphics[scale=.22]{MH_variability.jpg}
+\caption{qPCR standard curves of \emph{G. polynesiensis} strains CG14: (A) CG15: (B). Error bars represent the deviation of technical replicates during reactions.}
 \label{fig:polyStd}
-\end{figure} 
+\end{figure}
 \FloatBarrier
 -Ct of known gBlocks gives copy number - extrapolate those to SSU rDNA copies for cell. can compare to
 \subsection{Quantification of SSU rDNA copy number per cell of \emph{G. lapullis} and \emph{G. polynesiensis}}
--gblocks calc 
+-gblocks calc
 \subsection{Screening environmental samples for \emph{G. lapullis} and \emph{G. polynesiensis} abundance}
 - map of Heron island and sampling sites
+- not sure how to label Table ~\ref{tbl:MacroalgaeTable} biological rep section, will change that table once I get clarity on that.
 \FloatBarrier
-\begin{longtable}{ | p{1cm} | p{1cm} | p{3cm} | p{4cm} | p{4cm} | }
+\begin{longtable}{ | p{1cm} | p{3cm} | p{1cm} | p{4cm} | p{4cm} | }
 \caption{Screening of macroalgal samples of \emph{G. lapillus} and \emph{G. polynesiensis}and cell density estimates via qPCR.}\\
 \hline
 \label{tbl:MacroalgaeTable}
-\textbf{Sample ID}&\textbf{Biol rep}&\textbf{Macroalgal substrate}&\textbf{\textit{G. lapillus} cell density}&\textbf{\textit{G. polynesiensis} cell density}\\
+\textbf{Sample ID}&\textbf{Macroalgal substrate}&\textbf{Spatial rep}&\textbf{\textit{G. lapillus} cell density}&\textbf{\textit{G. polynesiensis} cell density}\\
 \hline
-1&A&&&\\
+1&\emph{Padina} sp.&A&&\\
 \hline
-&B&&&\\
+&\emph{Sargassum} sp.&B&&\\
 \hline
-&C&&&\\
+&\emph{Padina} sp.&C&&\\
 \hline
-2&A&&&\\
+2&&A&&\\
 \hline
 &B&&&\\
 \hline
@@ -379,17 +368,16 @@ A total of 33 macroalgal sites around Heron Island were targeted, in tripplicate
 &B&&&\\
 \hline
 &C&&&\\
- \hline
+\hline
 \end{longtable}
 \FloatBarrier
-
 \FloatBarrier
 \begin{table}
 \caption{Screening of tow net samples for free floating \emph{G. lapillus} and \emph{G. polynesiensis}and cell density estimates via qPCR.}
 \label{tbl:NetTable}
-\begin{tabular}{  | p{4cm} |  p{4cm} | p{4cm} | }
+\begin{tabular}{ | p{4cm} | p{4cm} | p{4cm} | }
 \hline
-\textbf{Sample ID}  & \textbf{\emph{G. lapillus}cell density} & \textbf{\emph{G. polynesiensis}cell density}  \\
+\textbf{Sample ID} & \textbf{\emph{G. lapillus}cell density} & \textbf{\emph{G. polynesiensis} cell density} \\
 \hline
 34 &&\\
 \hline
@@ -397,7 +385,7 @@ A total of 33 macroalgal sites around Heron Island were targeted, in tripplicate
 \hline
 36&&\\
 \hline
- \end{tabular}
+\end{tabular}
 \end{table}
 \FloatBarrier
 \newpage
@@ -410,13 +398,10 @@ A total of 33 macroalgal sites around Heron Island were targeted, in tripplicate
 - FLIPR assay, ie is it giving results that match LC-MS for polynesiensis and what does CTX for lapillus look like?
 \newpage
 \section{Conclusion}
-
 \section{Acknowledgements}
 Gratitude to Dr. Adachi and Dr. Nishimura for supplying \emph{G. scabrosus} as well as Dr. Kirsty Smith and Dr. Lesley Rhodes for supplying \emph{G. xx}, both species were used for DNA for cross reactivity assessment. Thanks to Bojana M? for Matlab assistance.
 \FloatBarrier
 \newpage
 \bibliographystyle{acm}
 \bibliography{references.bib}
-
-
 \end{document}
