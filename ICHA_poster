@@ -1,0 +1,182 @@
+\documentclass[a0paper,portrait,margin=2cm,]{baposter}
+
+\usepackage{relsize}		% For \smaller
+\usepackage{url}			% For \url
+\usepackage{epstopdf}	% Included EPS files automatically converted to PDF to include with pdflatex
+
+%%% Global Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\graphicspath{{pix/}}	% Root directory of the pictures 
+\tracingstats=2			% Enabled LaTeX logging with conditionals
+
+%%% Color Definitions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{bordercol}{RGB}{40,40,40}
+\definecolor{headercol1}{RGB}{186,215,230}
+\definecolor{headercol2}{RGB}{80,80,80}
+\definecolor{headerfontcol}{RGB}{0,0,0}
+\definecolor{boxcolor}{RGB}{186,215,230}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Utility functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Save space in lists. Use this after the opening of the list %%%%%%%%%%%%%%%%
+\newcommand{\compresslist}{
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Document Start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\typeout{Poster rendering started}
+
+%%% Setting Background Image %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\background{
+	\begin{tikzpicture}[remember picture,overlay]%
+	\draw (current page.north west)+(-2em,2em) node[anchor=north west]
+	{\includegraphics[height=1.1\textheight]{background}};
+	\end{tikzpicture}
+}
+
+%%% General Poster Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Eye Catcher, Title, Authors and University Images %%%%%%%%%%%%%%%%%%%%%%
+\begin{poster}{
+	grid=false,
+	% Option is left on true though the eyecatcher is not used. The reason is
+	% that we have a bit nicer looking title and author formatting in the headercol
+	% this way
+	%eyecatcher=false, 
+	borderColor=bordercol,
+	headerColorOne=headercol1,
+	headerColorTwo=headercol2,
+	headerFontColor=headerfontcol,
+	% Only simple background color used, no shading, so boxColorTwo isn't necessary
+	boxColorOne=boxcolor,
+	headershape=roundedright,
+	headerfont=\Large\sf\bf,
+	textborder=rectangle,
+	background=user,
+	headerborder=open,
+  boxshade=plain
+}
+%%% Eye Cacther %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
+	Eye Catcher, empty if option eyecatcher=false - unused
+}
+%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\sf\bf
+	\emph{Gambierdiscus lapillus} sp. nov.: Characterisation of a new toxic dinoflagellate from the Great Barrier Reef, Australia.
+}
+%%% Authors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
+	\vspace{1em} A. L. Kretzschmar, A. Verma, M. Hoppenrath, T. Harwood, S. Murray
+}
+%%% Logo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
+% The logos are compressed a bit into a simple box to make them smaller on the result
+% (Wasn't able to find any bigger of them.)
+%\setlength\fboxsep{0pt}
+%\setlength\fboxrule{0.5pt}
+	\fbox{
+			\includegraphics[scale=.25]{C3.png}
+			%\includegraphics[width=4em,height=4em]{elte_logo} \\
+			%\includegraphics[width=10em,height=4em]{dynanets_logo}
+			%\includegraphics[width=4em,height=4em]{aitia_logo}
+		}
+}
+
+\headerbox{Genus \emph{Gambierdiscus} sp.}{name=gamb,column=0,row=0}{
+\textbf{Organism:} \emph{Gambierdiscus} are single-celled eukaryotic algae, implicated in harmful algal blooms.\\
+\textbf{Distribution:} Pacific Ocean, Caribbean, Mediterranean, Indian Ocean. %ref\{litaker}\\
+\textbf{Importance:} Human intoxication due to neurotoxic ciguatoxins by some species. \\
+\textbf{Future:} Climate Change predicted to increase habitat and distribution of intoxocation %\cite{berdalet}.
+}
+
+\headerbox{Ciguatera fish poisoning}{name=ciguatera,column=0,below=gamb}{
+\textbf{Severity:} Highly morbid, potentially fatal disease.\\
+\textbf{Transmission:} Bioaccumulation, toxins taken up and transferred through food chain via predation.\\
+\textbf{High risk area:} Pacific Island Nations (1 in 3 New Caledonians intoxicated).\\
+\textbf{Symptomatology:} 180+ gastrointestinal, cardiovascular and neurological symptoms. %\cite{bagnis?}\\
+\textbf{Australia:} Great Barrier Reef endemic.
+}
+
+\headerbox{Sample collection}{name=meth,column=0,below=ciguatera}{
+Macroalgal specimens (\emph{Halimeda} sp. in October 2013, \emph{Padina} sp. in July 2014) were collected from Heron Island, part of the ciguateric web of the Great Barrier Reef (23$^{\circ}$ 4420' S, 151$^{\circ}$ 9140' E).  Five clonal strains of \emph{G. lapillus} were established (HG1, HG4, HG6, HG7 and HG26) and maintained in F/10 medium %\cite{holmes} 
+at 27$^{\circ}$C, 60 mol/m/s light in 12h:12h light to dark cycles.
+}
+
+\headerbox{Toxicity of \emph{G. lapillus}}{name=toxicity,column=0,below=meth}{
+\textbf{Methods:}\\
+\textbf{Results:}
+}
+
+\headerbox{References}{name=references,column=0,below=toxicity}{
+\smaller													% Make the whole text smaller
+\vspace{-0.4em} 										% Save some space at the beginning
+\bibliographystyle{plain}							% Use plain style
+\renewcommand{\section}[2]{\vskip 0.05em}		% Omit "References" title
+\begin{thebibliography}{1}							% Simple bibliography with widest label of 1
+\itemsep=-0.01em										% Save space between the separation
+\setlength{\baselineskip}{0.4em}					% Save space with longer lines
+\bibitem{Rhodes2014} Laszlo Gulyas, Richard Legendi: \emph{Effects of Sample Duration on Network Statistics in Elementary Models of Dynamic Networks}, International Conference on Computational Science, Singapore (2011) 
+\bibitem{prevWork2} Laszlo Gulyas, Susan Khor, Richard Legendi and George Kampis \emph{Cumulative Properties of Elementary Dynamic Networks}, The International Sunbelt Social Network Conference XXXI (2011)
+\bibitem{gulya-kampis1} Gulyas, Laszlo et al.: \emph{Betweenness Centrality Dynamics in Networks of Changing Density}. Presented at the 19th International Symposium on Mathematical Theory of Networks and Systems (MTNS 2010)
+\end{thebibliography}
+}
+
+\headerbox{Acknowledgements}{name=acknowledgements,column=0,below=references, above=bottom}{
+\smaller						% Make the whole text smaller
+\vspace{-0.4em}			% Save some space at the beginning
+\begin{itemize}
+\item Dr. Petrou, , Dr. Nielsen and Dr. Ralph for sample collection
+\item Dr. Munday for toxicology investigation
+\item Dr. Chinain and Dr. Yasumoto for CTX and MTX standards
+\item Dr. Ajani and Dr. Kohli
+\item Dr. Turnbull and Dr. Johnson at UTS Microbial Imaging Facility
+\item Dr. Chomerat
+\item Janis Ortgis for SEM preparations
+\item Australian Research Council (ARC) for funding
+\end{itemize}
+} 
+
+\headerbox{Genetics}{name=genetics,span=2,column=1,row=0}{
+\textbf{Methods:} Genomic DNA extracted via CTAB method %cite{ctab}
+, large sub-unit (LSU) ribosomal DNA (rDNA) region D8-D10 (799 bp) and the small-sub unit (SSU) rDNA (1699) regions were amplified via PCR. Sanger sequencing was conducted by Macrogen (Korea). Sequences (D8-D10 rDNA 799 bp, SSU rDNA 1699 bp) were aligned with \emph{Gambierdiscus} spp. sequences from GenBank via MUSCLE (8 iterations). Phylogenetics were calculated with Bayesian inference (BI, MrBayes 3.2.2, 2,000,000 generations subsampled every 1000th) as well as maximum likelyhood (ML, PhyML, 1000 bootstraps) using Geneious v8. \\
+\textbf{Results:} 
+\begin{center}
+	\includegraphics[width=0.7\linewidth]{phylo-sml.jpg}
+	%\includegraphics[width=0.49\linewidth]{D8D10.jpg}
+\end{center}
+}
+
+\headerbox{Thecal plate structure}
+{name=morphology,span=2,column=1,below=genetics}{
+\textbf{Methods:} Type strain HG7 was preserved with 10\% Lugol's iodide then analysed by \\
+(1) Flourescent Brightner 28 (Sigma, St Louis, USA) addition under UV (Olympus BX51 microscope, Olympus DP73 camera).\\
+(2) scanning electron microscopy (Tescan Vega3 microscope, 15kV) at the Senckenberg amd Meer.\\
+\textbf{Results:} 
+
+
+	\includegraphics[width=0.7\linewidth]{morph.jpg}
+	%\includegraphics[width=0.49\linewidth]{CPA_3d_cumulative}
+
+}
+
+\headerbox{Size}{name=size,span=2,column=1,row=0,below=morphology}{
+\textbf{Methods:} Strains HG4, HG6 HG7 and HG26 were fixed in 10\% Lugol's iodide during exponential growth phase and examined with inverted light microscope (Nikon Eclipse TS100, Infinite Luminera 1 camera). Depth (along dorso-ventral axis) and width (along lateral axis) were meassured for 30 to 36 cells per strain (n=128). \\
+\textbf{Results:} 
+\begin{center}
+\includegraphics[width=0.5\linewidth]{graph.jpg}
+\end{center}
+}
+
+\headerbox{Conclusion}{name=conc,span=2,column=1,row=0,below=size}{
+Evidence for for \emph{Gambierdiscus lapillus} sp. nov. due to genetic distinction from other \emph{Gambierdiscus} spp., coupled with morphology and diminutive siz. The species is named for the latter along with heavy plate ornamentation characteristic of it's members. Latin, lapillus (= little gem).
+}
+
+\end{poster}
+\end{document}
