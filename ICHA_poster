@@ -1,5 +1,6 @@
 \documentclass[a0paper,portrait,margin=2cm,]{baposter}
 
+\usepackage{enumitem}
 \usepackage{relsize}		% For \smaller
 \usepackage{url}			% For \url
 \usepackage{epstopdf}	% Included EPS files automatically converted to PDF to include with pdflatex
@@ -91,51 +92,37 @@
 
 \headerbox{Genus \emph{Gambierdiscus} sp.}{name=gamb,column=0,row=0}{
 \textbf{Organism:} \emph{Gambierdiscus} are single-celled eukaryotic algae, implicated in harmful algal blooms.\\
-\textbf{Distribution:} Pacific Ocean, Caribbean, Mediterranean, Indian Ocean. %ref\{litaker}\\
+\textbf{Distribution:} Pacific Ocean, Caribbean, Mediterranean, Indian Ocean \cite{litaker}.\\
 \textbf{Importance:} Human intoxication due to neurotoxic ciguatoxins by some species. \\
-\textbf{Future:} Climate Change predicted to increase habitat and distribution of intoxocation %\cite{berdalet}.
+\textbf{Future:} Climate Change predicted to increase habitat and distribution of intoxocation \cite{berdalet}.
 }
 
-\headerbox{Ciguatera fish poisoning}{name=ciguatera,column=0,below=gamb}{
-\textbf{Severity:} Highly morbid, potentially fatal disease.\\
-\textbf{Transmission:} Bioaccumulation, toxins taken up and transferred through food chain via predation.\\
-\textbf{High risk area:} Pacific Island Nations (1 in 3 New Caledonians intoxicated).\\
-\textbf{Symptomatology:} 180+ gastrointestinal, cardiovascular and neurological symptoms. %\cite{bagnis?}\\
-\textbf{Australia:} Great Barrier Reef endemic.
+\headerbox{Thecal plate structure}
+{name=morphology,column=0,below=gamb}{
+\textbf{Methods:} Type strain HG7 was preserved with 10\% Lugol's iodide then analysed using Kofoid plate tabulation by \\
+(1) Flourescent Brightner 28 (Sigma, St Louis, USA) addition under UV (Olympus BX51 microscope, Olympus DP73 camera).\\
+(2) scanning electron microscopy (SEM) (Tescan Vega3 microscope, 15kV) at the Senckenberg amd Meer.\\
+\textbf{Results:} \emph{G. lapilus} shows morphological distinction to other \emph{Gambierdiscus} spp. in combination of heavy thecal ornamentation (strongly reticulate-foveate) and plates 2', '' \& 2''''. Plate tabulation: Po, 3', 0a, 7'', 6c, 7-8s, 5''', 0p, 2''''.
+\begin{center}
+\includegraphics[width=1\linewidth]{morph.jpg}
+\end{center}
+	Fig. 3: Morphological diagnosis of \emph{G. lapillus}; (A-C) epitheca, (D-E) hypotheca. Epiflourescence shows plate tabulation (A,D); as does SEM (B,E); (C,F) shows drawing of plate tabulation with 2' and 2'''' highlighted for diagnsotic significance.
 }
 
-\headerbox{Sample collection}{name=meth,column=0,below=ciguatera}{
-Macroalgal specimens (\emph{Halimeda} sp. in October 2013, \emph{Padina} sp. in July 2014) were collected from Heron Island, part of the ciguateric web of the Great Barrier Reef (23$^{\circ}$ 4420' S, 151$^{\circ}$ 9140' E).  Five clonal strains of \emph{G. lapillus} were established (HG1, HG4, HG6, HG7 and HG26) and maintained in F/10 medium %\cite{holmes} 
-at 27$^{\circ}$C, 60 mol/m/s light in 12h:12h light to dark cycles.
+\headerbox{Toxin profile of \emph{G. lapillus}}{name=tox,column=0,below=morphology}{
+\textbf{Methods:} HG4, HG6 and HG7 were screened at Cawthron (New Zealand) for presence of maitotoxin (MTX-1) and ciguatoxins (CTX-3B, CTX-3C, CTX-4A, CTX-4B) via LC-MS/MS \cite{Kohli2014}.\\
+\textbf{Results:}\\
+\textbf{No} Maitoxins or ciguatoxins detected that correspond to available standards;\\
+\textbf{Yes} Tentative maitotoxin-3 compound detected;\\
+\textbf{?} Unassigned chromatographic peaks were observed in the ciguatoxin transition which warrant further investigation.
 }
 
-\headerbox{Toxicity of \emph{G. lapillus}}{name=toxicity,column=0,below=meth}{
-\textbf{Methods:}\\
-\textbf{Results:}
-}
-
-\headerbox{References}{name=references,column=0,below=toxicity}{
-\smaller													% Make the whole text smaller
-\vspace{-0.4em} 										% Save some space at the beginning
-\bibliographystyle{plain}							% Use plain style
-\renewcommand{\section}[2]{\vskip 0.05em}		% Omit "References" title
-\begin{thebibliography}{1}							% Simple bibliography with widest label of 1
-\itemsep=-0.01em										% Save space between the separation
-\setlength{\baselineskip}{0.4em}					% Save space with longer lines
-\bibitem{Rhodes2014} Laszlo Gulyas, Richard Legendi: \emph{Effects of Sample Duration on Network Statistics in Elementary Models of Dynamic Networks}, International Conference on Computational Science, Singapore (2011) 
-\bibitem{prevWork2} Laszlo Gulyas, Susan Khor, Richard Legendi and George Kampis \emph{Cumulative Properties of Elementary Dynamic Networks}, The International Sunbelt Social Network Conference XXXI (2011)
-\bibitem{gulya-kampis1} Gulyas, Laszlo et al.: \emph{Betweenness Centrality Dynamics in Networks of Changing Density}. Presented at the 19th International Symposium on Mathematical Theory of Networks and Systems (MTNS 2010)
-\end{thebibliography}
-}
-
-\headerbox{Acknowledgements}{name=acknowledgements,column=0,below=references, above=bottom}{
-\smaller						% Make the whole text smaller
+\headerbox{Acknowledgements}{name=acknowledgements,column=0,above=bottom}{
+\tiny					% Make the whole text smaller
 \vspace{-0.4em}			% Save some space at the beginning
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item Dr. Petrou, , Dr. Nielsen and Dr. Ralph for sample collection
-\item Dr. Munday for toxicology investigation
 \item Dr. Chinain and Dr. Yasumoto for CTX and MTX standards
-\item Dr. Ajani and Dr. Kohli
 \item Dr. Turnbull and Dr. Johnson at UTS Microbial Imaging Facility
 \item Dr. Chomerat
 \item Janis Ortgis for SEM preparations
@@ -143,40 +130,64 @@ at 27$^{\circ}$C, 60 mol/m/s light in 12h:12h light to dark cycles.
 \end{itemize}
 } 
 
-\headerbox{Genetics}{name=genetics,span=2,column=1,row=0}{
-\textbf{Methods:} Genomic DNA extracted via CTAB method %cite{ctab}
-, large sub-unit (LSU) ribosomal DNA (rDNA) region D8-D10 (799 bp) and the small-sub unit (SSU) rDNA (1699) regions were amplified via PCR. Sanger sequencing was conducted by Macrogen (Korea). Sequences (D8-D10 rDNA 799 bp, SSU rDNA 1699 bp) were aligned with \emph{Gambierdiscus} spp. sequences from GenBank via MUSCLE (8 iterations). Phylogenetics were calculated with Bayesian inference (BI, MrBayes 3.2.2, 2,000,000 generations subsampled every 1000th) as well as maximum likelyhood (ML, PhyML, 1000 bootstraps) using Geneious v8. \\
-\textbf{Results:} 
+
+
+\headerbox{Ciguatera fish poisoning}{name=ciguatera,column=1,row=0}{
+\textbf{Severity:} Highly morbid, potentially fatal disease.\\
+\textbf{Transmission:} Bioaccumulation, toxins taken up and transferred through food chain via predation.\\
+\textbf{High risk area:} Pacific Island Nations (1 in 3 New Caledonians intoxicated).\\
+\textbf{Symptomatology:} 180+ gastrointestinal, cardiovascular and neurological symptoms \cite{bagnis}.
+}
+
+\headerbox{Genetics}{name=genetics,span=2,column=1,row=0,below=ciguatera}{
+\textbf{Methods:} Genomic DNA extracted (CTAB); amplification of large sub-unit (LSU) ribosomal DNA (rDNA) and the small-sub unit (SSU) rDNA regions via PCR then Sanger sequenced by Macrogen (Korea). Results aligned with sequences from GenBank. Phylogenetics inferences calculated with Bayesian inference as well as maximum likelihood. \\
+\textbf{Results:} \emph{G. lapillus} forms a genetically distinct, well supported clade (Gig. 2).
 \begin{center}
-	\includegraphics[width=0.7\linewidth]{phylo-sml.jpg}
-	%\includegraphics[width=0.49\linewidth]{D8D10.jpg}
-\end{center}
+	\includegraphics[width=0.85\linewidth]{phylo-sml-trans.png}
+	\end{center}
+	Fig. 2: Phylogenetic analysis of \emph{G. lapillus}.  Maximum likelihood phylogeny of \emph{Gambierdiscus} spp. and phylotypes. Nodal support are Bayesian posterior probability (PP) and bootstraps (BS). Strong support (PP/BT = 1.00/100) shown as thick line. (A) SSU region 1699 bp; (B) D8-D10 LSU region  799 bp.
 }
 
-\headerbox{Thecal plate structure}
-{name=morphology,span=2,column=1,below=genetics}{
-\textbf{Methods:} Type strain HG7 was preserved with 10\% Lugol's iodide then analysed by \\
-(1) Flourescent Brightner 28 (Sigma, St Louis, USA) addition under UV (Olympus BX51 microscope, Olympus DP73 camera).\\
-(2) scanning electron microscopy (Tescan Vega3 microscope, 15kV) at the Senckenberg amd Meer.\\
-\textbf{Results:} 
-
-
-	\includegraphics[width=0.7\linewidth]{morph.jpg}
-	%\includegraphics[width=0.49\linewidth]{CPA_3d_cumulative}
-
-}
-
-\headerbox{Size}{name=size,span=2,column=1,row=0,below=morphology}{
-\textbf{Methods:} Strains HG4, HG6 HG7 and HG26 were fixed in 10\% Lugol's iodide during exponential growth phase and examined with inverted light microscope (Nikon Eclipse TS100, Infinite Luminera 1 camera). Depth (along dorso-ventral axis) and width (along lateral axis) were meassured for 30 to 36 cells per strain (n=128). \\
-\textbf{Results:} 
+\headerbox{Size}{name=size,span=2,column=1,row=0,below=genetics}{
+\textbf{Methods:} Strains HG4, HG6 HG7 and HG26 were fixed in 10\% Lugol's iodide during exponential growth phase and examined with inverted light microscope (Nikon Eclipse TS100, Infinite Luminera 1 camera). Depth (along dorso-ventral axis) and width (along lateral axis) (n=128). \\
+\textbf{Results:} \emph{G. lapillus} is consistently much smaller than any other \emph{Gambierdiscus} spp, comparable with the sister genus \emph{Fukuyoa}.
 \begin{center}
-\includegraphics[width=0.5\linewidth]{graph.jpg}
+\includegraphics[width=0.45\linewidth]{graph-trans.png}
 \end{center}
+Fig. 1: Visual representation of size difference \emph{Gambierdiscus} spp. Error bars denote standard deviation of measurements.
 }
+
 
 \headerbox{Conclusion}{name=conc,span=2,column=1,row=0,below=size}{
-Evidence for for \emph{Gambierdiscus lapillus} sp. nov. due to genetic distinction from other \emph{Gambierdiscus} spp., coupled with morphology and diminutive siz. The species is named for the latter along with heavy plate ornamentation characteristic of it's members. Latin, lapillus (= little gem).
+Evidence for for \emph{Gambierdiscus lapillus} sp. nov. due to genetic distinction from other \emph{Gambierdiscus} spp. (Fig. 2), coupled with morphology (Fig. 3) and diminutive size (Fig. 1). The species is named for the latter along with heavy plate ornamentation characteristic of it's members. Latin, lapillus (= little gem).\\
+This constitutes the 5th \emph{Gambierdiscus} spp. identified around Australia, however none are verified ciguatoxin producers by LC-MS/MS. Hence the causative organism of ciguatera fish poisoning in Australia is still unknown. This makes the investigation into the uncharacterised peaks in the ciguatoxin transition a priority for future work.
 }
+
+\headerbox{References}{name=ref,span=2,column=1,row=0,above=bottom}{
+\tiny													% Make the whole text smaller
+\vspace{-0.4em} 										% Save some space at the beginning
+\bibliographystyle{plain}							% Use plain style
+\renewcommand{\section}[2]{\vskip 0.05em}		% Omit "References" title
+\begin{thebibliography}{1}							% Simple bibliography with widest label of 1
+\itemsep=-0.01em										% Save space between the separation
+\setlength{\baselineskip}{0.4em}					% Save space with longer lines
+\bibitem{litaker}Liaker et al. (2010) Global distribution of the ciguatera causing dinoflagellates in the genus \emph{Gambierdiscus}.
+\bibitem{berdalet}Berdalet et al. 2012. Global ecology and oceanography of harmful algal blooms, {GEOHAB} core research project: {HABs} in benthic systems.
+\bibitem{bagnis}Bagnis et al. (1979) Clinical observations on 3,009 cases of ciguatera (fish poisoning) in the {S}outh {P}acific.
+\bibitem{holmes}Holmes et al. (1991) Strain dependent production of ciguatoxin precursors (gambiertoxins) by \emph{Gambierdiscus toxicus} ({D}inophyceae) in culture. 
+\bibitem{Kohli2014}Kohli et al. (2014) A feeding study to probe the uptake of maitotoxin by snapper (\emph{Pagrus auratus}).
+\end{thebibliography}
+} 
+
+
+
+\headerbox{Sample collection}{name=meth,column=2,row=0}{
+\textbf{Location:} Heron Island, ciguateric web of Great Barrier Reef, Australia (23$^{\circ}$ 4420' S, 151$^{\circ}$ 9140' E).\\
+\textbf{Macroalgal samples:} \emph{Halimeda} sp. in October 2013, \emph{Padina} sp. in July 2014.\\
+\textbf{Cultures:}  Five clonal strains of  established (HG1, HG4, HG6, HG7 and HG26) and maintained in F/10 medium \cite{holmes}. 
+at 27$^{\circ}$C, 60 mol/m/s light in 12h:12h light to dark cycles.
+}
+
 
 \end{poster}
 \end{document}
