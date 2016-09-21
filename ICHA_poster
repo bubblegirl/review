@@ -74,21 +74,22 @@
 }
 %%% Authors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {
-	\vspace{1em} A. L. Kretzschmar, A. Verma, M. Hoppenrath, T. Harwood, S. Murray
+	\vspace{1em} A. L. Kretzschmar, A. Verma, M. Hoppenrath, T. Harwood, S. Murray\\
+	 \smaller C3 UTS (AU), C3 UTS (AU), Senckenberg am Meer (DE), Cawthron (NZ), C3 UTS (AU)
 }
 %%% Logo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{
+%{
 % The logos are compressed a bit into a simple box to make them smaller on the result
 % (Wasn't able to find any bigger of them.)
 %\setlength\fboxsep{0pt}
 %\setlength\fboxrule{0.5pt}
-	\fbox{
-			\includegraphics[scale=.25]{C3.png}
-			%\includegraphics[width=4em,height=4em]{elte_logo} \\
-			%\includegraphics[width=10em,height=4em]{dynanets_logo}
-			%\includegraphics[width=4em,height=4em]{aitia_logo}
-		}
-}
+	%\fbox{
+	%		\includegraphics[scale=.25]{C3.png}
+	%		%\includegraphics[width=4em,height=4em]{elte_logo} \\
+	%		%\includegraphics[width=10em,height=4em]{dynanets_logo}
+	%		%\includegraphics[width=4em,height=4em]{aitia_logo}
+	%	}
+%}
 
 \headerbox{Genus \emph{Gambierdiscus} sp.}{name=gamb,column=0,row=0}{
 \textbf{Organism:} \emph{Gambierdiscus} are single-celled eukaryotic algae, implicated in harmful algal blooms.\\
@@ -106,7 +107,7 @@
 \begin{center}
 \includegraphics[width=1\linewidth]{morph.jpg}
 \end{center}
-	Fig. 3: Morphological diagnosis of \emph{G. lapillus}; (A-C) epitheca, (D-E) hypotheca. Epiflourescence shows plate tabulation (A,D); as does SEM (B,E); (C,F) shows drawing of plate tabulation with 2' and 2'''' highlighted for diagnsotic significance.
+	Fig. 1: Morphological diagnosis of \emph{G. lapillus}; (A-C) epitheca, (D-E) hypotheca. Epiflourescence shows plate tabulation (A,D); as does SEM (B,E); (C,F) shows drawing of plate tabulation with 2' and 2'''' highlighted for diagnsotic significance.
 }
 
 \headerbox{Toxin profile of \emph{G. lapillus}}{name=tox,column=0,below=morphology}{
@@ -114,7 +115,7 @@
 \textbf{Results:}\\
 \textbf{No} Maitoxins or ciguatoxins detected that correspond to available standards;\\
 \textbf{Yes} Tentative maitotoxin-3 compound detected;\\
-\textbf{?} Unassigned chromatographic peaks were observed in the ciguatoxin transition which warrant further investigation.
+\textbf{?} Unassigned chromatographic peaks were observed in the ciguatoxin transition which warrant further investigation as they could be indicative of undescribed ciguatoxin congener.
 }
 
 \headerbox{Acknowledgements}{name=acknowledgements,column=0,above=bottom}{
@@ -149,17 +150,20 @@
 }
 
 \headerbox{Size}{name=size,span=2,column=1,row=0,below=genetics}{
-\textbf{Methods:} Strains HG4, HG6 HG7 and HG26 were fixed in 10\% Lugol's iodide during exponential growth phase and examined with inverted light microscope (Nikon Eclipse TS100, Infinite Luminera 1 camera). Depth (along dorso-ventral axis) and width (along lateral axis) (n=128). \\
+\begin{minipage}[b]{0.53\linewidth}
+\textbf{Methods:} Strains HG4, HG6 HG7 and HG26 were fixed in 10\% Lugol's iodide during exponential growth phase and examined with inverted light microscope (Nikon Eclipse TS100, Infinite Luminera 1 camera). Depth (along dorso-ventral axis) and width (along lateral axis) (n=128).\\
 \textbf{Results:} \emph{G. lapillus} is consistently much smaller than any other \emph{Gambierdiscus} spp, comparable with the sister genus \emph{Fukuyoa}.
-\begin{center}
-\includegraphics[width=0.45\linewidth]{graph-trans.png}
-\end{center}
-Fig. 1: Visual representation of size difference \emph{Gambierdiscus} spp. Error bars denote standard deviation of measurements.
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.43\linewidth}
+\includegraphics[width=1\linewidth]{graph-trans.png}
+Fig. 3: Size difference \emph{Gambierdiscus} spp. Error bars denote standard deviation.
+\end{minipage}
 }
 
 
 \headerbox{Conclusion}{name=conc,span=2,column=1,row=0,below=size}{
-Evidence for for \emph{Gambierdiscus lapillus} sp. nov. due to genetic distinction from other \emph{Gambierdiscus} spp. (Fig. 2), coupled with morphology (Fig. 3) and diminutive size (Fig. 1). The species is named for the latter along with heavy plate ornamentation characteristic of it's members. Latin, lapillus (= little gem).\\
+Evidence for for \emph{Gambierdiscus lapillus} sp. nov. due to genetic distinction from other \emph{Gambierdiscus} spp. (Fig. 2), coupled with morphology (Fig. 1) and consistently diminutive size (Fig. 3). The species is named for the latter along with heavy plate ornamentation characteristic of it's members. Latin, lapillus (= little gem).
 This constitutes the 5th \emph{Gambierdiscus} spp. identified around Australia, however none are verified ciguatoxin producers by LC-MS/MS. Hence the causative organism of ciguatera fish poisoning in Australia is still unknown. This makes the investigation into the uncharacterised peaks in the ciguatoxin transition a priority for future work.
 }
 
@@ -171,11 +175,11 @@ This constitutes the 5th \emph{Gambierdiscus} spp. identified around Australia, 
 \begin{thebibliography}{1}							% Simple bibliography with widest label of 1
 \itemsep=-0.01em										% Save space between the separation
 \setlength{\baselineskip}{0.4em}					% Save space with longer lines
-\bibitem{litaker}Liaker et al. (2010) Global distribution of the ciguatera causing dinoflagellates in the genus \emph{Gambierdiscus}.
-\bibitem{berdalet}Berdalet et al. 2012. Global ecology and oceanography of harmful algal blooms, {GEOHAB} core research project: {HABs} in benthic systems.
-\bibitem{bagnis}Bagnis et al. (1979) Clinical observations on 3,009 cases of ciguatera (fish poisoning) in the {S}outh {P}acific.
-\bibitem{holmes}Holmes et al. (1991) Strain dependent production of ciguatoxin precursors (gambiertoxins) by \emph{Gambierdiscus toxicus} ({D}inophyceae) in culture. 
-\bibitem{Kohli2014}Kohli et al. (2014) A feeding study to probe the uptake of maitotoxin by snapper (\emph{Pagrus auratus}).
+\bibitem{litaker}Liaker et al. '10. Global distribution of the ciguatera causing dinoflagellates in the genus \emph{Gambierdiscus}.
+\bibitem{berdalet}Berdalet et al. '12. Global ecology and oceanography of harmful algal blooms, {GEOHAB} core research project: {HABs} in benthic systems.
+\bibitem{bagnis}Bagnis et al. '79. Clinical observations on 3,009 cases of ciguatera (fish poisoning) in the {S}outh {P}acific.
+\bibitem{holmes}Holmes et al. '91. Strain dependent production of ciguatoxin precursors (gambiertoxins) by \emph{Gambierdiscus toxicus} ({D}inophyceae) in culture. 
+\bibitem{Kohli2014}Kohli et al. '14. A feeding study to probe the uptake of maitotoxin by snapper (\emph{Pagrus auratus}).
 \end{thebibliography}
 } 
 
