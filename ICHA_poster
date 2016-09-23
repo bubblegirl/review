@@ -1,5 +1,6 @@
 \documentclass[a0paper,portrait,margin=2cm,]{baposter}
 
+%\usepackage[dvipsnames]{xcolor}
 \usepackage{enumitem}
 \usepackage{relsize}		% For \smaller
 \usepackage{url}			% For \url
@@ -12,11 +13,26 @@
 
 %%% Color Definitions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\definecolor{bordercol}{RGB}{40,40,40}
-\definecolor{headercol1}{RGB}{186,215,230}
+\definecolor{caribbeangreen}{rgb}{0.0, 0.8, 0.6}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+%\definecolor{olivine}{rgb}{0.6, 0.73, 0.45}
+%\definecolor{paleblue}{rgb}{0.69, 0.93, 0.93}
+%\definecolor{shamrockgreen}{rgb}{0.0, 0.62, 0.38}
+%\definecolor{antiquewhite}{rgb}{0.98, 0.92, 0.84}
+\definecolor{iceblue}{rgb}{0.94, 0.97, 1.0}
+\definecolor{azuremist}{rgb}{0.94, 1.0, 1.0}
+\definecolor{bubbles}{rgb}{0.91, 1.0, 1.0}
+\definecolor{cosmiclatte}{rgb}{1.0, 0.97, 0.91}
+\definecolor{lavendermist}{rgb}{0.9, 0.9, 0.98}
+\definecolor{lightcyan}{rgb}{0.88, 1.0, 1.0}
+
+ 
+
+%\definecolor{bordercol}{RGB}{40,40,40}
+%\definecolor{headercol1}{RGB}{186,215,230}
 \definecolor{headercol2}{RGB}{80,80,80}
 \definecolor{headerfontcol}{RGB}{0,0,0}
-\definecolor{boxcolor}{RGB}{186,215,230}
+%\definecolor{boxcolor}{RGB}{186,215,230}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Utility functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -51,12 +67,12 @@
 	% that we have a bit nicer looking title and author formatting in the headercol
 	% this way
 	%eyecatcher=false, 
-	borderColor=bordercol,
-	headerColorOne=headercol1,
+	borderColor=amber,
+	headerColorOne=caribbeangreen,
 	headerColorTwo=headercol2,
 	headerFontColor=headerfontcol,
 	% Only simple background color used, no shading, so boxColorTwo isn't necessary
-	boxColorOne=boxcolor,
+	boxColorOne=iceblue,
 	headershape=roundedright,
 	headerfont=\Large\sf\bf,
 	textborder=rectangle,
@@ -70,48 +86,53 @@
 }
 %%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {\sf\bf
-	\emph{Gambierdiscus lapillus} sp. nov.: Characterisation of a new toxic dinoflagellate from the Great Barrier Reef, Australia.
+	\emph{Gambierdiscus lapillus} sp. nov.:\\
+	 A new, toxic dinoflagellate from Australia.
 }
 %%% Authors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {
-	\vspace{1em} A. L. Kretzschmar, A. Verma, M. Hoppenrath, T. Harwood, S. Murray\\
-	 \smaller C3 UTS (AU), C3 UTS (AU), Senckenberg am Meer (DE), Cawthron (NZ), C3 UTS (AU)
+	\vspace{0.5em} A. L. Kretzschmar$^{1,2}$, A. Verma$^{2}$, M. Hoppenrath$^{3}$, T. Harwood$^{4}$, S. Murray$^{2}$\\
+	\vspace{-0.4em}
+\begin{center}
+\tiny$^{1}$anna.kretzschmar@uts.edu.au\\
+\tiny$^{2}$Climate Change cluster, University of Technology Sydney (AU)\\
+\tiny$^{3}$Senckenberg am Meer (DE)\\
+\tiny$^{4}$Cawthron Institute (NZ)
+\end{center}
 }
 %%% Logo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%{
+{
 % The logos are compressed a bit into a simple box to make them smaller on the result
 % (Wasn't able to find any bigger of them.)
-%\setlength\fboxsep{0pt}
-%\setlength\fboxrule{0.5pt}
-	%\fbox{
-	%		\includegraphics[scale=.25]{C3.png}
-	%		%\includegraphics[width=4em,height=4em]{elte_logo} \\
-	%		%\includegraphics[width=10em,height=4em]{dynanets_logo}
+\setlength\fboxsep{0pt}
+\setlength\fboxrule{0.5pt}
+	\fbox{
+			\includegraphics[scale=.23]{me.jpg}				%		%\includegraphics[width=10em,height=4em]{dynanets_logo}
 	%		%\includegraphics[width=4em,height=4em]{aitia_logo}
-	%	}
-%}
+		}
+	}
 
-\headerbox{Genus \emph{Gambierdiscus} sp.}{name=gamb,column=0,row=0}{
+\headerbox{The genus \emph{Gambierdiscus}}{name=gamb,column=0,row=0}{
 \textbf{Organism:} \emph{Gambierdiscus} are single-celled eukaryotic algae, implicated in harmful algal blooms.\\
-\textbf{Distribution:} Pacific Ocean, Caribbean, Mediterranean, Indian Ocean \cite{litaker}.\\
-\textbf{Importance:} Human intoxication due to neurotoxic ciguatoxins by some species. \\
-\textbf{Future:} Climate Change predicted to increase habitat and distribution of intoxocation \cite{berdalet}.
+\textbf{Distribution:} Recorded in the Pacific Ocean, Caribbean, Mediterranean, Indian Ocean \cite{litaker}.\\
+\textbf{Importance:} Some species produce ciguatoxins, which can cause human intoxication due to neurotoxic ciguatoxins by some species. \\
+\textbf{Future:} Climate change is predicted to increase the abundance and distribution of species of \emph{Gambierdiscus} \cite{berdalet}.
 }
 
 \headerbox{Thecal plate structure}
 {name=morphology,column=0,below=gamb}{
 \textbf{Methods:} Type strain HG7 was preserved with 10\% Lugol's iodide then analysed using Kofoid plate tabulation by \\
 (1) Flourescent Brightner 28 (Sigma, St Louis, USA) addition under UV (Olympus BX51 microscope, Olympus DP73 camera).\\
-(2) scanning electron microscopy (SEM) (Tescan Vega3 microscope, 15kV) at the Senckenberg amd Meer.\\
-\textbf{Results:} \emph{G. lapilus} shows morphological distinction to other \emph{Gambierdiscus} spp. in combination of heavy thecal ornamentation (strongly reticulate-foveate) and plates 2', '' \& 2''''. Plate tabulation: Po, 3', 0a, 7'', 6c, 7-8s, 5''', 0p, 2''''.
+(2) scanning electron microscopy (SEM) (Tescan Vega3 microscope, 15kV) at the Senckenberg am Meer.\\
+\textbf{Results:} \emph{G. lapillus} shows morphological distinction to other \emph{Gambierdiscus} spp. in combination of heavy thecal ornamentation (strongly reticulate-foveate) and plates 2', '' \& 2''''. Plate tabulation: Po, 3', 0a, 7'', 6c, 7-8s, 5''', 0p, 2''''.
 \begin{center}
 \includegraphics[width=1\linewidth]{morph.jpg}
 \end{center}
-	Fig. 1: Morphological diagnosis of \emph{G. lapillus}; (A-C) epitheca, (D-E) hypotheca. Epiflourescence shows plate tabulation (A,D); as does SEM (B,E); (C,F) shows drawing of plate tabulation with 2' and 2'''' highlighted for diagnsotic significance.
+	Fig. 1: Morphological diagnosis of \emph{G. lapillus}; (A-C) epitheca, (D-E) hypotheca. Epiflourescence shows plate tabulation (A,D); as does SEM (B,E); (C,F) shows drawing of plate tabulation with 2' and 2'''' highlighted for diagnostic significance.
 }
 
 \headerbox{Toxin profile of \emph{G. lapillus}}{name=tox,column=0,below=morphology}{
-\textbf{Methods:} HG4, HG6 and HG7 were screened at Cawthron (New Zealand) for presence of maitotoxin (MTX-1) and ciguatoxins (CTX-3B, CTX-3C, CTX-4A, CTX-4B) via LC-MS/MS \cite{Kohli2014}.\\
+\textbf{Methods:} HG4, HG6 and HG7 were screened at Cawthron (NZ) for presence of maitotoxin (MTX-1) and ciguatoxins (CTX-3B, CTX-3C, CTX-4A, CTX-4B) via LC-MS/MS \cite{Kohli2014}.\\
 \textbf{Results:}\\
 \textbf{No} Maitoxins or ciguatoxins detected that correspond to available standards;\\
 \textbf{Yes} Tentative maitotoxin-3 compound detected;\\
@@ -134,15 +155,15 @@
 
 
 \headerbox{Ciguatera fish poisoning}{name=ciguatera,column=1,row=0}{
-\textbf{Severity:} Highly morbid, potentially fatal disease.\\
-\textbf{Transmission:} Bioaccumulation, toxins taken up and transferred through food chain via predation.\\
-\textbf{High risk area:} Pacific Island Nations (1 in 3 New Caledonians intoxicated).\\
+\textbf{Severity:} Ciguatera is a highly morbid, potentially fatal disease.\\
+\textbf{Transmission:} Through bioaccumulation toxins are consumed with \emph{Gambierdiscus} spp. and  then transferred through food chain via predation.\\
+\textbf{High risk area:} Pacific Island Nations, for example life time incidence in New Caledonia are 35-70\%.\\
 \textbf{Symptomatology:} 180+ gastrointestinal, cardiovascular and neurological symptoms \cite{bagnis}.
 }
 
 \headerbox{Genetics}{name=genetics,span=2,column=1,row=0,below=ciguatera}{
 \textbf{Methods:} Genomic DNA extracted (CTAB); amplification of large sub-unit (LSU) ribosomal DNA (rDNA) and the small-sub unit (SSU) rDNA regions via PCR then Sanger sequenced by Macrogen (Korea). Results aligned with sequences from GenBank. Phylogenetics inferences calculated with Bayesian inference as well as maximum likelihood. \\
-\textbf{Results:} \emph{G. lapillus} forms a genetically distinct, well supported clade (Gig. 2).
+\textbf{Results:} \emph{G. lapillus} forms a genetically distinct, well supported clade (Fig. 2).
 \begin{center}
 	\includegraphics[width=0.85\linewidth]{phylo-sml-trans.png}
 	\end{center}
@@ -156,26 +177,26 @@
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.43\linewidth}
-\includegraphics[width=1\linewidth]{graph-trans.png}
+\includegraphics[width=0.98\linewidth]{graph-trans.png}
 Fig. 3: Size difference \emph{Gambierdiscus} spp. Error bars denote standard deviation.
 \end{minipage}
 }
 
 
 \headerbox{Conclusion}{name=conc,span=2,column=1,row=0,below=size}{
-Evidence for for \emph{Gambierdiscus lapillus} sp. nov. due to genetic distinction from other \emph{Gambierdiscus} spp. (Fig. 2), coupled with morphology (Fig. 1) and consistently diminutive size (Fig. 3). The species is named for the latter along with heavy plate ornamentation characteristic of it's members. Latin, lapillus (= little gem).
-This constitutes the 5th \emph{Gambierdiscus} spp. identified around Australia, however none are verified ciguatoxin producers by LC-MS/MS. Hence the causative organism of ciguatera fish poisoning in Australia is still unknown. This makes the investigation into the uncharacterised peaks in the ciguatoxin transition a priority for future work.
+The evidence for \emph{Gambierdiscus lapillus} sp. nov. is based on unique genetic regions to other \emph{Gambierdiscus} spp. (Fig. 2), supported by morphology (Fig. 1) and consistently diminutive size (Fig. 3). The species is named for the latter along with heavy plate ornamentation characteristic of it's members. Latin, lapillus (= little gem).
+This constitutes the 4th \emph{Gambierdiscus} spp. identified around Australia, however none are verified ciguatoxin producers by LC-MS/MS. Hence the causative organism of ciguatera fish poisoning in Australia is still unknown. This makes the investigation into the uncharacterised peaks in the ciguatoxin transition a priority for future work.
 }
 
 \headerbox{References}{name=ref,span=2,column=1,row=0,above=bottom}{
 \tiny													% Make the whole text smaller
-\vspace{-0.4em} 										% Save some space at the beginning
+\vspace{-0.8em} 										% Save some space at the beginning
 \bibliographystyle{plain}							% Use plain style
 \renewcommand{\section}[2]{\vskip 0.05em}		% Omit "References" title
 \begin{thebibliography}{1}							% Simple bibliography with widest label of 1
 \itemsep=-0.01em										% Save space between the separation
 \setlength{\baselineskip}{0.4em}					% Save space with longer lines
-\bibitem{litaker}Liaker et al. '10. Global distribution of the ciguatera causing dinoflagellates in the genus \emph{Gambierdiscus}.
+\bibitem{litaker}Litaker et al. '10. Global distribution of the ciguatera causing dinoflagellates in the genus \emph{Gambierdiscus}.
 \bibitem{berdalet}Berdalet et al. '12. Global ecology and oceanography of harmful algal blooms, {GEOHAB} core research project: {HABs} in benthic systems.
 \bibitem{bagnis}Bagnis et al. '79. Clinical observations on 3,009 cases of ciguatera (fish poisoning) in the {S}outh {P}acific.
 \bibitem{holmes}Holmes et al. '91. Strain dependent production of ciguatoxin precursors (gambiertoxins) by \emph{Gambierdiscus toxicus} ({D}inophyceae) in culture. 
