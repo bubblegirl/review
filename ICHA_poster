@@ -5,7 +5,7 @@
 \usepackage{relsize}		% For \smaller
 \usepackage{url}			% For \url
 \usepackage{epstopdf}	% Included EPS files automatically converted to PDF to include with pdflatex
-
+%\usepackage{natbib}
 %%% Global Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \graphicspath{{pix/}}	% Root directory of the pictures 
@@ -46,6 +46,7 @@
 }
 
 \renewcommand{\familydefault}{cmss}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Document Start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -88,7 +89,7 @@
 }
 %%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {\sf\bf
-	\emph{Gambierdiscus lapillus} sp. nov.:\\
+	  \emph{Gambierdiscus lapillus} sp. nov.:\\
 	 A new, toxic dinoflagellate from Australia.
 }
 %%% Authors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -131,6 +132,7 @@
 \includegraphics[width=1\linewidth]{morph.jpg}
 \end{center}
 	Fig. 1: Morphological diagnosis of \emph{G. lapillus}; (A-C) epitheca, (D-E) hypotheca. Epiflourescence shows plate tabulation (A,D); as does SEM (B,E); (C,F) shows drawing of plate tabulation.\\
+	
 (2) \emph{G. lapillus} is much smaller than any other \emph{Gambierdiscus} spp. recorded, comparable with the sister genus \emph{Fukuyoa}. 
 \includegraphics[width=1\linewidth]{graph-trans.png}
 Fig. 3: Size difference \emph{Gambierdiscus} spp. Error bars denote standard deviation.
@@ -157,7 +159,7 @@ Fig. 3: Size difference \emph{Gambierdiscus} spp. Error bars denote standard dev
 
 \headerbox{Molecular phylogeny}{name=genetics,span=2,column=1,row=0,below=ciguatera}{
 \textbf{Methods:} Sequences of large sub-unit (LSU) ribosomal DNA (rDNA) and the small-sub unit (SSU) rDNA regions from \emph{G. lapillus} were aligned with sequences from known \emph{Gambierdiscus} spp. Phylogenetic inferences were calculated with Bayesian inference as well as maximum likelihood. \\
-\textbf{Results:} \emph{G. lapillus} forms a genetically distinct, well supported clade (Fig. 2).
+\textbf{Results:} \emph{G. lapillus} forms a genetically distinct, well supported clade for both D8-D10 LSU and SSU rDNA regions using either ML or BI for analysis (Fig. 2).
 \begin{center}
 	\includegraphics[width=0.99\linewidth]{phylo-sml-trans.png}
 	\end{center}
@@ -173,8 +175,8 @@ Fig. 3: Size difference \emph{Gambierdiscus} spp. Error bars denote standard dev
 }
 
 \headerbox{Conclusion}{name=conc,span=2,column=1,row=0,below=tox}{
-\emph{Gambierdiscus lapillus} sp. nov. is genetically distinct from other \emph{Gambierdiscus} spp. (Fig. 2), which is supported by their morphology, with distinctive thecal ornamentation and plate arrangement (Fig. 1) and their diminutive size (Fig. 3). The species is named for the latter along with their heavy plate ornamentation. Latin, lapillus (= little gem).
-This constitutes the 4th \emph{Gambierdiscus} spp. identified around Australia, however none are LC-MS/MS verified ciguatoxin producers. Effectively the causative organism of ciguatera in Australia is still unknown and hence investigation into the uncharacterised peaks in the ciguatoxin transition a priority for future work.
+\emph{Gambierdiscus lapillus} sp. nov. is genetically distinct from other \emph{Gambierdiscus} spp. (Fig. 2), which is supported by their morphology, with distinctive thecal ornamentation and plate arrangement (Fig. 1) and their diminutive size (Fig. 3). The species is named for the latter along with their heavy thecal plate ornamentation. Latin, lapillus (= little gem).\\
+This constitutes the 4th \emph{Gambierdiscus} spp. identified in Australia, however none are LC-MS/MS verified ciguatoxin producers. Effectively the causative organism of ciguatera in Australia is still unknown and hence investigation into the uncharacterised peaks in the ciguatoxin transition a priority for future work.
 }
 
 \headerbox{References}{name=ref,column=1,row=0,above=bottom}{
@@ -184,11 +186,11 @@ This constitutes the 4th \emph{Gambierdiscus} spp. identified around Australia, 
 \renewcommand{\section}[2]{\vskip 0.05em}		% Omit "References" title
 \begin{thebibliography}{1}							% Simple bibliography with widest label of 1
 \itemsep=-0.005em										% Save space between the separation
-\setlength{\baselineskip}{0.4em}					% Save space with longer lines
+%\setlength{\baselineskip}{0.4em}					% Save space with longer lines
 \bibitem{litaker}Litaker et al. 2010 \emph{Toxicon}.
 \bibitem{berdalet}Berdalet et al. 2012 \emph{GEOHAB report}.
-\bibitem{bagnis}Bagnis et al. 1979 \emph{The Biological Bulletin}.
 \bibitem{bauman}Baumann et al. 2010 \emph{Toxicon}.
+\bibitem{bagnis}Bagnis et al. 1979 \emph{The Biological Bulletin}.
 \bibitem{Kohli2014}Kohli et al. 2014 \emph{Harmful Algae}.
 \end{thebibliography}
 } 
@@ -197,14 +199,14 @@ This constitutes the 4th \emph{Gambierdiscus} spp. identified around Australia, 
 
 \headerbox{Sample collection}{name=meth,column=2,row=0}{
 \textbf{Location:} Samples were taken from Heron Island, which is part of the ciguateric web of Great Barrier Reef in Australia (23$^{\circ}$ 4420' S, 151$^{\circ}$ 9140' E).\\
-\textbf{Macroalgal substrate:} Sampling occurred at two time points, \emph{Halimeda} sp. was collected in October 2013 and \emph{Padina} sp. was collected in July 2014.\\
+\textbf{Macroalgal substrate:} Sampling occurred at two time points, where first \emph{Halimeda} sp. was collected in October 2013 and then \emph{Padina} sp. was collected in July 2014.\\
 \textbf{Cultures:}  Five clonal strains of \emph{G. lapillus} were established (HG1, HG4, HG6, HG7 and HG26) and maintained in F/10 medium at 27$^{\circ}$C, 60 mol/m/s light in 12h:12h light to dark cycles.
 }
 
 \headerbox{Acknowledgements}{name=acknowledgements,column=2,row=0,above=bottom}{
 \tiny					% Make the whole text smaller
 		% Save some space at the beginning
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
 \setlength\itemsep{0.4em}
 \item Dr. Petrou, , Dr. Nielsen \& Dr. Ralph for sample collection
 \item Dr. Chinain \& Dr. Yasumoto for CTX and MTX standards
