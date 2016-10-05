@@ -69,7 +69,7 @@
 	% Option is left on true though the eyecatcher is not used. The reason is
 	% that we have a bit nicer looking title and author formatting in the headercol
 	% this way
-	%eyecatcher=false, 
+	eyecatcher=true, 
 	borderColor=amber,
 	headerColorOne=caribbeangreen,
 	headerColorTwo=c3,
@@ -84,12 +84,11 @@
   boxshade=plain
   }
 %%% Eye Cacther %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{
-	Eye Catcher, empty if option eyecatcher=false - unused
+{\includegraphics[height=2.5em]{C3-logo-col.png}
 }
 %%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {\sf\bf
-	  \emph{Gambierdiscus lapillus} sp. nov.:\\
+	  \emph{Gambierdiscus   lapillus} sp. nov.:\\
 	 A new, toxic dinoflagellate from Australia.
 }
 %%% Authors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -107,7 +106,7 @@
 \setlength\fboxsep{0pt}
 \setlength\fboxrule{0.5pt}
 	\fbox{
-			\includegraphics[scale=.23]{me.jpg}				%		%\includegraphics[width=10em,height=4em]{dynanets_logo}
+			\includegraphics[scale=.14]{me-2.png}				%		%\includegraphics[width=10em,height=4em]{dynanets_logo}
 	%		%\includegraphics[width=4em,height=4em]{aitia_logo}
 		}
 	}
@@ -115,37 +114,49 @@
 %{\fontfamily{cmss}\selectfont}
 
 \headerbox{The genus \emph{Gambierdiscus}}{name=gamb,column=0,row=0}{
-\textbf{Organism:} \emph{Gambierdiscus} are protists, implicated in harmful algal blooms. To date, 13 species and 6 ribo/species types have been recorded.\\
-\textbf{Distribution:} Recorded in the Pacific Ocean, Caribbean, Mediterranean, Indian Ocean \cite{litaker}.\\
-\textbf{Importance:} Some species produce ciguatoxins, which can cause human intoxication due to neurotoxic ciguatoxins by some species. \\
+\textbf{Organism:} Members of the genus \emph{Gambierdiscus} are protists, implicated in harmful algal blooms. To date, 13 species and 6 ribo/species types have been recorded.\\
+\textbf{Distribution:} Recorded in the Pacific, Caribbean, Mediterranean and Indian Oceans \cite{litaker}.\\
+\textbf{Importance:} Some species produce neurotoxic ciguatoxins, which can cause human intoxication. \\
 \textbf{Future:} Climate change is predicted to increase the abundance and distribution of species of \emph{Gambierdiscus} \cite{berdalet}.
 }
 
 \headerbox{Morphology}
 {name=morphology,column=0,below=gamb}{
 \textbf{Methods:} The morphology of \emph{G. lapillus} was assessed by\\
-(1) Thecal plate structure. The theca of the type strain HG7 was investigated by both epifuorescence and scanning electron microscopy. Plates were designated using the Kofoid system.\\
+(1) Thecal plate structure. The theca of the type strain HG7 was investigated by both epifuorescence and scanning electron microscopy. Plates were designated using the kofoidian system.\\
 (2) Cell size. Lugol-fixed cells of four strains were measured. Cells were 34.4 - 50.9$\mu$m deep and 32 - 46.9 $\mu$m wide (n=128).\\
 \textbf{Results:} \\
-(1) \emph{G. lapillus} shows morphological distinction to other \emph{Gambierdiscus} spp. in combination of heavy thecal ornamentation (strongly reticulate-foveate) and plates 2', 4'' \& 2''''. Plate tabulation: Po, 3', 0a, 7'', 6c, 7-8s, 5''', 0p, 2''''.
+(1) \emph{G. lapillus} is morphologically distinct to other \emph{Gambierdiscus} spp. evident in combination of heavy thecal ornamentation (strongly reticulate-foveate) and plates 2', 4'' \& 2''''. Plate tabulation: Po, 3', 0a, 7'', 6c, 7-8s, 5''', 0p, 2''''.
 \begin{center}
 \includegraphics[width=1\linewidth]{morph.jpg}
 \end{center}
 	Fig. 1: Morphological diagnosis of \emph{G. lapillus}; (A-C) epitheca, (D-E) hypotheca. Epiflourescence shows plate tabulation (A,D); as does SEM (B,E); (C,F) shows drawing of plate tabulation.\\
 	
-(2) \emph{G. lapillus} is much smaller than any other \emph{Gambierdiscus} spp. recorded, comparable with the sister genus \emph{Fukuyoa}. 
-\includegraphics[width=1\linewidth]{graph-trans.png}
+(2) The cell size of \emph{G. lapillus} is outside the common dimensions of other \emph{Gambierdiscus} spp. The cell dimensions are comparable to the sister genus \emph{Fukuyoa}. 
+\includegraphics[width=0.965\linewidth]{graph-trans.png}
 Fig. 3: Size difference \emph{Gambierdiscus} spp. Error bars denote standard deviation.
 }
 
-\headerbox{}
-{name=c3,column=0,above=bottom,headershape=rectangle,headerborder=closed,boxheaderheight=0pt}{
+\headerbox{Acknowledgements}{name=acknowledgements,column=0,above=bottom}{
+\tiny					% Make the whole text smaller
+		% Save some space at the beginning
+\begin{itemize}[leftmargin=*]
+\setlength\itemsep{0.4em}
+\item Dr. Petrou, , Dr. Nielsen \& Dr. Ralph for sample collection
+\item Dr. Chinain \& Dr. Yasumoto for CTX and MTX standards
+\item Australian Research Council (FT120100704) for funding
+\item Dr. Turnbull \& Dr. Johnson, UTS Microbial Imaging Facility
+\end{itemize}
+} 
 
-\begin{center}
-\includegraphics[width=1\linewidth]{C3.png}
-\end{center}
+%\headerbox{}
+%{name=c3,column=0,above=bottom,headershape=rectangle,headerborder=closed,boxheaderheight=0pt}{
 
-}
+%\begin{center}
+%\includegraphics[width=1\linewidth]{C3-logo-col.png}
+%\end{center}
+
+%}
 
 
 
@@ -167,7 +178,7 @@ Fig. 3: Size difference \emph{Gambierdiscus} spp. Error bars denote standard dev
 }
 
 \headerbox{Toxin profile of \emph{G. lapillus}}{name=tox,span=2,column=1,row=0,below=genetics}{
-\textbf{Methods:} HG4, HG6 and HG7 were screened at Cawthron (NZ) for presence of maitotoxin (MTX-1) and ciguatoxins (CTX-3B, CTX-3C, CTX-4A, CTX-4B) via LC-MS/MS \cite{Kohli2014}.\\
+\textbf{Methods:} HG4, HG6 and HG7 were screened at the Cawthron (NZ) for presence of maitotoxin (MTX-1) and ciguatoxins (CTX-3B, CTX-3C, CTX-4A, CTX-4B) via LC-MS/MS \cite{Kohli2014}.\\
 \textbf{Results:}\\
 \textbf{No -} Maitoxins or ciguatoxins that would correspond to the peaks of available standards were not detected;\\
 \textbf{Yes -} A tentative maitotoxin-3 compound was detected in all strains;\\
@@ -176,10 +187,10 @@ Fig. 3: Size difference \emph{Gambierdiscus} spp. Error bars denote standard dev
 
 \headerbox{Conclusion}{name=conc,span=2,column=1,row=0,below=tox}{
 \emph{Gambierdiscus lapillus} sp. nov. is genetically distinct from other \emph{Gambierdiscus} spp. (Fig. 2), which is supported by their morphology, with distinctive thecal ornamentation and plate arrangement (Fig. 1) and their diminutive size (Fig. 3). The species is named for the latter along with their heavy thecal plate ornamentation. Latin, lapillus (= little gem).\\
-This constitutes the 4th \emph{Gambierdiscus} spp. identified in Australia, however none are LC-MS/MS verified ciguatoxin producers. Effectively the causative organism of ciguatera in Australia is still unknown and hence investigation into the uncharacterised peaks in the ciguatoxin transition a priority for future work.
+This constitutes the fourth \emph{Gambierdiscus} spp. identified in Australia, however none are LC-MS/MS verified ciguatoxin producers. Effectively the causative organism of ciguatera in Australia is still unknown and hence investigation into the uncharacterised peaks in the ciguatoxin transition a priority for future work.
 }
 
-\headerbox{References}{name=ref,column=1,row=0,above=bottom}{
+\headerbox{References}{name=ref,span=2,column=1,row=0,above=bottom}{
 \tiny													% Make the whole text smaller
 \vspace{-0.8em} 										% Save some space at the beginning
 \bibliographystyle{plain}							% Use plain style
@@ -200,20 +211,10 @@ This constitutes the 4th \emph{Gambierdiscus} spp. identified in Australia, howe
 \headerbox{Sample collection}{name=meth,column=2,row=0}{
 \textbf{Location:} Samples were taken from Heron Island, which is part of the ciguateric web of Great Barrier Reef in Australia (23$^{\circ}$ 4420' S, 151$^{\circ}$ 9140' E).\\
 \textbf{Macroalgal substrate:} Sampling occurred at two time points, where first \emph{Halimeda} sp. was collected in October 2013 and then \emph{Padina} sp. was collected in July 2014.\\
-\textbf{Cultures:}  Five clonal strains of \emph{G. lapillus} were established (HG1, HG4, HG6, HG7 and HG26) and maintained in F/10 medium at 27$^{\circ}$C, 60 mol/m/s light in 12h:12h light to dark cycles.
+\textbf{Cultures:}  Five clonal strains of \emph{G. lapillus} were established (HG1, HG4, HG6, HG7 and HG26) and maintained in F/10 medium at 27$^{\circ}$C, 60 $\mu$mol/m$^{2}$/s light in 12h:12h light to dark cycles.
 }
 
-\headerbox{Acknowledgements}{name=acknowledgements,column=2,row=0,above=bottom}{
-\tiny					% Make the whole text smaller
-		% Save some space at the beginning
-\begin{itemize}[leftmargin=*]
-\setlength\itemsep{0.4em}
-\item Dr. Petrou, , Dr. Nielsen \& Dr. Ralph for sample collection
-\item Dr. Chinain \& Dr. Yasumoto for CTX and MTX standards
-\item Australian Research Council (FT120100704) for funding
-\item Dr. Turnbull \& Dr. Johnson, UTS Microbial Imaging Facility
-\end{itemize}
-} 
+
 
 \end{poster}
 \end{document}
