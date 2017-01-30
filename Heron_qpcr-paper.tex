@@ -192,7 +192,7 @@ Three \emph{G. lapillus} and 2 \emph{G. polynesiensis} strains were analyzed (Ta
 \FloatBarrier
 
 \subsection{Screening environmental samples for \emph{G. lapullis} and \emph{G. polynesiensis} abundance}
-Around Heron Island and Heron Reef (Fig. ~\ref{fig:samplesites}) 33 sites (within 1km of the shore) were sampled in October 2015, in spatial replicates (A, B, C; ~\ref{tbl:MacroalgaeTable}) within a 2m radius. Three species of macroalgae that commonly grow on this reef, \textit{Chnoospora} sp., \textit{Padina} sp. and \textit{Saragassum} sp., were sampled for the presence of epiphytic \emph{Gambierdiscus} spp. In each case, approximately 200g samples were taken, epiphytes were dislodged from macroalagae and preserved in 10ml RNAlater (REF) till DNA extraction.
+Around Heron Island and Heron Reef (Fig. ~\ref{fig:samplesites}) 33 sites (within 1km of the shore) were sampled in October 2015, in spatial replicates (A, B, C; ~\ref{tbl:MacroalgaeTable}) within a 2m radius. Three species of macroalgae that commonly grow on this reef, \textit{Chnoospora} sp., \textit{Padina} sp. and \textit{Saragassum} sp., were sampled for the presence of epiphytic \emph{Gambierdiscus} spp. In each case, approximately 200g samples were taken, epiphytes were dislodged from macroalagae and preserved in 10ml RNAlater () till DNA extraction.
 To assess the presence of these species in the pelagic environment adjacent to macroalgal beds, plankton nets were dragged through the current (samples 34 - 38; table ~\ref{tbl:NetTable}) for five minutes, then processed as macroalgal samples.
 
 \FloatBarrier 
@@ -206,7 +206,10 @@ To assess the presence of these species in the pelagic environment adjacent to m
 \newpage
 \section{Results}
 \subsection{Evaluation of primer specificity}
-The primers were specific to their target species for both \emph{G. lapillus} and \emph{G. polynesiensis} (table ~\ref{tbl:CrossreactTable}). 
+The qGlapSSU2F - qGlapSSU2R primer pair amplified in PCRs of all five strains of \emph{G. lapillus}, while negative for genetically closely related species \emph{G. belizeanus}, \emph{G. cheloniae}, \emph{G. pacificus} and \emph{G. scabrosus}. Also negative for species from different clades, \emph{G. australes}, \emph{G. carpenteri}, \emph{G. polynesiensis} and \emph{G.} cf. \emph{silvae} (table ~\ref{tbl:CrossreactTable})  \cite{smith2016new,kretzschmar2016characterization}.
+
+In PCRs using the qGpolySSU2F - qGpolySSU2R primer set, \emph{G. polynesiensis} amplified while species from the same genetic clade, \emph{G. australes} and \emph{G.} cf. \emph{silvae}, were negative. No amplification was observed for \emph{Gambierdiscus} species tested from different clades: \emph{G. belizeanus}, \emph{G. cheloniae}, \emph{G. lapillus }\emph{G. pacificus} and \emph{G. scabrosus} (table ~\ref{tbl:CrossreactTable}) \cite{kretzschmar2016characterization}.
+
 
 \FloatBarrier
 \begin{table}
@@ -251,12 +254,20 @@ The primers were specific to their target species for both \emph{G. lapillus} an
 \FloatBarrier
  
 \subsection{Evaluation of primer sensitivity}
+The cell-based standard curves for \emph{G. lapillus} (HG4 anf HG7, Fig. ~\ref{fig:lapiStd}A) showed high linearity with R$^{2}$ approaching 1.00. The slope for the Ct vs. log$_{10}$ cell number was -3.49 and -3.51 for HG4 and HG7 respectively. The AEs were 1.93 for both HG4 and HG7. The linear detection covered six orders of magnitude. The detection limit was less than 0.1 cell for both strains of \emph{G. lapillus} (Fig. ~\ref{fig:lapiStd}A).
+\begin{figure}
+%\includegraphics[scale=.22]{MH_variability.jpg}
+\caption{qPCR cell based standard curves of (A) \emph{G. lapillus} strains HG4 (circle) and HG7 (triangle); and (B) \emph{G. polynesiensis} strains CG14 and CG15.} %Error bars represent the deviation of technical replicates during reactions.}
+\label{fig:lapiStd}
+\end{figure}
+\FloatBarrier
 
+The gene based standard curve for \emph{G. lapillus} covered linear detection over 7 orders of magnitude. The detection limit tested was less than 10$^{5}$ gene copy numbers. The Ct for the lowest gene copy number tested was less than 25, so it is likely that the sensitivity is lower than 10$^{5}$ gene copy numbers.
 \FloatBarrier
 \begin{figure}
 %\includegraphics[scale=.22]{MH_variability.jpg}
-\caption{qPCR standard curves of (A) \emph{G. lapillus} strains HG4 (circle) and HG7 (triangle); and (B) \emph{G. polynesiensis} strains CG14 and CG15. Error bars represent the deviation of technical replicates during reactions.}
-\label{fig:lapiStd}
+\caption{qPCR gene based standard curves of (A) \emph{G. lapillus} and (B) \emph{G. polynesiensis}.} %Error bars represent the deviation of technical replicates during reactions.}
+\label{fig:lapigblocks}
 \end{figure}
 \FloatBarrier
 % font: URW Bookman L, size 18
@@ -264,8 +275,11 @@ The primers were specific to their target species for both \emph{G. lapillus} an
 %Ct of known gBlocks gives copy number - extrapolate those to SSU rDNA copies for cell. can compare to
 \subsection{Quantification of SSU rDNA copy number per cell of \emph{G. lapullis} and \emph{G. polynesiensis}}
 %gblocks calc
-\subsection{Screening environmental samples for \emph{G. lapullis} and \emph{G. polynesiensis} abundance}
 
+\subsection{Screening environmental samples for \emph{G. lapullis} and \emph{G. polynesiensis} abundance}
+To evaluate the adequacy of the \emph{G. lapillus} and \emph{G. polynesiensis} qPCR assays for environmental screening, the assays were applied to community DNA extracts from 33 sites around Heron Island (Fig. ~\ref{fig:samplesites}). Environmental samples were screened in triplicate and due to the high sensitivity of both assays, low cell numbers were detectable for \emph{G. lapillus} and likely would have been for \emph{G. polynesiensis}.
+\emph{G. polynesiensis} was not detected in any of the environmental samples.
+\emph{G. lapillus} was detected across 32 of the 33 sampling sites
 
 %needs scale bar
 \FloatBarrier 
