@@ -27,10 +27,11 @@ Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, 
 Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
 \paragraph{}Gurjeet Kohli\\
 Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
-\paragraph{}Gurjeet Kohli\\
-Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
-\paragraph{}Gurjeet Kohli\\
-Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
+\paragraph{}
+Himaya Siddhihalu Wickrama Hewage\\
+Institute for Molecular Biology (IMB), University of Queensland,  Brisbane St Lucia, QLD, Australia
+\paragraph{}Richard Lewis\\
+Institute for Molecular Biology (IMB), University of Queensland,  Brisbane St Lucia, QLD, Australia
 \paragraph{}Shauna Murray\\
 Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
 \newpage
@@ -152,14 +153,20 @@ To verify primer set specificity as listed in Table ~\ref{tbl:PrimerTable}, DNA 
 The qPCR reaction mixture contained 10 $\mu$l SYBR Select Master Mix (Thermo Fisher Scientific), 7 $\mu$l MilliQ water, 0.5 $\mu$M forward and reverse primers and 2 - 20 ng DNA template, for a final volume of 20 $\mu$l.
 \subsection{Calibration curve construction}
 Standard curves were constructed via two methods: (1) synthetic gene fragment based (henceforth referred to as gene based calibration) and (2) cell based calibration curves. The former was constructed from a 10-fold serial dilution of a synthesised fragment containing the SSU target sequence, forward and reverse primer sites and 50bp flanking both primer sites matching sequencing results. Cell-based standard curves were constructed using 10-fold dilutions of gDNA extract of known cell concentrations.
+The calibration curves for both methods were calculated (R$^{2}$, amplification efficiency (AE) and regression line slope) and graphed in R version 3.2.3, using R studio version 1.0.136 and the ggplot2 package. 
 \subsubsection{Gene based calibration curve}
-For the target amplicons of both \emph{G. lapillus} and \emph{G. polynesiensis}, a corresponding synthetic DNA (with an extra 50bp at either end), gBlocks \textsuperscript{\textregistered} gene fragment was synthesised by Integrated DNA Technologies.
+For the target amplicons of both \emph{G. lapillus} and \emph{G. polynesiensis}, a DNA fragment spanning the target sequence, the reverse and forward primer sites and an extra 50bp on either end was synthesized called gBlocks \textsuperscript{\textregistered} by Integrated DNA Technologies (IDT, IA, USA). Lyophilized gBlocks \textsuperscript{\textregistered} was re-suspended in TE (Tris 1M, EDTA 0.5 pH8) to a concentration of 1 ng.$\mu$l. The copy number of gene fragment was then calculated as 
+%inseet calculation
+The stock solutopn was 10-fold serially diluted and dilutions between 10$^{3}$ and 10$^{8}$ were amplified in qPCR in triplicate.
+
+
 %add more info
 \subsubsection{Cell based calibration curve}
-Three cultures of \emph{G. lapillus} and two cultures of \emph{G. polynesiensis} (Table ~\ref{tbl:StrainTable}) were used to construct cell based standard curves. Cells were counted microscopically () with a Sedqick Rafter Counting Chamber. DNA was extracted using xx kit, as per the manufacturer's instructions. The gDNA extracts were 10-fold serial diluted.
+Two strains of \emph{G. lapillus} (HG4 and HG7) and \emph{G. polynesiensis} (CG14 and CG15) (Table ~\ref{tbl:StrainTable}) were used to construct cell based standard curves. Cells were counted microscopically () with a Sedwick Rafter Counting Chamber. DNA was extracted using xx kit, as per the manufacturer's instructions. The gDNA extracts were 10-fold serially diluted. Dilutions ranging from xxxx were amplified via qPCR in triplicate.
 %\subsection{Quantification of SSU rDNA copy number per cell of \emph{G. lapullis} and \emph{G. polynesiensis}}
 \subsection{Toxicity of \emph{G. lapillus}}
-- if N2A assays work out
+SHSY5Y cell line -- \textbf{Himaya} could you please fill in this section?
+Three \emph{G. lapillus} and 2 \emph{G. polynesiensis} strains were analyzed (Table ~\ref{tbl:N2ATable}).
 \FloatBarrier
 \begin{table}
 \caption{\emph{Gambierdiscus} spp. analysed by N2A assay including strain ID and cell counts.}
@@ -179,6 +186,7 @@ Three cultures of \emph{G. lapillus} and two cultures of \emph{G. polynesiensis}
 &CG15&675,840\\
 \hline
 \emph{G.} cf. \emph{silvae}&HG5&129,140\\
+\hline
 \end{tabular}
 \end{table}
 \FloatBarrier
