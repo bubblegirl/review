@@ -4,6 +4,7 @@
 \usepackage[numbib]{tocbibind}
 \usepackage{rotating}
 \usepackage[square,sort,comma,numbers]{natbib}
+%\usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{tabularx}
 \linespread{1.3}
@@ -16,8 +17,8 @@
 \addtolength{\textheight}{2cm}
 \addtolength{\voffset}{-1cm}
 \setlength{\parindent}{0pt}
-\title{Development of semi-quantitative PCR assays for the detection and enumeration of toxic \emph{Gambierdiscus lapillus} and \emph{Gambierdiscus polynesiensis} (Gonyaulacales, Dinophyceae).}
-\author{me}
+\title{Development of quantitative PCR assays for the detection and enumeration of toxic \emph{Gambierdiscus lapillus} and \emph{Gambierdiscus polynesiensis} (Gonyaulacales, Dinophyceae).}
+\author{xx}
 \date{}
 \begin{document}
 \maketitle
@@ -32,13 +33,13 @@ Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, 
 \newpage
 \section*{Abstract}
 Ciguatera fish poisoning is an illness contracted through the ingestion of seafood containing ciguatoxins. It is prevalent in tropical regions worldwide, including in Australia. Ciguatoxins are produced by some species of \emph{Gambierdiscus}. Rapid \emph{Gambierdiscus} species identification through quantitative PCR, along with the identification of toxicity of species, are required for screening for potential ciguatera risk development. In Australia, the identity, distribution and abundance of species of \textit{Gambierdiscus} that produce ciguatoxins is largely unknown. In this study we developed rapid qPCR assays to quantify the presence and abundance of two candidate species of \textit{Gambierdiscus} that may produce ciguatoxins in the region. %We determined the toxicity of the species \textit{G. lapillus} and \textit{G. polynesiensis}, and 
-We assessed the specificity and efficiency of the  qPCR assays targeting \textit{G. lapillus} and \textit{G. polynesiensis}. The assays were tested on samples from 33 sites around Heron Island in the southern Great Barrier Reef, to determine the presence and patchiness of these species across samples from several macroalgal hosts.  
+We assessed the specificity and efficiency of the  qPCR assays targeting \textit{G. lapillus} and \textit{G. polynesiensis}. The assays were tested on samples from 33 sites around Heron Island in the southern Great Barrier Reef in a semi-quantitative fashion, to determine the presence and patchiness of these species across samples from several macroalgal hosts.  
 
 
 \newpage
 \section*{Introduction}
 %The genus Gambierdiscus and its morphological diversity, and why qPCR is needed to detect species.
-Benthic dinoflagellates of the genus \emph{Gambierdiscus} Adachi \& Fukuyo produce ciguatoxins (CTX), which can accumulate in humans via consumption of contaminated seafood and cause ciguatera fish poisoning (CFP). Symptoms of CFP are largely gastrointestinal and neurotoxic however in severe cases humans can develop cardiovascular symptoms \cite{sims1987theoretical}. Species of \emph{Gambierdiscus} can be epiphytic, growing on macroalgae and other substrates such as dead coral, as well as in the water column. Species of \textit{Gambierdiscus} can vary in the production of ciguatoxins and/or maitotoxins \cite{chinain2010ciguatera,kohli2014high}. If a particular \emph{Gambierdiscus} sp. is a CTX producer, the toxins bioaccumulate in herbivorous fish and filter feeders with the potential to travel up the food chain to cause CFP in humans  \citep{chinain1997intraspecific,holmes1998gambierdiscus}. %put int image of thing!
+Benthic dinoflagellates of the genus \emph{Gambierdiscus} Adachi \& Fukuyo produce ciguatoxins (CTX), which can accumulate in humans via consumption of contaminated seafood and cause ciguatera fish poisoning (CFP). Symptoms of CFP are largely gastrointestinal and neurotoxic however in severe cases humans can develop cardiovascular symptoms \cite{sims1987theoretical}. Species of \emph{Gambierdiscus} can be epiphytic, growing on macroalgae and other substrates such as dead coral, as well as traverse the water column. Species of \textit{Gambierdiscus} can vary in the production of ciguatoxins and/or maitotoxins \cite{chinain2010ciguatera,kohli2014high}. If a particular \emph{Gambierdiscus} sp. is a CTX producer, and inhabit a palatable macroalgal substrate, the toxins bioaccumulate in herbivorous fish and filter feeders with the potential to travel up the food chain to cause CFP in humans  \citep{chinain1997intraspecific,holmes1998gambierdiscus}. %put int image of thing!
 
 \emph{Gambierdiscus} was first identified in 1977, with the type species \emph{G. toxicus} Adachi \& Fukuyo \citep{adachi1979thecal}. The genus remained monotypic for 18 years until the discovery of a second species \emph{G. belizeanus} Faust \citep{faust1995observation}. To date, the genus comprises 14 described species and 6 ribo/species types
  \citep{smith2016new,fraga2016gambierdiscus,litaker2010global,adachi1979thecal,faust1995observation,chinain1999morphology,litaker2009taxonomy,dai2017taxonomic,nishimura2014morphology,rhodes2017new,kretzschmar2016characterization,fraga2011gambierdiscus,xu2014distribution,fraga2014genus} .
@@ -46,21 +47,21 @@ A major \emph{Gambierdiscus} species taxonomic revision was undertaken by Litake
 
 %Toxins of Gambierdiscus. How to measure. Which species produce which toxins. Why this is important to know.
 %check list of toxins 
-\emph{Gambierdiscus} spp. produce a suite of different polyketide compounds - CTX, maitotoxin (MTX), gambierone, gambieric acid and gambierol have been characterised to date \citep{satake1993gambierol,nagai1992gambieric,rodriguez2015gambierone,murata1993structure,murata1989structures}. While any of these can contribute to toxicity, only CTX has been clearly linked to CFP in humans \citep{chinain1997intraspecific,holmes1998gambierdiscus}. The toxin profile of many \textit{Gambierdiscus} species is not well understood, and many different assays have been used to determine CTX toxicity \citep{globalcig}. Bioassays, such as mouse bioassays and neuroblastoma cell-line bioassays are good indicators of the toxicity of an organism, however species/strain specific toxin profiles needs to be elucidated with LC-MS/MS in order to characterize individual toxin congeners \citep{diogened2014chemistry}. The toxin profile of \textit{Gambierdiscus polynesiensis} Chinain \& Faust is the only of \emph{Gambierdiscus} spp. whose production of CTX congeners (P-CTX-3B, P-CTX-3C, P-CTX-4A, P-CTX-4B and M-seco-CTX-3C) has been verified by LC-MS/MS in isolates from French Polynesia and the Cook Islands, and is thought to be the principal cause of CFP in the Pacific region \citep{chinain2010growth,rhodes2014production}. However recently, a \emph{G. polynesiensis} strain isolated from the Kermandec Islands, Pacific Ocean, did not exhibit CTX toxicity detectable by LC-MS \cite{rhodes2017epiphytic}.
+\emph{Gambierdiscus} spp. produce a suite of different polyketide compounds - CTX, maitotoxin (MTX), gambierone, gambieric acid and gambierol have been characterised to date \citep{satake1993gambierol,nagai1992gambieric,rodriguez2015gambierone,murata1993structure,murata1989structures}. While any of these can contribute to toxicity, only CTX has been clearly linked to CFP in humans \citep{chinain1997intraspecific,holmes1998gambierdiscus}. The toxin profile of many \textit{Gambierdiscus} species is not well understood, and many different assays have been used to determine CTX toxicity \citep{globalcig}. Bioassays, such as mouse bioassays and neuroblastoma cell-line bioassays are good indicators of the toxicity of an organism, however species/strain specific toxin profiles needs to be elucidated with LC-MS/MS in order to characterize individual toxin congeners \citep{diogened2014chemistry}. The toxin profile of \textit{Gambierdiscus polynesiensis} Chinain \& Faust is the only of \emph{Gambierdiscus} spp. whose production of CTX congeners (P-CTX-3B, P-CTX-3C, P-CTX-4A, P-CTX-4B and M-seco-CTX-3C) has been verified by LC-MS/MS in isolates from French Polynesia and the Cook Islands, and is thought to be the principal cause of CFP in the Pacific region \citep{chinain2010growth,rhodes2014production}. However recently, a \emph{G. polynesiensis} strain isolated from the Kermandec Islands, Pacific Ocean, did not exhibit CTX toxicity detectable by LC-MS/MS  \cite{rhodes2017epiphytic}.
 An uncharacterised peak in the CTX phase of several strains of \emph{Gambierdiscus lapillus} extracts was reported via LC-MS/MS, which did not match any available CTX standards (CTX-3B, CTX-3C, CTX-4A, CTX-4B) \cite{kretzschmar2016characterization}. Therefore, this species may produce previously uncharacterised CTX congener(s), and its production of CTX compounds requires verification.
 Determining the toxin profile for species of \textit{Gambierdiscus} requires toxin standards for comparative peak analysis. However, these are currently not commercially available. Therefore, progress in determining the toxins produced by species of \emph{Gambierdiscus} has been comparatively slow.\\
 
 %CFP 
 %CFP presents with over 175 gastrointestinal, cardiovascular and neurological symptoms and can be misdiagnosed \cite{sims1987theoretical,lindsay1997chronic,ting2001ciguatera,adams1993outbreak}. Dominant symptoms of CFP vary between geographic regions, which could be due to the different prevalent CTX congeners \cite{lewis2000ciguatera,dickey2010ciguatera}. The correct diagnosis relies on specific training of the physician which contributes to the low report rate globally.
 
-CFP was determined  to be  a "neglected tropical disease" by a panel of experts co-ordinated by the Intergovernmental Oceanographic Commission’s (IOC) Intergovernmental Panel on Harmful Algal Blooms (IPHAB), as part of the United Nations Educational, Scientific and Cultural Organization), and a global ciguatera strategy was developed \cite{globalcig}. 
+CFP was given the "neglected tropical disease" status by a panel of experts co-ordinated by the Intergovernmental Oceanographic Commission’s (IOC) Intergovernmental Panel on Harmful Algal Blooms (IPHAB), as part of the United Nations Educational, Scientific and Cultural Organization), and a global ciguatera strategy was developed \cite{globalcig}. 
 One element of the IOC/IPHAB ‘Global Ciguatera Strategy’ is to  investigate various species of the genus \emph{Gambierdiscus}, determine which species produce CTXs through LC-MS/MS and other means, and develop efficient and reliable molecular monitoring tools for the species of interest \citep{globalcig}. Quantitative PCR (qPCR) is a useful molecular genetic screening tool, as it can give species-specific and quantitative results from DNA samples extracted from environmental samples \citep{globalcig}. \\
 
 %pPCR
 qPCR is a variant of PCR in which a fluorescent agent is included in the PCR mix. Assays using qPCR have been extensively developed for the quantification of species of phytoplankton, particularly those involved in harmful algal blooms, utilizing methods such as Sybr green, Taqman assays, and others e.g. \citep{murray2011sxta,antonella2013quantitative,smith2009advantages,nishimura2016quantitative,vandersea2012development,hariganeya2013quantitative}. %Both these qPCR assay types have been successfully implemented in species specific environmental screening
-
-Currently there is one qPCR assay to identify the presence of the genera \emph{Gambierdiscus/Fukuyoa} \cite{smith2017molecular}. Assays for genus specific identification are available for 6 of the 14 described \emph{Gambierdiscus} spp. and 3 out of 6 undescribed \emph{Gambierdiscus} sp. types/ribotypes (Table ~\ref{tbl:qpcrTable}). Assays are available for 2 of the 3 species of \emph{Fukuyoa} (Table ~\ref{tbl:qpcrTable}), the genus seceded from \emph{Gambierdiscus} in 2015 \citep{gomez2015fukuyoa}. \textit{Fukoyoa} spp. are of interest for monitoring purposes as MTX producers, as the involvement of that toxin in CFP has not been resolved \citep{kohli2014feeding}.
 \FloatBarrier
+Currently there is one qPCR assay to identify the presence of the genera \emph{Gambierdiscus/Fukuyoa} \cite{smith2017molecular}. Assays for species specific identification are available for 6 of the 14 described \emph{Gambierdiscus} spp. and 3 out of 6 undescribed \emph{Gambierdiscus} sp. types/ribotypes (Table ~\ref{tbl:qpcrTable}). Assays are available for 2 of the 3 species of \emph{Fukuyoa} (Table ~\ref{tbl:qpcrTable}), which seceded from \emph{Gambierdiscus} as their own genus in 2015 \citep{gomez2015fukuyoa}. \textit{Fukoyoa} spp. are of interest for monitoring purposes as MTX producers, as the involvement of that toxin in CFP has not been resolved \citep{kohli2014feeding}.
+
 \begin{table}
 \caption{Published qPCR assays for \emph{Gambierdiscus} and \emph{Fukoyoa} spp.}
 \label{tbl:qpcrTable}
@@ -100,7 +101,7 @@ Currently there is one qPCR assay to identify the presence of the genera \emph{G
 %Which qPCR assays have been developed to date, why more are necessary
 
 %Australia
-In Australia, outbreaks of CFP occur annually in Queensland \cite{qldcig}. However, due to the complicated presentation of symptoms, the predicted report rate is less than 20\% \citep{lewis2006ciguatera}. Annually, there have been 7-69 reported cases between 2011 and 2015 (ie. likely >35-345 cases) (Table ~\ref{tbl:CFPTable}), with 2 fatalities reported in the state \cite{tonge1967ciguatera}. Cases of ciguatera from spanish Mackerel fish caught in NSW have been reported since 2014, with three separate outbreaks affecting a total of 17 people \cite{farrellclinical}.
+In Australia, outbreaks of CFP occur annually in Queensland \cite{qldcig}. However, due to the complicated presentation of symptoms, the predicted report rate is less than 20\% \citep{lewis2006ciguatera}. Annually, there have been 7-69 reported cases between 2011 and 2015 (considering the report rate, $>$ 35-345 cases, see Table ~\ref{tbl:CFPTable}), with 2 fatalities reported in the state \cite{tonge1967ciguatera}. Cases of ciguatera from spanish Mackerel fish caught in NSW have been reported since 2014, with three separate outbreaks affecting a total of 17 people \cite{farrellclinical}.
 . %Conversely, the fatal traffic accidents in Queensland in 2011 totalled 269 incidents \cite{qldtraffic}. Hence the potential number of ciguatera cases could exceed the fatal traffic accidents in Queensland in some years. 
 \FloatBarrier
 \begin{table}
@@ -125,7 +126,7 @@ qPCR primers that can be used for identification in Australia for potential moni
 
 
 %aim
-The aim of this study was to develop and test qPCR assays to detect the two species \emph{G. lapillus} and \emph{G. polynesiensis}. The latter is a species found in the Pacific that produces a range of CTXs congeners (CTX-3B, CTX-3C, CTX-4A, CTX-4B), identified by LC-MS \cite{rhodes2014production}, and would be a plausible causative agent of CFP in Australia. The former is a recently identified species from the Great Barrier Reef with a toxin profile that may indicate CTX production.
+The aim of this study was to develop and test qPCR assays to detect the two species \emph{G. lapillus} and \emph{G. polynesiensis}. The latter is a species found in the Pacific that produces a range of CTXs congeners (CTX-3B, CTX-3C, CTX-4A, CTX-4B), identified by LC-MS/MS \cite{rhodes2014production}, and would be a plausible causative agent of CFP in Australia. The former is a recently identified species from the Great Barrier Reef with an unresolved toxin profile that indicates the possibility of CTX production.
 \newpage
 \section*{Materials and methods}
 \subsection*{Clonal strains and culturing conditions}
@@ -181,7 +182,7 @@ The PCR cycling comprised of an initial 10 min step at 94 $^{\circ}$C, followed 
 \end{tabular}
 \end{table}
 \subsection*{Evaluation of primer specificity}
-To verify primer set specificity as listed in Table ~\ref{tbl:PrimerTable}, DNA was extracted via CTAB from \emph{G. australes} (CCMP1650 and CG61), \emph{G. belizeanus} (CCMP401), \emph{G. carpenteri} (UTSMER9A3, donated by Michaela Larsson, UTS, Australia), \emph{G. pacificus} (CAWD149) and \emph{G.} cf. \emph{silvae} (HG5). \emph{G. cheloniae} (CAWD232) DNA was extracted using a PowerSoil™ DNA isolation kit (Mo Bio Inc., CA, USA) by Dr. Kirsty Smith, Cawthron Institute, New Zealand. \emph{G. scabrosus} (KW070922_1) DNA was extracted using DNeasy Plant Mini Kit (Quiagen, Tokyo, Japan) according to the manufacturer's protocol, by Dr. Tomohiro Nishimura, Kochi University, Japan. For all extracted samples, the presence and integrity of genomic DNA was assessed on 1\% agarose gel. Primer sets designed for \emph{G. lapillus} and \emph{G. polynesiensis} were tested for cross-reactivity against all other \emph{Gambierdiscus} spp. available via PCR (BioRadT100 Thermal Cycler (CA, USA)), appropriate positive and negative controls were applied. PCR amplicons were visually assessed on 1\% agarose gel.
+To verify primer set specificity as listed in Table ~\ref{tbl:PrimerTable}, DNA was extracted via CTAB from \emph{G. australes} (CCMP1650 and CG61), \emph{G. belizeanus} (CCMP401), \emph{G. carpenteri} (UTSMER9A3, donated by Michaela Larsson, UTS, Australia), \emph{G. pacificus} (CAWD149) and \emph{G.} cf. \emph{silvae} (HG5). \emph{G. cheloniae} (CAWD232) DNA was extracted using a PowerSoil™ DNA isolation kit (Mo Bio Inc., CA, USA) by Dr. Kirsty Smith, Cawthron Institute, New Zealand. \emph{G. scabrosus} (KW070922\_1) DNA was extracted using DNeasy Plant Mini Kit (Quiagen, Tokyo, Japan) according to the manufacturer's protocol, by Dr. Tomohiro Nishimura, Kochi University, Japan. For all extracted samples, the presence and integrity of genomic DNA was assessed on 1\% agarose gel. Primer sets designed for \emph{G. lapillus} and \emph{G. polynesiensis} were tested for cross-reactivity against all other \emph{Gambierdiscus} spp. available via PCR (BioRadT100 Thermal Cycler (CA, USA)), appropriate positive and negative controls were applied. PCR amplicons were visually assessed on 1\% agarose gel.
 
 
 \subsection*{Evaluation of primer sensitivity}
@@ -197,11 +198,11 @@ The stock solution was 10-fold serially diluted and dilutions between 10$^{3}$ a
 
 %add more info
 \subsubsection*{Cell based calibration curve}
-Two strains of \emph{G. lapillus} (HG4 and HG7) and \emph{G. polynesiensis} (CG14 and CG15) (Table ~\ref{tbl:StrainTable}) were used to construct cell based standard curves. Cells were counted using a Sedgwick Rafter Counting Chamber as viewed under a Nikon Eclipse TS100 (Australia) microscope. DNA was extracted with the FastDNA soin kit for soil by MO Biomedicals (CA, USA), as per the manufacturer's instructions. The gDNA extracts were 10-fold serially diluted. Dilutions ranging from {\Large xxxx} were amplified via qPCR ({\large on  and BioRad} (CA, USA) CFX96 real time system for \emph{G. lapillus} and \emph{G. polynesiensis} respectively) in triplicate.
+Two strains of \emph{G. lapillus} (HG4 and HG7) and \emph{G. polynesiensis} (CG14 and CG15) (Table ~\ref{tbl:StrainTable}) were used to construct cell based standard curves. Cells were counted using a Sedgwick Rafter counting chamber as viewed under a Nikon Eclipse TS100 (Australia) microscope. DNA was extracted with the FastDNA soin kit for soil by MP Biomedicals (CA, USA), as per the manufacturer's instructions. The gDNA extracts were 10-fold serially diluted. Dilutions ranging from 3880 to 0.0388 cells and {\Large xxxx} were amplified via qPCR ({\large on  and BioRad} (CA, USA) CFX96 real time system) for \emph{G. lapillus} and \emph{G. polynesiensis} respectively, in triplicate.
 %\subsection{Quantification of SSU rDNA copy number per cell of \emph{G. lapullis} and \emph{G. polynesiensis}}
 
 \subsection*{Screening environmental samples for \emph{G. lapillus} and \emph{G. polynesiensis} abundance}
-Around Heron Island and Heron Reef (Fig. ~\ref{fig:samplesites}) 33 sites (within 1km of the shore) were sampled in October 2015, in spatial replicates (A, B, C; Supplementary Table 1) within a 2m radius. Three species of macroalgae that commonly grow on this reef, \textit{Chnoospora} sp., \textit{Padina} sp. and \textit{Saragassum} sp., were sampled for the presence of epiphytic \emph{Gambierdiscus} spp. For each sample, about 200 g of macroalgae was collected from approximately 1 m deep water at low tide and briefly placed in plastic bags containing 200–300 ml of ambient seawater. They were shaken vigorously for 5 min to detach the epiphytic dinoflagellates from the macroalgae. This seawater was passed through $>$ 120 μm mesh filter to remove any remaining larger fauna and debris. The collected seawater was centrifuged at 1000 rpm. The supernatant was discarded and the pellet was dissolved in 10 ml RNAlater (Ambion®, Austin, TX, USA) for preservation and stored at 4°C.
+Around Heron Island and Heron Reef (Fig. ~\ref{fig:samplesites}) 33 sites (within 1km of the shore) were sampled in October 2015, in spatial replicates (A, B, C; Supplementary Table 1) within a 2m radius. Three species of macroalgae that commonly grow on this reef, \textit{Chnoospora} sp., \textit{Padina} sp. and \textit{Saragassum} sp., were sampled for the presence of epiphytic \emph{Gambierdiscus} spp. For each sample, about 200 g of macroalgae was collected from approximately 1 m deep water at low tide and briefly placed in plastic bags containing 200 to 300 ml of ambient seawater. They were shaken vigorously for 5 min to detach the epiphytic dinoflagellates from the macroalgae. This seawater was passed through $>$ 120 μm mesh filter to remove any remaining larger fauna and debris. The collected seawater was centrifuged at 1000 rpm. The supernatant was discarded and the pellet was dissolved in 10 ml RNAlater (Ambion®, Austin, TX, USA) for preservation and stored at 4$^{\circ}$C.
 To assess the presence of these species in the pelagic environment adjacent to macroalgal beds, plankton nets were dragged through the current (samples 34 - 38; table ~\ref{tbl:NetTable}) for five minutes, then processed as macroalgal samples.
 
 \FloatBarrier 
@@ -254,7 +255,7 @@ In PCRs using the qGpolySSU2F - qGpolySSU2R primer set, \emph{G. polynesiensis} 
 \hline
 &CG15&+&-&+\\
 \hline
-\emph{G. scabrosus}&&+&-&-\\
+\emph{G. scabrosus}&KW070922\_1&+&-&-\\
 \hline
 \emph{G.} cf. \emph{silvae}&HG5&+&-&-\\
 \hline
@@ -275,7 +276,7 @@ The gene based standard curve for \emph{G. lapillus} covered linear detection ov
 \FloatBarrier
 \begin{figure}
 %\includegraphics[scale=.22]{MH_variability.jpg}
-\caption{qPCR standard curves of (A) \emph{G. lapillus} strains HG4 (circle) and HG7 (triangle); and (B) \emph{G. polynesiensis} strains CG14 and CG15. Error bars represent the deviation of technical replicates during reactions.}
+\caption{qPCR standard curves of (A) \emph{G. lapillus} strains HG4 (circle) and HG7 (triangle); and (B) \emph{G. polynesiensis} strain CG15. Error bars represent the deviation of technical replicates during reactions.}
 \label{fig:stdCurve}
 \caption{qPCR gene based standard curves of (A) \emph{G. lapillus} and (B) \emph{G. polynesiensis}.} %Error bars represent the deviation of technical replicates during reactions.}
 \label{fig:lapigblocks}
