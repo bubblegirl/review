@@ -106,7 +106,7 @@ To verify primer set specificity as listed in Table ~\ref{tbl:PrimerTable}, DNA 
 The qPCR reaction mixture contained 10 $\mu$l SYBR Select Master Mix (Thermo Fisher Scientific), 7 $\mu$l MilliQ water, 0.5 $\mu$M forward and reverse primers and 2 - 20 ng DNA template, for a final volume of 20 $\mu$l. Cycling conditions consisted of 10 min at 95, then 40 cycles of 95 $^{\circ}$C for 15 seconds and 60 $^{\circ}$C for 30 seconds, followed by a temperature gradient for melt curve construction.
 \subsection*{Calibration curve construction}
 Standard curves were constructed to determine the efficiency of the assay, using a synthetic gene fragment approach, and also to use to quantify species presence, using calibration curves based on DNA extracted from known cell numbers. For curves based on synthetic gene fragments, a 10-fold serial dilution of a synthesised fragment containing the SSU target sequence, forward and reverse primer sites and 50bp flanking both primer sites matching sequencing results was generated. Cell-based standard curves were constructed using 10-fold dilutions of gDNA extract of known cell concentrations.
-The calibration curves for both methods were calculated (R$^{2}$, amplification efficiency and regression line slope) and graphed in R version 3.2.3 \citep{rlang}, using R studio version 1.0.136 \citep{rstudio} and the ggplot2 package \citep{ggplot2}. 
+The calibration curves for both methods were calculated (R$^{2}$, PCR efficiency and regression line slope) and graphed in R version 3.2.3 \citep{rlang}, using R studio version 1.0.136 \citep{rstudio} and the ggplot2 package \citep{ggplot2}. 
 %AE is (10^(1/slope)-1)*100
 \subsubsection*{Gene based calibration curve}
 For the target amplicons of both \emph{G. lapillus} and \emph{G. polynesiensis}, a DNA fragment spanning the target sequence, the reverse and forward primer sites and an extra 50bp on either end was synthesised called gBlocks \textsuperscript{\textregistered} by Integrated DNA Technologies (IDT, IA, USA). Lyophilized gBlocks \textsuperscript{\textregistered} was re-suspended in 1x TE (Tris 1M, EDTA 0.5 pH8) to a concentration of 1 ng.$\mu$l. The copy number of gene fragment was then calculated as 28,850,000,000 and 24,380,000,000 for the \textit{G. lapillus} and \textit{G. polynesiensis} target rDNA regions respectively.
@@ -139,12 +139,15 @@ In PCRs using the qGpolySSU2F - qGpolySSU2R primer set, \emph{G. polynesiensis} 
 
  
 \subsection*{Evaluation of primer sensitivity}
-The cell-based standard curves for \emph{G. lapillus} (HG4 and HG7, Fig. ~\ref{fig:stdCurve}a) showed high linearity with R$^{2}$ approaching 1.00. The slope for the Ct vs. log$_{10}$ cell number for HG4  was -3.4, efficiency 96.8 \%  and amplification factor 1.97; and -3.51, efficiency of 92.7 \% with an amplification factor of 1.93 for HG7. The linear detection for both \emph{G. lapillus} isolates covered six orders of magnitude. The lower detection limit was 0.04 and 0.05 cells for HG4 and HG7 respectively (Fig. ~\ref{fig:stdCurve}a).
-The detection for \emph{G. polynesiensis} CG15 was over five orders of magnitude with a lower detection limit 0.4 cells (Fig. ~\ref{fig:stdCurve}b) and showed high linearity with R$^{2}$ equals 1.00. The slope for the Ct vs. log$_{10}$ cell number was -1.89. The AE for CG15 was
-FUUUUUUUUCK
+The cell-based standard curves for \emph{G. lapillus} (HG4 and HG7, Fig. ~\ref{fig:stdCurve}a) showed high linearity with R$^{2}$ approaching 1.00. The slope for the Ct vs. log$_{10}$ cell number for HG4  was -3.4, efficiency 96.8 \%%  and amplification factor 1.97
+; and -3.51, efficiency of 92.7 \% %  with an amplification factor of 1.93
+for HG7. The linear detection for both \emph{G. lapillus} isolates covered six orders of magnitude. The lowest number of cells detected were 0.04 and 0.05 cells for HG4 and HG7 respectively (Fig. ~\ref{fig:stdCurve}a).
+The detection for \emph{G. polynesiensis} CG15 was over five orders of magnitude with a lowest detection was of 0.4 cells (Fig. ~\ref{fig:stdCurve}b) and showed high linearity with R$^{2}$ equals 1.00. The slope for the Ct vs. log$_{10}$ cell number was -4.35 with a PCR efficiency of 70 \%.
 
 
-The gene based standard curve for \emph{G. lapillus} covered linear detection over 7 orders of magnitude. The detection limit tested was less than 10$^{5}$ gene copy numbers. The Ct for the lowest gene copy number tested was less than 25, so it is likely that the sensitivity is lower than 10$^{5}$ gene copy numbers.
+
+The gene based standard curve for \emph{G. lapillus} covered linear detection over 7 orders of magnitude, with a slope of -3.42, R$^{2}$ equals 0.99 and a PCR efficiency of 96 \%. %The detection limit tested was less than 10$^{5}$ gene copy numbers. The Ct for the lowest gene copy number tested was less than 25, so it is likely that the sensitivity is lower than 10$^{5}$ gene copy numbers.\\
+The \emph{G. polynesiensis} gene based standard curve covered six orders of magnitude, with a slope of -4.15, R$^{2}$ equals 1.00 and a PCR efficiency of 74.2 \%.
 
 
 
