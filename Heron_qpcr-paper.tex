@@ -4,8 +4,8 @@
 %\usepackage[numbib]{tocbibind} use for ref in table of contents
 \usepackage{rotating}
 %\usepackage[natbibapa]{apacite}
-%\usepackage[square,sort,comma,numbers]{natbib}
-\usepackage{natbib}
+\usepackage[square,sort,comma,numbers]{natbib}
+%\usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{tabularx}
 \linespread{1.3}
@@ -24,16 +24,16 @@
 \date{}
 \begin{document}
 \maketitle
-%\paragraph{}A. L. Kretzschmar\\
-%Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia, anna.kretzschmar@uts.edu.au\\
-%ithree institute (i3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
-%\paragraph{}A. Verma \\
-%Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
-%\paragraph{}G. S. Kohli\\
-%Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia\\
-%Singapore Centre for Environmental Life Sciences Engineering (SCELSE), Nanyang Technological University, Singapore 637551, Singapore
-%\paragraph{}S. A. Murray\\
-%Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
+\paragraph{}A. L. Kretzschmar\\
+Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia\\
+ithree institute (i3), University of Technology Sydney, Ultimo, 2007 NSW, Australia, anna.kretzschmar@uts.edu.au
+\paragraph{}A. Verma \\
+Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
+\paragraph{}G. S. Kohli\\
+Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia\\
+Department of Ecological Chemistry, Alfred Wegener Institute (AWI), Helmholtz Centre for Polar and Marine Research, Am Handelshafen 12, 27570, Bremerhaven, Germany
+\paragraph{}S. A. Murray\\
+Climate Change Cluster (C3), University of Technology Sydney, Ultimo, 2007 NSW, Australia
 \newpage
 \section*{Abstract}
 Ciguatera fish poisoning is an illness contracted through the ingestion of seafood containing ciguatoxins. 
@@ -41,20 +41,28 @@ It is prevalent in tropical regions worldwide, including in Australia.
 Ciguatoxins are produced by some species of \emph{Gambierdiscus}. 
 Therefore rapid \emph{Gambierdiscus} species identification through quantitative PCR (qPCR), along with its toxicity, are required to screen for potential ciguatera risk development. 
 In Australia, the identity, distribution and abundance of species of \textit{Gambierdiscus} that produce ciguatoxins is largely unknown. 
-In this study we developed rapid qPCR assays to quantify the presence and abundance of \textit{Gambierdiscus lapillus}, a species which may produce ciguatoxins in the region. %We determined the toxicity of the species \textit{G. lapillus} and \textit{G. polynesiensis}, and 
+In this study we developed rapid qPCR assays to quantify the presence and abundance of \textit{Gambierdiscus lapillus}, a ciguatoxic species. %We determined the toxicity of the species \textit{G. lapillus} and \textit{G. polynesiensis}, and 
 We assessed the specificity and efficiency of the  qPCR assay targeting \textit{G. lapillus}. % and \textit{G. polynesiensis}. 
-The assay was tested on samples from 6 sites around Heron Island in the southern Great Barrier Reef semi-quantitatively, to determine the presence and patchiness of these species across samples from several macroalgal hosts.  
+The assay was tested on environmental samples around Heron Island in the southern Great Barrier Reef, to which ciguatera is endemic, to determine the presence and patchiness of these species across samples from several macroalgal hosts.  
 
 
 \newpage
 \section*{Introduction}
+\FloatBarrier
 %The genus Gambierdiscus and its morphological diversity, and why qPCR is needed to detect species.
-Benthic dinoflagellates of the genus \emph{Gambierdiscus} Adachi \& Fukuyo produce ciguatoxins (CTX), which can accumulate in humans via consumption of contaminated seafood and cause ciguatera fish poisoning (CFP). 
+Benthic dinoflagellates of the genus \emph{Gambierdiscus} Adachi \& Fukuyo produce ciguatoxins (CTX), which can accumulate in humans via consumption of contaminated seafood and cause ciguatera fish poisoning (CFP) (Fig. ~\ref{fig:bioaccom}). 
+\begin{figure} 
+\includegraphics[scale=.55]{Hero_qpcr-figs/CFP-diagram.png} 
+\caption{The mechanism of bioaccumulation of CTXs, with \emph{G. polynesiensis} at the base of the food web inhabiting the macroalgae \emph{Padina} spp. \cite{padina}. 
+A herbivore, here a white trevally (\emph{Pseudocaranx dentex}) \cite{trevally} consumes CTX from \emph{G. polynesiensis} along with the macroalgae, which is then either passes directly to humans through consumption, or through an intermediary piscivorous vector such as Australian spotted mackerel (\emph{Scomberomorus munroi}) \cite{mackerel}. 
+Image of \emph{G. polynesiensis} (strain CG15) taken by A. L. Kretzschmar, 2016, Nikon Eclipse TS100 equipped with an Infinite Luminera 1 camera.} 
+\label{fig:bioaccom}
+\end{figure} 
 Symptoms of CFP are largely gastrointestinal and neurotoxic however in severe cases humans can develop cardiovascular symptoms \citep{sims1987theoretical}. 
 Species of \emph{Gambierdiscus} can be epiphytic, growing on macroalgae and other substrates such as dead coral, as well as traverse the water column. 
 Species of \textit{Gambierdiscus} can vary in the production of ciguatoxins and/or maitotoxins \citep{chinain2010ciguatera,kohli2014high}. 
 If a particular \emph{Gambierdiscus} sp. is a CTX producer, and inhabit a palatable macroalgal substrate, the toxins bioaccumulate in herbivorous fish and filter feeders with the potential to travel up the food chain to cause CFP in humans  \citep{chinain1997intraspecific,holmes1998gambierdiscus}. 
-
+\FloatBarrier
 \emph{Gambierdiscus} was first identified in 1977, with the type species \emph{G. toxicus} Adachi \& Fukuyo \citep{adachi1979thecal}. 
 The genus remained monotypic for 18 years until the discovery of a second species \emph{G. belizeanus} Faust \citep{faust1995observation}. 
 To date, the genus comprises 14 described species and 6 ribo/species types
@@ -150,7 +158,7 @@ Farrell et al. (2017) put forward a recommendation on how to manage the emerging
 %Conversely, the fatal traffic accidents in Queensland in 2011 totalled 269 incidents \citep{qldtraffic}. Hence the potential number of ciguatera cases could exceed the fatal traffic accidents in Queensland in some years. 
 
 Despite the prevalence of CFP in Australia, the characterization of \textit{Gambierdiscus} population is on going work. 
-A causative species for CFP has not been identified and verified by LC-MS/MS to date, though recent bioassays by Larsson et al. has identified several species, two of which yet uncharacterized, that showed ciguatoxin-like activity which could all contribute to the ciguateric web \cite{larsson2018toxicology}.
+A causative species for CFP has not been identified and verified by LC-MS/MS to date, though recent bioassays by Larsson et al. has identified several species, two of which yet uncharacterised, that showed ciguatoxin-like activity which could all contribute to the ciguateric web \cite{larsson2018toxicology}.
 Over 50\% of Australia's expansive coastline (total 66,000 km) is tropical or subtropical, and may be considered potential habitat for \emph{Gambierdiscus} spp. \citep{kretzschmar2017characterization}. 
 The 7 species of \emph{Gambierdiscus} that have been identified from Queensland and New South Wales are as follows: \emph{G. belizeanus} \citep{murray2014molecular}, \emph{G. carpenteri} \citep{kohli2014high,sparrow2017effects}, \emph{G. honu} (based on D8-D10 LSU sequence matching to a study by Richlen et al. \cite{richlen2008phylogeography}) \citep{rhodes2017new}, \emph{G. lapillus} \citep{kretzschmar2017characterization,larsson2018toxicology}, \emph{G. toxicus} \citep{hallegraeff2010algae} and two uncharacterized potentially new species \cite{larsson2018toxicology}, as well as \emph{F. yasumotoi}  \citep{murray2014molecular}). 
 Using pyrosequencing, \textit{Gambierdiscus} was identified to the genus level in Western Australia \citep{kohli2014cob}, indicating that this is a coastline that should be examined further for CFP risk. 
@@ -469,26 +477,26 @@ A low number of free floating \textit{G. lapillus} were detected in one of the t
 &C&\emph{Padina} sp.&8.64\\%&N/D\\
 \hline
 7 %ex shark bay A
-&tow net&N/D\\
+&-&tow net&N/D\\
 \hline
 8 %ex shark bay B
-&tow net&N/D\\
+&-&tow net&N/D\\
 \hline
 9 %ex shark bay C
-&tow net&1.24\\
+&-&tow net&1.24\\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{figure} 
 \includegraphics[scale=2.5]{Hero_qpcr-figs/Fig4_Heron-positive-negative-samplingsites_May18.png} 
-\caption{\emph{G. lapillus} presence at the sampling sites around Heron Island. The spatial replicates for each site are set up as shown in (A); the sites in (B) linked to numbering in Fig. ~\ref{fig:samplesites} where positive (green) and negative (red) as per Table ~\ref{tbl:MacroalgaeTable}.} 
+\caption{\emph{G. lapillus} presence at the macroalgal sampling sites around Heron Island. The spatial replicates for each site are set up as shown in (A); the sites in (B) linked to numbering in Fig. ~\ref{fig:samplesites} where positive (green) and negative (red) as per Table ~\ref{tbl:MacroalgaeTable}.} 
 \label{fig:envposneg}
 \end{figure} 
  
 \begin{figure} 
 \includegraphics[scale=.85]{Hero_qpcr-figs/Fig5_Env-sites-May18.png} 
-\caption{Detection of \emph{G. lapillus} per spatial replicate at each sampling site, cell numbers as normalised to HG7 standard curve (Fig. ~\ref{fig:stdCurve}A). Spatial replicates cper macroalgal substrate where \emph{Sargassum} sp. are squares, \emph{Padina} sp. are circles and mixed macroalgal substrates are triangles (Table ~\ref{tbl:MacroalgaeTable}).} 
+\caption{Detection of \emph{G. lapillus} per spatial replicate at each macroalgal sampling site, cell numbers as normalised to HG7 standard curve (Fig. ~\ref{fig:stdCurve}A). Spatial replicates cper macroalgal substrate where \emph{Sargassum} sp. are squares, \emph{Padina} sp. are circles and mixed macroalgal substrates are triangles (Table ~\ref{tbl:MacroalgaeTable}).} 
 \label{fig:envHG7}
 \end{figure} 
 \FloatBarrier
@@ -592,18 +600,16 @@ Gratitude to Dr. Adachi and Dr. Nishimura for supplying \emph{G. scabrosus}, Mic
 The authors report no conflict of interest in conducting this study.
 
 \section*{Author contribution}
-%The environmental samples from Heron Island were collected by G. Kohli. 
-%DNA from environmental samples was extracted by A. L. Kretzschmar, A. Verma and G. Kohli. %Reference \emph{G. polynesiensis} cultures from the Cook Islands were established from a field trip attended by Arjun Verma, G. Kohli and S. Murray. %not necesary because Arjun wasn't on lapillus paper & everyone else should be on the paper too then
-%The \emph{G. polynesiensis} assay was designed by A. L. Kretzschmar. 
-%TODO work this out
+The environmental samples from Heron Island were collected by G. Kohli. 
+DNA from environmental samples was extracted by A. L. Kretzschmar, A. Verma and G. Kohli. %Reference \emph{G. polynesiensis} cultures from 
 The \emph{G. lapillus} assay was designed by A. L. Kretzschmar. 
 The assay was tested for specificity, sensitivity, standard curves generated and environmental screening conducted by A. L. Kretzschmar. 
 The manuscript was drafted by A. L. Kretzschmar and revised by all authors.
 
 \FloatBarrier
 \newpage
-\bibliographystyle{apa}
+%\bibliographystyle{apa}
 %\bibliographystyle{apacite}
-%\bibliographystyle{acm}
+\bibliographystyle{acm}
 \bibliography{references.bib}
 \end{document}
