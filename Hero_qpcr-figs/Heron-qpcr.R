@@ -7,7 +7,7 @@ library(reshape2)
 library(readxl)
 library(tibble)
 
-padina <- read_tsv("/home/nurgling/PhD/writing/review/Hero_qpcr-figs/Env-HG7-padina.tsv")
+padina <- read_tsv("/home/nurgling/PhD/writing/review/Hero_qpcr-figs/Env-HG7-padina_Nov18.tsv")
 #needs space in first row otherwise deleted by column header
 colnames(padina) <- c("site", "macroalgae", "Cell_number")
 padina$site <- gsub('A', '', padina$site)
@@ -15,7 +15,7 @@ padina$site <- gsub('B', '', padina$site)
 padina$site <- gsub('C', '', padina$site)
 padina$site <- as.numeric(padina$site)
 
-sargassum <- read_tsv("/home/nurgling/PhD/writing/review/Hero_qpcr-figs/Env-HG7-Saragassum.tsv")
+sargassum <- read_tsv("/home/nurgling/PhD/writing/review/Hero_qpcr-figs/Env-HG7-Saragassum_Nov18.tsv")
 #needs space in first row otherwise deleted by column header
 colnames(sargassum) <- c("site", "macroalgae", "Cell_number")
 sargassum$site <- gsub('A', '', sargassum$site)
@@ -23,7 +23,7 @@ sargassum$site <- gsub('B', '', sargassum$site)
 sargassum$site <- gsub('C', '', sargassum$site)
 sargassum$site <- as.numeric(sargassum$site)
 
-chnoospora <- read_tsv("/home/nurgling/PhD/writing/review/Hero_qpcr-figs/Env-HG7-chnoospora.tsv")
+chnoospora <- read_tsv("/home/nurgling/PhD/writing/review/Hero_qpcr-figs/Env-HG7-chnoospora_Nov18.tsv")
 #needs space in first row otherwise deleted by column header
 colnames(chnoospora) <- c("site", "macroalgae", "Cell_number")
 chnoospora$site <- gsub('A', '', chnoospora$site)
@@ -31,7 +31,7 @@ chnoospora$site <- gsub('B', '', chnoospora$site)
 chnoospora$site <- gsub('C', '', chnoospora$site)
 chnoospora$site <- as.numeric(chnoospora$site)
 
-mixed <- read_tsv("/home/nurgling/PhD/writing/review/Hero_qpcr-figs/Env-HG7-mixed-macroalgae.tsv")
+mixed <- read_tsv("/home/nurgling/PhD/writing/review/Hero_qpcr-figs/Env-HG7-mixed-macroalgae_Nov18.tsv")
 #needs space in first row otherwise deleted by column header
 colnames(mixed) <- c("site", "macroalgae", "Cell_number")
 mixed$site <- gsub('A', '', mixed$site)
