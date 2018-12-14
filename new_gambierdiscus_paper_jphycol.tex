@@ -6,6 +6,7 @@
 \usepackage[square,sort,comma,numbers]{natbib}
  \usepackage{graphicx}
  \usepackage{tabularx}
+ \usepackage{placeins}
  \linespread{1.3}
  \usepackage{gensymb}
  \usepackage{longtable}
@@ -96,7 +97,7 @@ The aim of the current study was to further the continued search for the causati
 \section{Materials and methods}
 
 \subsection{Specimen collection and culture conditions}
-\floatbarrier
+\FloatBarrier
 Specimens were collected from Heron Island (23$^{\circ}$ 4420' S, 151$^{\circ}$ 9140' E), which is part of the southern GBR region. 
 Heron Island constitutes site 3 of previous specimen collection in Australia (Fig. ~\ref{fig:OzSites}).
 In October 2013, a sample of \emph{Halimeda} sp. was taken when the average sea surface temperature was 23.8 $^{\circ}$C. 
@@ -134,7 +135,7 @@ The cultures were maintained F/10 medium at 27 $^{\circ}$C, 60$\mu$mol.m$^{2}$.s
 \end{tabular}
 \end{table}
 
-\floatbarrier
+\FloatBarrier
 \subsection{Morphological analyses}
 The cultures HG4, HG6, HG7 and HG26 (during exponential growth phase) were fixed with 10 \% Lugol's iodide and examined with an inverted light microscope (Nikon Eclipse TS100 equipped with an Infinite Luminera 1 camera) for cell size. 
 Depth (D: measured along dorso-ventral axis) and width (W: measured between the lateral axis) was measured for 30 to 36 cells per strain.
@@ -230,7 +231,6 @@ The limit of detection of the analysis was ~1 ng.mL$^{-1}$ for MTX-1 and <1 ng.m
 \textit{Gambierdiscus lapillus} sp. nov. Kretzschmar, Hoppenrath et Murray
 \subsubsection{Morphology and taxonomical treatment}
 \FloatBarrier
-%er than all other characterised \emph{Gambierdiscus} spp. (Table ~\ref{tbl:GlobalSizeTable}, Fig. ~\ref{fig:SizeGraph}),
 Description: Cells were anterioposteriorly compressed and round to ellipsoid, sometimes dorsally pointed in apical view (Figs. ~\ref{fig:PetLM}, ~\ref{fig:epiSEM}). 
 Cells were small compared to other \textit{Gambierdiscus} spp., with a dorsoventral depth of 40.6 $\mu$m (range of 34.4 - 50.9 $\mu$m; SD 3.3 $\mu$m) and width of 39 $\mu$m (range of 32 - 46.9 $\mu$m; SD 3.2 $\mu$m) with a depth to width ratio of 1.04 (SD 0.06 $\mu$m) (n=128, Table ~\ref{tbl:SizeTable}). 
  
@@ -242,7 +242,7 @@ Cells were small compared to other \textit{Gambierdiscus} spp., with a dorsovent
 
 
 \begin{table}
-\caption{Morphological meassurements of \emph{G. lapillus }sp. nov. strains collected from Heron Island, Australia. Between 30 to 36 cells were counted per strain. Values in parentheses are $\pm$ standard deviation. \textbf{--- for supplementary data}}
+\caption{Morphological measurements of \emph{G. lapillus }sp. nov. strains collected from Heron Island, Australia. Between 30 to 36 cells were counted per strain. Values in parentheses are $\pm$SD}
 \label{tbl:SizeTable}
 \begin{tabular}{ | p{2cm} | p{2.5cm} | p{2.5cm} | p{2.5cm} | }
 \hline
@@ -291,7 +291,56 @@ Molecular characterization: \textit{Gambierdiscus lapillus} can be genetically i
 Further information: The strain HG7, from which the holotype is derived, has been deposited in the Australian National Algae Culture Collection under strain designation CS-1146.
 
 
+\begin{figure} 
+%\includegraphics[scale=.22]{MH_epitheca.jpg} 
+\caption{Scanning electron micrographs of the epitheca of \textit{Gambierdiscus lapillus}. (a) Apical view. (b) Apical ventral view. (c) Left lateral view. (d) Apical to left lateral view. (e–h) Apical pore complex. (e–g) Outside view of the pore plate (Po), note the variable arrangement of large depressions. (h) Inside view of Po. Scale bars (a–d) 10 $\mu$m, (e–h) 5 $\mu$m.} 
+\label{fig:epiSEM}
+\end{figure} 
 
+\begin{figure} 
+%\includegraphics[scale=.22]{MH_hypotheca.jpg} 
+\caption{Scanning electron micrographs of \textit{Gambierdiscus lapillus}. (a, b) Hypotheca in antapical view. (c) Left lateral to ventral view of the sulcal opening. (d, e) Antapical view of the ventral area, note the posterior sulcal plate appearing like a hypothecal plate. (f) Right lateral view of a cell with relatively high hypotheca. (g) Antapical view into the sulcus. Scale bars (a-f) 10 $\mu$m, (g) 5 $\mu$m.} 
+\label{fig:hypoSEM}
+\end{figure} 
+
+\begin{figure} 
+%\includegraphics[scale=.22]{MH_ornamentation.jpg} 
+\caption{Scanning electron micrographs of \textit{Gambierdiscus lapillus} showing the reticulate-foveate thecal ornamentation. (a) Apical plates with regularly arranged deep depressions, nearly all containing a pore. (b, c) Wide transversely “ribbed” intercalary bands separating apical plates from precingular plates with more irregular reticulation with scattered pores. (d) Cell after division with newly developing plates that have a smooth surface with scattered pores. Scale bars (a, b) 5 $\mu$m, (c, d) 10 $\mu$m.} 
+\label{fig:ornSEM}
+\end{figure} 
+
+\begin{figure} 
+%\includegraphics[scale=.1]{size_chart-grey.png} 
+\caption{Line drawings showing the thecal tabulation pattern of \textit{Gambierdiscus lapillus} (a, b); \textit{Gambierdiscus belizeanus} (c, e); and \textit{Gambierdiscus scabrosus} (d, f). Epitheca (a, c, d). Hypotheca (b, e, f)} 
+\label{fig:DrawMorph}
+\end{figure}
+
+\begin{table}
+\caption{Morphological character of closely related \textit{Gambierdiscus} species and \textit{G. lapillus} sp. nov. Common features preceding diagnostic features are Po, 3' , 0a. 7'', 6c, 7-8s, 5''', 0p, 2'''' and cells anterio-posteriorly compressed.}
+\label{tbl:MorphTable}
+\begin{tabular}{ | p{2cm} | p{2.5cm} | p{2.5cm} | p{2.5cm} |  p{2.5cm} | p{2.5cm} |p{2.5cm} |}
+\hline
+Species&\textit{G. lapillus}&\textit{G. belizeanus}&\textit{G. scabrosus}& \textit{G. toxicus}&\textit{G. pacificus}\\
+ \hline
+Cell depth ($\mu$m)&40.6$\pm$3.3&63$\pm$2.2&63.2$\pm$5.7&93$\pm$5.7&70$\pm$4.7\\
+\hline
+Cell width ($\mu$m)&39$\pm$3.2&58$\pm$2.5&58.2$\pm$5.7&83$\pm$2.3&63$\pm$3.6\\
+\hline
+Theca ornamentation&Reticulate-foveate&Reticulate-foveate&Reticulate-foveate&Smooth&Smooth\\
+\hline
+Plate 2'&Hatchet-shaped&Nearly rectangular&Rectangular&Hatchet-shaped&Hatchet-shaped\\
+ \hline
+ Plate 4''&Symmetric&Symmetric (Fig. 3 \citep{faust1995observation}); Asymmetric ()Fig. 42A \citep{hoppenrath2014marine})&Asymmetric&Asymmetric&Symmetric\\
+ \hline
+ Plate 2''''&Narrow&Narrow&Narrow&Broad&Narrow\\
+ \hline
+ References&This study&\citep{faust1995observation,litaker2009taxonomy,chinain1999morphology,chinain1999seasonal}&\citep{kuno2010genetic,nishimura2013genetic,nishimura2014morphology}&\citep{adachi1979thecal,litaker2009taxonomy,chinain1997intraspecific,richlen2008phylogeography}&\citep{litaker2009taxonomy,chinain1999morphology,chinain1999seasonal}\\
+ \hline
+\end{tabular}
+\end{table}
+
+
+\FloatBarrier
 \subsubsection{Phylogenetics}
 \FloatBarrier 
 Phylogenetic trees for SSU and D8-D10 LSU rDNA regions were inferred using both BI and ML methods. 
@@ -362,7 +411,15 @@ Also, unassigned chromatographic peaks were observed in the CTX transition and t
 \emph{Gambierdiscus lapillus} cells are anterio-posteriorly compressed, poses a narrow 2'''' plate (1p plate equivalent) and heavily areolated cell surface (strong reticulate-foveate thecal ornamentation), as does \emph{G. belizeanus}  \citep{litaker2009taxonomy}.
  \emph{Gambierdiscus scabrosus} T.Nishimura, Shinya Sato \& M.Adachi is also morphologically similar to \emph{G. belizeanus}, but can be distinguished by the asymmetry of the 4'' plate (designated 3'' by Nishimura et al. (2014)) compared to the symmetry of the 4'' plate in \emph{G. belizeanus} (Table 4, asymmetric in Fig. 42A in \citep{hoppenrath2014marine}). 
  Hence, the closest morphological relatives to \emph{G. lapillus} are \emph{G. belizeanus} and \emph{G. scabrosus}. 
-Comparing the distinguishing morphological characteristics between \emph{G. lapillus} sister species is the \textit{G. lapillus}'s diminutive size (Figs. ~\ref{fig:DrawMorph}, ~\ref{fig:SizeGraph} ).  
+Comparing the distinguishing morphological characteristics between \emph{G. lapillus} sister species is the \textit{G. lapillus}'s diminutive size (Figs. ~\ref{fig:DrawMorph}, ~\ref{fig:SizeGraph}).  
+
+\FloatBarrier 
+\begin{figure} 
+%\includegraphics[scale=.1]{size_chart-grey.png} 
+\caption{Visual representation of the size difference between \emph{Gambierdiscus} and \textit{Fukuyoa} species Error bars denote standard deviation of measurements. Data taken from publications as follows: a) Chinain et al. (1999b) \citep{chinain1999morphology}; b) Fraga and Rodriguez (2014) \citep{fraga2014genus}; c) Faust et al. (1995) \citep{faust1995observation}; d) G\'omez et al. (2015) \citep{gomez2015fukuyoa}; e) Litaker et al. (2009) \citep{litaker2009taxonomy}; f) Nishimura et al. (2014) \citep{nishimura2014morphology}; and g) Xu et al. (2014) \citep{xu2014distribution}} 
+\label{fig:SizeGraph}
+\end{figure} 
+
  Size is a feature that has been previously used to distinguish species of \emph{Gambierdiscus} from each other \citep{litaker2009taxonomy}. 
 \emph{Gambierdiscus lapillus} also differs to \emph{G. scabrosus} due to it's symmetric 4'' plate (Fig. ~\ref{fig:epiSEM}a), hence it is closer morphologically to \emph{G. belizeanus}. 
 The morphological point of difference between the two species lies in the 2' plate (Fig. ~\ref{fig:DrawMorph}).  
@@ -441,96 +498,6 @@ We thank the Australian Research Council (FT120100704) for funding.
 \section{Conflict of interest disclosure}
 The authors report no conflict of interest in conducting this study.
 \newpage
-
-
-
-
-
-
-\FloatBarrier
-\begin{longtable}{ | p{5cm} | p{2cm} | p{6cm} | p{2cm} |}
-\caption{Morphological meassurements for all characterised \emph{Gambierdiscus} spp. and \emph{Fukoyoa} spp. Values in parentheses are $\pm$ standard deviation. NA stands for not available.}\\
-\hline
-\label{tbl:GlobalSizeTable}
-\textbf{Taxa} &  Cell size ($\mu$m) (depth-width-ratio) & Morphologically distinctive features & References  \\
- \hline
-\textit{G. australes }M.Chinian \& M.A.Faust	& (86$\pm$5.1)-(77$\pm$3.7)-(1.12) &  Narrow 2'''' plate; smooth cell surface; 2’ rectangular shaped; smaller than \textit{G. excentricus} & \citep{litaker2009taxonomy,chinain1999morphology}  \\
- \hline
- \textit{G. belizeanus }M.A.Faust	& (63$\pm$2.2)-(58$\pm$2.5)-(1.07$\pm$0.08) & Narrow 2'''' plate; heavily reticulate-foveate cell surface & \citep{chinain1999morphology,litaker2009taxonomy,faust1995observation} \\
- \hline
- \textit{G. caribaeus} Vandersea, Litaker, Faust, Kibler, Holland \& Tester	& (82.2$\pm$7.6)-(81.9$\pm$7.9)-(1) & Broad 2'''' plate; 2 rectangular shaped; symmetric 4'' & \citep{litaker2009taxonomy}  \\
- \hline
- \textit{G. carolinianus} Litaker, Vandersea, Faust, Kibler, Holland \& Tester & (78.2$\pm$4.8)-(87.1$\pm$7.1)-(0.9) & Broad 2'''' plate; 2' hatchet shaped; dorsal end 2'''' oblique; larger cell size than \textit{G. polynesiensis} & \citep{litaker2009taxonomy} \\
- \hline
-\textit{G. carpenteri} Kibler, Litaker, Faust, Holland, Vandersea \& Tester &	(81.7$\pm$6.4)-(74.8$\pm$5.9)-(1.09) & Broad 2'''' plate; 2' rectangular shaped; asymmetric 4” & \citep{litaker2009taxonomy}  \\
- \hline
-\textit{G. excentricus	}S.Fraga & (97.8$\pm$8.0)-(83.0$\pm$10.0)-(1.18) & Narrow 2'''' plate; smooth cell surface; 2' rectangular shaped; cell size bigger than \textit{G. australes} & \citep{litaker2009taxonomy} \\
- \hline
-\textit{G. pacificus} M.Chinain \& M.Faust& (70$\pm$4.7)-(63$\pm$3.6)-(1.11) & Narrow 2'''' plate; smooth cell surface; 2’ hatchet shaped & \citep{chinain1999morphology,litaker2009taxonomy} \\
- \hline
-\textit{G. polynesiensis} M.Chinain \& M.Faust & (69$\pm$4.5)-(69$\pm$3.6)-(1.1) & Broad 2'''' plate; 2' hatchet shaped; dorsal end 2'''' oblique; smaller cell size than \textit{G. carolinianus} &	\citep{chinain1999morphology,litaker2009taxonomy} \\ 
- \hline
-\textit{G. scabrosus} T.Nishimura, Shinya Sato \& M.Adachi	& (63.2$\pm$5.7)-(58.2$\pm$5.7)-(1.09$\pm$0.07) & Narrow 2'''' plate; reticulate-foveate; asymmetric 3” plate & \citep{nishimura2014morphology,nishimura2013genetic,kuno2010genetic}  \\
- \hline
- \textit{G. silvae}	S.Fraga \& F.Rodr{\'i}guez & (69$\pm$8.0)-(64$\pm$9.0)-(1.1) & Narrow 2'''' plate; heavily reticulate-foveate & \citep{fraga2014genus,litaker2010global} \\
- \hline
-\textit{G. toxicus} R.Adachi \& Y.Fukuyo & (93$\pm$5.7)-(83$\pm$2.3)-(1.12) & Broad 2'''' plate; 2; hatchet shaped; dorsal end 2'''' pointed & \citep{litaker2009taxonomy,adachi1979thecal,chinain1997intraspecific,richlen2008phylogeography}\\
- \hline
- \emph{Gambierdiscus} sp. type 4	& (67$\pm$5)-(68.8$\pm$5.6)-(0.97) & Evenly distributed pores; larger than \textit{Gambierdiscus sp. type 5}; 2’ hatchet shaped; broad 2'''' plate 
- & \citep{xu2014distribution}\\
- \hline
- \emph{Gambierdiscus} sp. type 5 & (54.8$\pm$4.6)-(53.7$\pm$6.3)-(1.02) & Evenly distributed pores; smaller than \textit{Gambierdiscus sp. type 4}; 2’ rectangular shaped; narrow 2'''' plate &  \citep{xu2014distribution} \\
- \hline
- \textit{F. paulensis} F.Gómez, D.Qiu, R.M.Lopes \& S.Lin & (50$\pm$3)-(45$\pm$2)-(1.2) & Smaller than \textit{F. yasumotoi} and larger than \textit{F. rutzleri} & \citep{gomez2015fukuyoa} \\
- \hline
-\textit{F. rutzleri }(Faust, Litaker, Vandersea, Kibler, Holland \& Tester) F.Gómez, D.Qiu, R.M.Lopes \& S.Lin& (43$\pm$5.1)-(36$\pm$6.0)-(1.19) & Smaller than \textit{F. yasumotoi}; cell size less than 42μm &  \citep{litaker2009taxonomy}\\
- \hline
-\textit{F. yasumotoi }(M.J.Holmes) F.Gómez, D.Qiu, R.M.Lopes \& S.Lin& (56.8$\pm$5.6)-(51.7$\pm$5.6)-(1.1) & Larger than \textit{F. ruetzleri}; cell size exceeds 42 μm & \citep{litaker2009taxonomy,holmes1998gambierdiscus}  \\
- \hline
-\textit{G. lapillus}  & (40.6$\pm$3.3)(39$\pm$3.2)-(1.04$\pm$0.06) & Narrow 2'''' plate; heavily reticulate-foveate; hatchet-shaped 2' plate & This study\\
-   \hline
-\end{longtable}
-\FloatBarrier
-
-
-
-\FloatBarrier 
-\begin{figure} 
-%\includegraphics[scale=.22]{MH_epitheca.jpg} 
-\caption{Scanning electron micrographs of the epitheca of \textit{Gambierdiscus lapillus}. (a) Apical view. (b) Apical ventral view. (c) Left lateral view. (d) Apical to left lateral view. (e–h) Apical pore complex. (e–g) Outside view of the pore plate (Po), note the variable arrangement of large depressions. (h) Inside view of Po. Scale bars (a–d) 10 $\mu$m, (e–h) 5 $\mu$m.} 
-\label{fig:epiSEM}
-\end{figure} 
-\FloatBarrier 
-
-\FloatBarrier 
-\begin{figure} 
-%\includegraphics[scale=.22]{MH_hypotheca.jpg} 
-\caption{Scanning electron micrographs of \textit{Gambierdiscus lapillus}. (a, b) Hypotheca in antapical view. (c) Left lateral to ventral view of the sulcal opening. (d, e) Antapical view of the ventral area, note the posterior sulcal plate appearing like a hypothecal plate. (f) Right lateral view of a cell with relatively high hypotheca. (g) Antapical view into the sulcus. Scale bars (a-f) 10 $\mu$m, (g) 5 $\mu$m.} 
-\label{fig:hypoSEM}
-\end{figure} 
-\FloatBarrier
-
-\FloatBarrier 
-\begin{figure} 
-%\includegraphics[scale=.22]{MH_ornamentation.jpg} 
-\caption{Scanning electron micrographs of \textit{Gambierdiscus lapillus} showing the reticulate-foveate thecal ornamentation. (a) Apical plates with regularly arranged deep depressions, nearly all containing a pore. (b, c) Wide transversely “ribbed” intercalary bands separating apical plates from precingular plates with more irregular reticulation with scattered pores. (d) Cell after division with newly developing plates that have a smooth surface with scattered pores. Scale bars (a, b) 5 $\mu$m, (c, d) 10 $\mu$m.} 
-\label{fig:ornSEM}
-\end{figure} 
-\FloatBarrier
-
-\FloatBarrier 
-\begin{figure} 
-%\includegraphics[scale=.1]{size_chart-grey.png} 
-\caption{Line drawings showing the thecal tabulation pattern of \textit{Gambierdiscus lapillus} (a, b); \textit{Gambierdiscus belizeanus} (c, e); and \textit{Gambierdiscus scabrosus} (d, f). Epitheca (a, c, d). Hypotheca (b, e, f)} 
-\label{fig:DrawMorph}
-\end{figure}
-
-\FloatBarrier 
-\begin{figure} 
-%\includegraphics[scale=.1]{size_chart-grey.png} 
-\caption{Visual representation of the size difference between \emph{Gambierdiscus} and \textit{Fukuyoa} species Error bars denote standard deviation of measurements. Data taken from publications as follows: a) Chinain et al. (1999b) \citep{chinain1999morphology}; b) Fraga and Rodriguez (2014) \citep{fraga2014genus}; c) Faust et al. (1995) \citep{faust1995observation}; d) G\'omez et al. (2015) \citep{gomez2015fukuyoa}; e) Litaker et al. (2009) \citep{litaker2009taxonomy}; f) Nishimura et al. (2014) \citep{nishimura2014morphology}; and g) Xu et al. (2014) \citep{xu2014distribution}} 
-\label{fig:SizeGraph}
-\end{figure} 
 
 
 \section{Supplementary Material}
