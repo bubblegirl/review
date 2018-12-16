@@ -96,6 +96,7 @@ The aim of the current study was to further the continued search for the causati
 \section{Materials and methods}
 
 \subsection{Specimen collection and culture conditions}
+\floatbarrier
 Specimens were collected from Heron Island (23$^{\circ}$ 4420' S, 151$^{\circ}$ 9140' E), which is part of the southern GBR region. 
 Heron Island constitutes site 3 of previous specimen collection in Australia (Fig. ~\ref{fig:OzSites}).
 In October 2013, a sample of \emph{Halimeda} sp. was taken when the average sea surface temperature was 23.8 $^{\circ}$C. 
@@ -107,11 +108,33 @@ Single cells were isolated from the samples using a micropipette under an invert
 The culture HG1 was isolated from the sample from October 2013, while the cultures HG4, HG5, HG6, HG7, HG26 were isolated from the sample from July 2014.
 The cultures were maintained F/10 medium at 27 $^{\circ}$C, 60$\mu$mol.m$^{2}$.s$^{-1}$ light in 12hr:12hr light to dark cycles.
 
+\begin{figure} 
+% \includegraphics[scale=.85]{oz-gamb-grey-map.png} 
+\caption{(a) Sites where \textit{Gambierdiscus} isolates have been reported in Australia: Site 1 indicates Raine Island, QLD; site 2 indicates Townsville, QLD; Site 3 indicates Heron Island (asterix denotes site of panel B), QLD; Site 4 indicated Platypus Bay, QLD; site 5 indicates Wapengo Lagoon, NSW; site 6 indicates Merimbula, NSW; site 7 indicates Eden, NSW; and site 8 indicates Exmouth, WA; (b) Heron Island, Great Barrier Reef (site 3): Sampling site for this study as indicated by black dot.} 
+\label{fig:OzSites}
+\end{figure}
 
-%\newpage
+\begin{table}
+\caption{\emph{Gambierdiscus} spp. identified around Australia, including toxicological data available. N/D denotes not detected. NA denotes not attempted.}
+\label{tbl:OzTable}
+\begin{tabular}{ | p{3.3cm} | p{4cm} | p{4.5cm} | p{2.3cm} | }
+\hline
+ \textbf{\emph{Gambierdiscus} sp.} & \textbf{Site identified from fig. ~\ref{fig:OzSites}} & \textbf{Toxicity}  & \textbf{LC-MS profile}  \\
+ \hline
+ \emph{G. belizeanus}  & Site 3: Heron Island, GBR \citep{murray2014molecular} & CTX +ve via RBA \citep{chinain2010growth}; MTX +ve via HELA \citep{holland2013differences} & NA  \\
+ \hline
+ \emph{G. carpenteri} &Site 5: Wapengo Lagoon, NSW \citep{kohli2014high}; site 6:  Merimbula, NSW  \citep{kohli2014high}& MTX +ve via MBA \citep{kohli2014high} & N/D \citep{kohli2014high}\\
+ \hline
+ \emph{G. toxicus} & Site 2: Townsville, GBR \citep{hallegraeff2010algae}; Site 7: Eden, NSW \citep{hallegraeff2010algae} & CTX +ve via RBA \citep{chinain2010growth}; MTX +ve via MBA \citep{chinain1999morphology} & NA \\
+  \hline
+  \emph{Gambierdiscus} sp. & Site 8: Exmouth, WA \citep{kohli2014cob}& NA & NA \\
+  \hline
+ \emph{F. yasumotoi}  & Site 1: Raine Island, GBR \citep{murray2014molecular}; Site 2: Townsville, GBR \citep{murray2014molecular}; site 3: Heron Island, GBR \citep{murray2014molecular}& MTX +ve via MBA \citep{holmes1998gambierdiscus} & N/D \citep{rhodes2014gambierdiscus}\\
+  \hline
+\end{tabular}
+\end{table}
 
-
-
+\floatbarrier
 \subsection{Morphological analyses}
 The cultures HG4, HG6, HG7 and HG26 (during exponential growth phase) were fixed with 10 \% Lugol's iodide and examined with an inverted light microscope (Nikon Eclipse TS100 equipped with an Infinite Luminera 1 camera) for cell size. 
 Depth (D: measured along dorso-ventral axis) and width (W: measured between the lateral axis) was measured for 30 to 36 cells per strain.
@@ -128,6 +151,7 @@ Genomic DNA was extracted using the CTAB method \citep{zhou1999analysis}.
 Purity and concentration of the extract was measured by Nanodrop (Nanodrop2000, Thermo Scientific), the integrity was visualised on 1\% agarose gel.
 
 \subsection{PCR amplification and sequencing}
+\FloatBarrier
 Extracted DNA was used as a template to amplify rDNA sequences in 25 $\mu$l mixture in PCR tubes. 
 Reactions consisted of a final concentration of 0.6 $\mu$M forward and reverse primer, 0.4 $\mu$M BSA, 2 - 20 ng DNA, 12.5 $\mu$l 2xEconoTaq (Lucigen Corporation, Middleton, WI, USA) and 7.5 $\mu$l PCR grade water.\\
 The PCR cycling comprised of an initial 10 min step at 94 $^{\circ}$C, followed by 30 cycles of denaturing at 94 $^{\circ}$C for 30 s, annealing at 55 $^{\circ}$C for 30 s and extension at 72 $^{\circ}$C for 1 min, finalized with 3 minutes of extension at 72 $^{\circ}$C.
@@ -135,6 +159,40 @@ The LSU D8-D10 and SSU rDNA regions were amplified with the FD8-RB and 18ScomF1-
 Sanger sequencing was conducted by Macrogen Inc. (Seoul, Korea).
 
 
+\begin{table}
+\caption{List of primers used for phylogenetic analysis of \emph{Gambierdiscus} strains, synthesised by Integrated DNA technologies.}
+\label{tbl:PrimerTable}
+\begin{tabular}{  | p{2cm} | p{7.5cm} | p{2.5cm} | p{2cm} | }
+\hline
+\textbf{Name} & \textbf{Sequence (5'-3')} & \textbf{Purpose} & \textbf{Reference} \\
+\hline
+    \multicolumn{4}{| c |}{\textbf{LSU D8-D10 region}}\\
+    \hline
+   FD8   & GGATTGGCTCTGAGGGTTGGG & Amplification \& sequencing & \citep{chinain1999morphology} \\
+   \hline
+ GLD8\_421F   & ACAGCCAAGGGAACGGGCTT & Sequencing & \citep{nishimura2013genetic} \\
+ \hline
+ GLD8\_677R   & TGTGCCGCCCCAGCCAAACT & Sequencing & \citep{nishimura2013genetic} \\
+ \hline
+   RB   & GATAGGAAGAGCCGACATCGA & Amplification \& sequencing &\citep{chinain1999morphology}  \\
+    \hline
+  \multicolumn{4}{| c |}{\textbf{SSU region}}\\
+    \hline
+ 18ScomF1 & GCTTGTCTCAAAGATTAAGCCATGC & Amplification \& sequencing & \citep{zhang2005phylogeny} \\
+ \hline
+ 18ScomR1  & CACCTACGGAAACCTTGTTACGAC & Amplification \& sequencing &  \citep{zhang2005phylogeny}  \\
+ \hline
+ Dino18SF2  & ATTAATAGGGATAGTTGGGGGC & Sequencing &  \citep{zhang2008mitochondrial}\\
+ \hline
+ Dino18SR1    & GAGCCAGATRCDCACCCA & Sequencing &  \citep{zhang2008mitochondrial}\\ 
+ \hline
+G10'F    & TGGAGGGCAAGTCTGGTG & Sequencing & \citep{nishimura2013genetic} \\
+\hline
+G18'R    & GCATCACAGACCTGTTATTG & Sequencing &  \citep{litaker2005reclassification} \\
+ \hline
+\end{tabular}
+\end{table}
+\FloatBarrier
 \subsection{Sequence alignment and phylogenetic analysis}
 Sequencing data were aligned with \emph{Gambierdiscus} spp. data from the GenBank reference database (accession numbers as part of Fig. ~\ref{fig:HGD8D10} and Fig. ~\ref{fig:HGSSU}). 
 The alignment algorithm MUSCLE, with a maximum of eight iterations \citep{edgar2004muscle}, was used through the Geneious software, version 8.1.7 \citep{kearse2012geneious}. 
@@ -206,7 +264,7 @@ Molecular characterization: \textit{Gambierdiscus lapillus} can be genetically i
 Further information: The strain HG7, from which the holotype is derived, has been deposited in the Australian National Algae Culture Collection under strain designation CS-1146.
 
 \subsubsection{Phylogenetics}
-
+\FloatBarrier 
 Phylogenetic trees for SSU and D8-D10 LSU rDNA regions were inferred using both BI and ML methods. 
 Strains were marked according to their geographic origin, as per figure description (Figs. ~\ref{fig:HGD8D10}, ~\ref{fig:HGSSU}). 
 Branches were analyzed thus: 100\%/1.0 was fully supported, above 90\%/0.9 was very well supported, above 80\%/0.8 was relatively well supported and below 50\%/0.5 was unsupported for ML and BI, respectively.
@@ -224,8 +282,27 @@ The closest following relatives from within their major clade are \emph{G.} sp. 
 No differentiation within species based on their geographic origin was determined for the SSU rDNA or LSU D8-D10 rDNA regions (Fig. ~\ref{fig:HGD8D10} and Fig. ~\ref{fig:HGSSU}).
 %emph{G. silvae} was also isolated alongside HG4, HG6 , HG7 and HG26.
 
+\begin{figure} 
+%\includegraphics[scale=.1]{SSU_complex_geo_merge-f.png} 
+\caption{Maximum likelihood phylogeny of \textit{Gambierdiscus} species/phylotypes of the SSU rDNA region. Nodal support are Bayesian posterior probability (PP) and bootstrap (BS) values obtained from Bayesian inference analysis and maximum likelihood analysis, respectively. Nodes with strong support (PP/BS = 1.00 / 100) are shown as thick lines. The geographic origin of the isolates is coded as follows: Black = Pacific Ocean; dark grey = Caribbean Ocean; light grey = Atlantic Ocean; white = South China Sea; white with black horizontal stripes = Indian Ocean.}
+\label{fig:HGSSU} 
+\end{figure} 
+ 
+\FloatBarrier
 %\newpage
+\begin{figure} 
+%\includegraphics[scale=.1]{D8D10_complex_geo_merge-F.png} 
+\caption{Maximum likelihood phylogeny of \textit{Gambierdiscus} species/phylotypes of the LSU D8-D10 rDNA region. Nodal support are Bayesian posterior probability (PP) and bootstrap (BS) values obtained from Bayesian inference analysis and maximum likelihood analysis, respectively. Nodes with strong support (PP/BS = 1.00 / 100) are shown as thick lines. The geographic origin of the isolates is coded as follows: Black = Pacific Ocean; dark grey = Caribbean Ocean; light grey = Atlantic Ocean; white = South China Sea; horizontal white stripes = Indian Ocean; vertical white stripes = Gulf of Mexico.} 
+\label{fig:HGD8D10}
+\end{figure} 
+\FloatBarrier
 
+\begin{figure} 
+%\includegraphics[scale=.02]{lapillus-LM.png} 
+\caption{Light micrographs of \textit{Gambierdiscus lapillus} sp. nov. (a, b) Bright field, arrow in (a) shows the 2' apical plate with characteristic aerolated surface and pores; (b) shows the distinctive ribbed appearance due to areolation and pores; (c, d) epifluorescence images (Calcofluor staining) show plate tabulation, (c) epitheca with 2; plate and (d) hypotheca with the distinctive heavily reticulate-foveate surface. Scale bar equal 10 $\mu$m.​} 
+\label{fig:PetLM}
+\end{figure} 
+\FloatBarrier 
 \subsubsection{Toxicology}
 
 \paragraph{Toxicity via intraperitoneal injection.}
@@ -268,140 +345,83 @@ The morphological point of difference between the two species lies in the 2' pla
 The 2' plate of \emph{G. lapillus} is hatchet shaped (Fig. ~\ref{fig:epiSEM}a-d) whereas the 2' plate of \emph{G. belizeanus} is rectangular (Fig. 3 in \citep{faust1995observation}). %TODO check fig^
 In terms of the genetic relatedness of the new species and \textit{G. belizeanus}, they are relatively distantly related (Fig. ~\ref{fig:HGD8D10} and Fig. ~\ref{fig:HGSSU}). \\
 A small subset of isolates displayed some variability morphological features, and were different to the majority of cells, in the 2' plate as well as cell shape (Fig. S). %TODO figs suool 
-Bravo et al recorded a change in cell shape and size during the life cycle of a clonal strain of \emph{Gambierdiscus} sp., where a small proportion of the cells observed displayed this variability. 
+Bravo et al. (2014) recorded a change in cell shape and size during the life cycle of a clonal strain of \emph{Gambierdiscus} sp., where a small proportion of the cells observed displayed this variability. 
 They postulate that this was previously unrecorded due to their large number of observations compared to the rest of the literature \citep{bravo2014cellular}. 
-We suggest that the variability we observed is similarly due to screening numerous cells of 4 strains of \emph{G. lapillus}. 
-The variability in 2' plate is negligible. The hatchet shape of this plate should still be used as a diagnostic tool, though confirmation by cell size is essential.\\
-Kohli et al observed a similar difference from the original species description in the morphology of strains of  \emph{G. carpenteri} \citep{kohli2014high}. 
-Strains of \emph{G. carpenteri} isolated from southern NSW, Australia, were identified by a combination of morphological features and genetic sequencing. These strains were 99\% identical to the type strains of \textit{G. carpenteri}. 
-However, their morphological features differed from those described for \textit{G. carpenteri}, and were more similar to those of \emph{G. toxicus} (broad 2'''' plates, pointed dorsal ends, and the lack of a dorsal rostrum) \citep{kohli2014high,litaker2009taxonomy}.
+We suggest that the variability we observed is similar due to screening numerous cells of four strains of \emph{G. lapillus}. 
+The variability in 2' plate is negligible; the hatchet shape of this plate is still a diagnostic tool for identifying \textit{G. lapillus}.\\
+Kohli et al. (2014a) observed a similar difference from the original species description in the morphology of strains of  \emph{G. carpenteri} \citep{kohli2014high}. 
+Strains of \emph{G. carpenteri} isolated from southern NSW, Australia, were identified by a combination of morphological features and genetic sequencing. 
+Genetically these strains were 99\% identical to the type strains of \textit{G. carpenteri}. 
+However, their morphological features differed somewhat from those originally described for \textit{G. carpenteri}, and were more similar to those of the very similar species \emph{G. toxicus} (broad 2'''' plates, pointed dorsal ends, and the lack of a dorsal rostrum) \citep{kohli2014high,litaker2009taxonomy}.
 The potential intraspecific morphological variability of \emph{Gambierdiscus} spp. indicates that the identification of \emph{Gambierdiscus} spp. needs to be approached with caution, and preferably verified with molecular analysis.\\
 The sister groups to \emph{G. lapillus} in the phylogenetic analyses were found to be \emph{G. pacificus} and \emph{G. toxicus}, 
-which was fully supported (Fig. ~\ref{fig:HGD8D10} and Fig. ~\ref{fig:HGSSU}). For the D8-D10 LSU region, the confidence of the inter species relationship within the major clade containing \emph{G. lapillus} was lower.  
+which was fully supported (Fig. ~\ref{fig:HGD8D10} and Fig. ~\ref{fig:HGSSU}). 
+For the D8-D10 LSU region, the confidence of the interspecies relationship within the major clade containing \emph{G. lapillus} was lower.  
 While the resolution of \emph{G. lapillus} as a separate species is fully supported, the other branches within that major clade were more ambiguous and support differed between BI and ML with the latter consistently lower than the former. 
 Branches were well supported or better in BI phylogeny, while in the ML phylogeny some were unsupported. 
-The topology of the clade resembles that of the phylogeny by Xu et al, when the \emph{G.} sp. type 5 and \emph{G.} sp. type 6 were presented \citep{xu2014distribution}, hence it can be assumed that the BI phylogeny is accurate.
- %The BI of the species' relationships was still high, whereas the ML confidence was reduced. %ref other papers.. xu for example
-The discrepancy in confidence between SSU and D8-D10 LSU could be due to the length of the fragment, as the SSU fragment is almost twice the length as the LSU fragment. Alternatively it could be due to lower selection pressure, in effect higher mutation rate, in the D8-D10 region compared to the SSU region. Murray et al found that the D1-D6 LSU region in dinoflagellates had a substitution rate 4-8\% times that of the SSU region \citep{murray2005improving}. 
-Whether this faster substitution rate applies to the D8-D10 region is unknown, however the possibility should be taken into consideration. \\
-Morphologically \emph{G. lapillus} is distinct from \emph{G. pacificus} due to it's smooth cell surface \citep{chinain1999morphology} while \emph{G. lapillus} is discrete from \emph{G. toxicus} based on the broad 2'''' plate of \emph{G. toxicus} \citep{litaker2009taxonomy}.\\
+The topology of the clade resembles that of the phylogeny by Xu et al. (2014), in which the \emph{G.} sp. type 5 and \emph{G.} sp. type 6 were presented, hence it can be assumed that the BI phylogeny is accurate\citep{xu2014distribution}.
+The discrepancy in confidence between SSU and D8-D10 LSU could be due to the length of the fragment, as the SSU fragment is almost twice the length as the LSU fragment. 
+Alternatively it could be due to lower selection pressure, in effect higher mutation rate, in the D8-D10 region compared to the SSU region. 
+Murray et al. (2015) found that the D1-D6 LSU region in dinoflagellates had a substitution rate 4-8\% times that of the SSU region \citep{murray2005improving}. 
+Whether this faster substitution rate applies to the D8-D10 region remains unknown, however the possibility should be taken into consideration. \\
+Morphologically, \emph{G. lapillus} is distinct from \emph{G. pacificus} due to it's smooth cell surface \citep{chinain1999morphology}, whereas \emph{G. lapillus} is discrete from \emph{G. toxicus} based on the broad 2'''' plate of \emph{G. toxicus} \citep{litaker2009taxonomy}.\\
 
-Berdalet et al postulated that species of Gambierdiscus may be cosmopolitan, and the fact that some species were reported from only one or few locations was likely due to under sampling \citep{litaker2010global}. 
+Berdalet et al. (2012) postulated that species of \textit{Gambierdiscus} may be cosmopolitan, and the fact that some species were reported from only one or few locations was likely due to under sampling \citep{litaker2010global}. 
 It has been postulated that \textit{Gambierdiscus} strains of the same species  in warmer areas display higher toxicity than those in cooler regions \citep{bomber1989epiphytism}. 
-To test whether genetic divergence exists between strains from the same species from different localities, where possible a range of isolates from a variety of geographic locations were included in the phylogenetic study. 
-The phylogenetic analysis of the D8-D10 LSU rDNA (Fig. ~\ref{fig:HGD8D10})  \emph{G. belizeanus}, \emph{G. caribaeus}, \emph{G. carpenteri},  \emph{G. carolinianus} and \emph{G. toxicus} showed strains of one locality dispersed alongside strains from another geographic origin, rather than strains from different locations clustering together. 
-Examining the strain distribution in light of their geographic origin for the SSU rDNA fragment (Fig. ~\ref{fig:HGSSU}) shows a similar trend. 
+To observe whether genetic divergence exists between strains from the same species from different localities, where possible a range of isolates from a variety of geographic locations were included in the phylogenetic study. 
+The phylogenetic analysis of the D8-D10 LSU rDNA (Fig. ~\ref{fig:HGD8D10})  \emph{G. belizeanus}, \emph{G. caribaeus}, \emph{G. carpenteri},  \emph{G. carolinianus} Litaker, Vandersea, Faust, Kibler, Holland \& Tester and \emph{G. toxicus} strains of the same species clustered together, regardless of their geographic origin. 
+Examining the strain distribution in light of their geographic origin for the SSU rDNA fragment (Fig. ~\ref{fig:HGSSU}), a similar trend was found. 
 Strains of \emph{G. carpenteri}, \emph{G. caribaeus} and \emph{G. toxicus} showed closer relationship to geographically removed strains than ones from their own location.
-This indicates that the rDNA fragments do not show regional level divergence intraspecifically. 
-Regions within rDNA are likely too conserved to show fine scale biogeographical patterns, and more investigation using tools such as microsatellites or RADseq may reveal regional differences.
-%The indication that geography does not facilitate divergence within \emph{Gambierdiscus} needs to be tested with concatenated multi gene phylogenetic analysis and ideally with genes involved in toxin production.\\
-%genetic distsance calculation like in fraga 14?
+This indicates that the rDNA fragments used in this study are likely not variable enough to reveal intraspecific, regional-level divergence. 
+More investigation using tools such as microsatellites or RADseq are likely required to reveal regional differences.
 
-CFP is endemic to the GBR in Australia, yet the particular species of \textit{Gambierdiscus} that are directly correlated with CFP accumulation in local fish are still not known.
-\emph{G. belizeanus} was found at Heron Island, GBR, \citep{murray2014molecular}, in which CTX and MTX production in \emph{G. belizeanus} has been indicated via bioassay \citep{chinain2010growth,holland2013differences}. 
-Hence the ecosystem around Heron Island is likely part of the ciguateric web (in effect a food web where CTXs are found at different trophic levels through bioaccumulation) in the GBR, a decisive factor in selecting the sampling site.
-To our knowledge, this study constitutes the first report of a clearly identified strain of a \textit{Gambierdiscus} species that consistently produces a probable congener of CTX in Australia. The LC-MS toxin profile of \emph{G. lapillus} shows an undescribed congener of CTX.
-The toxicity of \emph{G. lapillus} is equally unusual. 
-Whole cell extract MBAs were conducted to query the toxicity as it would be encountered in an environmental setting. The pathology of the mice was unusual and not indicative of previously reported MTX or CTX intoxication (Pers. comm. Rex Munday). 
-Whether the abnormal pathology is due to the unknown CTX congener or another toxin produced by this species is unknown. 
-Further fractionation of whole cell extracts into aqueous methanol and dichloromethane partitions, which are expected to contain MTX from CTX respectively \citep{satake1993structure} could be conducted to elucidate which toxin is likely causing the pathology.
-The toxicity of \emph{Gambierdiscus} spp. in culture have been observed to fluctuate wildly (pers. comm. Tim Harwood). 
-This was observed in the highly variable toxicity of \emph{G. lapillus} isolates in the MBA, where the toxicity of HG6 was 128- to 190-fold as high as HG4.  
-The recorded intra species toxicity variation of \emph{G. polynesiensis} via MBA was only 2-fold \citep{chinain2010growth}. Proposed reasons for changing toxin production are phosphorous limitation in the media, different stages of the growth phase and growth rate \citep{sperr1996variation,chinain2010growth}. 
-However the HG4, HG6 and HG7 were grown under the same conditions and harvested simultaneously which indicates an intra strain variation in toxin production rather than external influence on toxin production regulation.\\
-% whole cell extracts to mimc enviro - incl MTX because Kohli et al. Disprove  Litaker et al 2010
+CFP is endemic to the GBR in Australia, yet the particular species of \textit{Gambierdiscus} that are most likely producing CTXs in this region are still not known. 
+The report that \textit{F. paulensis} from the Mediterranean produces possible analogs of CTXs \citep{laza2016characterization} is interesting, as the study classifies the \textit{F.} cf. \textit{yasumotoi} found in Australia as \textit{F. paulensis} (Table 1, \citep{murray2014molecular}). 
+However, we suggest caution should be used in interpreting the LC-MS results on \textit{F. paulensis} as presented \citep{laza2016characterization}, as: data to support the presence of MTX was not presented; no standard for gambieric acid A was used; and the peak at 6.29 min assigned to 54-deoxy CTX1B (panel b Fig. 9) was not highly similar to the 54-deoxy CTX1B standard peak (Fig. 9c). 
+As 54-deoxy CTX1B is considered to be a fish metabolite \citep{yogi2011detailed}, it appears novel that it would have been found in a species of \textit{Gambierdiscus}. 
+As the detection of CTX analogs using LC-MS is very difficult, and has not been conducted often for species of \textit{Gambierdiscus}, further work clarifying the toxin profile of more species will shed light on these issues.\\
 
+The identification of \textit{Gambierdiscus} species producing CTXs in Australia has been hampered by several uncertainties and difficulties, and no identified strains that consistently produce known CTX analogs have yet been confirmed.
+\emph{G. belizeanus} was has been reported from Heron Island, GBR, \citep{murray2014molecular}. 
+Previously, CTX and MTX production in \emph{G. belizeanus} has been indicated via bioassay \citep{chinain2010growth,holland2013differences} although LC-MS analysis using known CTX analogs has not been conducted for this species as yet. 
 
-%Sampling around Australia has been limited (fig. ~\ref{fig:OzSites}) and constitute single points in time. As \emph{Gambierdiscus} spp. tend to co-habitate, it is likely that other \emph{Gambierdiscus} spp. are present at Heron Island which we were unable to establish in culture.
+A previous study found a possible CTX analog in a \textit{Gambierdiscus} strain from Queensland, however, the production of the compound was unstable, and the strain precedes the discovery of species diversity in Gambierdiscus \citep{holmes1991strain}, and the identification of the strain is therefore uncertain. 
+Unfortunately, those cultures are no longer available, and therefore the identity of the species cannot now be verified \citep{holmes1991strain}. Based on the LC-MS/MS toxin profile of \textit{G. lapillus}, it produces a number of unknown compounds, which may include undescribed congeners of CTX. 
+These would require further work in order to characterize them. 
+The toxicity measurements of G. lapillus by mouse bioassay were found to be equally unusual. 
+The pathology of the mice was atypical, and not indicative of previously reported MTX or CTX intoxication (R. Munday, pers. comm.). 
+Whether the abnormal pathology is due to a possible unknown CTX congener, or to another toxin produced by this species, remains unknown. 
+Further fractionation of whole cell extracts into aqueous methanol and dichloromethane partitions, which are expected to contain MTX from CTX respectively \citep{satake1993structure}, could be conducted to elucidate which class of toxin is likely causing the pathology. 
+Whole cell extract MBAs in the literature were normalized to cells per MU by Litaker et al. (2010) (table 5 therein). 
+Comparatively, HG4 and HG7 were much less toxic than all the reported samples. 
+HG6 displayed a higher toxicity than the cultures established from bloom samples \citep{chinain1999seasonal}. 
+The strain’s toxicity compared to the other reported strains from both the Atlantic and the Pacific was in the bottom quarter percentile. 
+These studies precede the elucidation of the current \textit{Gambierdiscus} species complex, so it remains unclear which species these results relate to. 
+Markedly, the toxicity was found to differ greatly between the \textit{G. lapillus} isolates, with the toxicity of HG6 being 150-fold higher than HG7, which was in turn more than 5-fold more toxic than HG4. 
+The published intraspecies toxicity variation in \textit{G. polynesiensis} M.Chinain \& M.Faust via MBA was only 2-fold \citep{chinain2010growth}. Potential reasons for differing toxin production in cultures may be physiological, such as phosphorous limitation in the media and different stages of the growth phase and growth rate \cite{sperr1996variation,chinain2010growth}. 
+However, the HG4, HG6, and HG7 were grown under the same conditions and harvested simultaneously, which indicates an intrastrain variation in toxin production, rather than external influence on toxin production regulation.
 
-%\emph{Gambierdiscus} is a genus within the order \emph{Gonyaulacales}, whose evolutionary relationship has not yet been resolved \citep{gentekaki2014large}. To understand when and where the threat of CFP originates, it is essential to identify the species that produce the toxin at the base of the food chain. Currently \emph{Gambierdiscus} spp. have been implicated, whether the production of CTX and MTX is restricted to a \emph{Gambierdiscus} spp. or if it  persists in closely related genera is unknown. The identification of the genes involved in the toxin production is essential for monitoring CFP.
-
- \paragraph{\textbf{\emph{Gambierdiscus lapillus} sp. nov. Kretzschmar, Hoppenrath et Murray}}
- \paragraph{Description:} Cells anterioposteriorly compressed and round to ellipsoid in apical view. 
- Size of cells smaller than all other characterised \emph{Gambierdiscus} spp., dorsoventral depth 40.6 $\pm$3.3 $\mu$m, width 39 $\pm$3.2 $\mu$m and depth to width ratio 1.04 $\pm$0.06. 
- The cell surface is highly areolated with pores. 
- The plate formula is Po, 4', 0a, 6'', 6c, 8s, 6''', 1p, 2''''. 
-Apical pore complex Po is oval with a fish-hook shaped slit central of epitheca. Distinguishing feature to \emph{G. belizeanus}, closest morphological relative, is hatchet-shaped 2' plate. Largest apical plate is hatchet-shaped 2' plate, then pentagonal 3' plate and smallest hexagonal 1' plate. Largest precingular plate is 3'', then 4'', 5'', 6'', 2'' plates, 1'' plate is smallest. 
-Largest postcingular plate is the 4''' plate, then 2''', 3''', 5''' and smallest 1''' plates. Antapical 1'''' plate is smaller than the 2'''' plate, both quadrangular. Pentagonal and narrow 1p plate. 
-Deep and excavated sulcus bordering on cingulum. Plastids present, dense, distributed throughout cell. 
- \paragraph{Etymology:} %The epithet refers to disposition of one of the strains, HG6. The growth rate exceeded all other strains in culture at 27 $^{\circ}$C and subsequently terminated. The colloquialism that it lived fast and died young was applied, the strain was designated the rock and roll strain or \emph{G. lapillus} (Latin petram = rock).
-\paragraph{Holotype:} Fig. xx; SEM-stub (designation xxx) deposited at Senckenberg am Meer, German Centre for Marine Biodiversity Research, Centre of Excellence for Dinophyte Taxonomy, Germany.  \\
-
-\paragraph{Isotype:}Lugol-fixed subsample of strain HG 7 (designation xxx) deposited at the Senckenberg am Meer, German Centre for Marine Biodiversity Research, Centre of Excellence for Dinophyte Taxonomy,, Germany.  \\
-
-\paragraph{Type locality:} Heron Island (23.4420$^{\circ}$ S, 151.9140$^{\circ}$ E), Great Barrier Reef, Australia, South Pacific Ocean.
-%\paragraph{Distribution:} Marine, associated as epiphyte to seaweeds. Observed at Heron Island, Australia, attached to  \emph{Halimeda} sp. and \emph{Padina} sp. with an average sea surface temperature was 23.8 $^{\circ}$C. October 2013 fromThe cultures HG4, HG5, HG6, HG7 and HG 26 were isolated in July 2014 from 
-\paragraph{Further information:} Type strain deposited in the culture collection … number … Molecular characterization of strain HG 7, SSU (KU558932,) and LSU (KU558928).
-\paragraph{Remarks:} \emph{Gambierdiscus lapillus} can be genetically identified rDNA sequences deposited in GenBank SSU: HG1 KU558929, HG4 KU558930, HG6 KU558931, HG26 KU558933; and D8-D10 LSU: HG1 KU558925, HG4 KU558926, HG6 KU558927. 
 
 \newpage
 \section{Acknowledgements}
-Thank you to Dr Rex Munday of AgResearch for conducting the toxicology investigation. 
-Janis Ortgies, Senckenberg am Meer, is thanked for help with the SEM preparations.
+We want to thank Dr. Nicolas Chom\'erat for his help finding a name for the species and his advice with Latin. 
+Thank you to Dr. Rex Munday of AgResearch for conducting the toxicology investigation. 
+Thanks to Dr. Gurjeet Kohli and Dr. Penelope Ajani, UTS, for advice and guidance in the lab. 
+Thanks to Dr. Katherina Petrou, Dr. Daniel Nielsen, and Dr. Peter Ralph, UTS, for sample collection. 
+Samples were taken under the permit issued by the Queensland Government, in relation to Marine Parks. 
+The microbial imaging facility at UTS is acknowledged for the use of their epifluorescence microscope and Dr. Mike Johnson as well as Dr. Lynne Turnbull thanked for help. 
+Janis Ortgies, Senckenberg am Meer, is thanked for help with the SEM preparations. 
+Dr. Mireille Chinain (Institut Louis Malarde; French Polynesia) and Prof. Takeshi Yasumoto (Japan Food Research Laboratories, Tokyo) are acknowledged for providing the CTX and MTX standards, respectively. 
+We thank the Australian Research Council (FT120100704) for funding.
 
 \section{Conflict of interest disclosure}
 The authors report no conflict of interest in conducting this study.
 \newpage
 
-\begin{figure} 
-% \includegraphics[scale=.85]{oz-gamb-grey-map.png} 
-\caption{(A) Sites where Gambierdiscus isolates have been reported in Australia: site 5 indicates Wapengo Lagoon, NSW; site 6 indicates Merimbula, NSW; site 7 indicates Eden, NSW; and site 8 indicates Exmouth, WA; (B) Great Barrier Reef:​ Site 1 indicates Raine Island, QLD; site 2 indicates Townsville, QLD; Site 3 indicates Heron Island, QLD; Site 4 indicated Platypus Bay, QLD; (C) Heron Island: Sampling site for this study.} 
-\label{fig:OzSites}
-\end{figure}
-\begin{table}
-\caption{\emph{Gambierdiscus} spp. identified around Australia, including toxicological data available. N/D denotes not detected. NA denotes not attempted.}
-\label{tbl:OzTable}
-\begin{tabular}{ | p{3.3cm} | p{4cm} | p{4.5cm} | p{2.3cm} | }
-\hline
- \textbf{\emph{Gambierdiscus} sp.} & \textbf{Site identified from fig. ~\ref{fig:OzSites}} & \textbf{Toxicity}  & \textbf{LC-MS profile}  \\
- \hline
- \emph{G. belizeanus}  & Site 3: Heron Island, GBR \citep{murray2014molecular} & CTX +ve via RBA \citep{chinain2010growth}; MTX +ve via HELA \citep{holland2013differences} & NA  \\
- \hline
- \emph{G. carpenteri} &Site 5: Wapengo Lagoon, NSW \citep{kohli2014high}; site 6:  Merimbula, NSW  \citep{kohli2014high}& MTX +ve via MBA \citep{kohli2014high} & N/D \citep{kohli2014high}\\
- \hline
- \emph{G. toxicus} & Site 2: Townsville, GBR \citep{hallegraeff2010algae}; Site 7: Eden, NSW \citep{hallegraeff2010algae} & CTX +ve via RBA \citep{chinain2010growth}; MTX +ve via MBA \citep{chinain1999morphology} & NA \\
-  \hline
-  \emph{Gambierdiscus} sp. & Site 8: Exmouth, WA \citep{kohli2014cob}& NA & NA \\
-  \hline
- \emph{F. yasumotoi}  & Site 1: Raine Island, GBR \citep{murray2014molecular}; Site 2: Townsville, GBR \citep{murray2014molecular}; site 3: Heron Island, GBR \citep{murray2014molecular}& MTX +ve via MBA \citep{holmes1998gambierdiscus} & N/D \citep{rhodes2014gambierdiscus}\\
-  \hline
-\end{tabular}
-\end{table}
 
-\FloatBarrier
-\begin{table}
-\caption{List of primers used for phylogenetic analysis of \emph{Gambierdiscus} strains, synthesised by Integrated DNA technologies.}
-\label{tbl:PrimerTable}
-\begin{tabular}{  | p{2cm} | p{7.5cm} | p{2.5cm} | p{2cm} | }
-\hline
-\textbf{Name} & \textbf{Sequence (5'-3')} & \textbf{Purpose} & \textbf{Reference} \\
-\hline
-    \multicolumn{4}{| c |}{\textbf{LSU D8-D10 region}}\\
-    \hline
-   FD8   & GGATTGGCTCTGAGGGTTGGG & Amplification \& sequencing & \citep{chinain1999morphology} \\
-   \hline
- GLD8\_421F   & ACAGCCAAGGGAACGGGCTT & Sequencing & \citep{nishimura2013genetic} \\
- \hline
- GLD8\_677R   & TGTGCCGCCCCAGCCAAACT & Sequencing & \citep{nishimura2013genetic} \\
- \hline
-   RB   & GATAGGAAGAGCCGACATCGA & Amplification \& sequencing &\citep{chinain1999morphology}  \\
-    \hline
-  \multicolumn{4}{| c |}{\textbf{SSU region}}\\
-    \hline
- 18ScomF1 & GCTTGTCTCAAAGATTAAGCCATGC & Amplification \& sequencing & \citep{zhang2005phylogeny} \\
- \hline
- 18ScomR1  & CACCTACGGAAACCTTGTTACGAC & Amplification \& sequencing &  \citep{zhang2005phylogeny}  \\
- \hline
- Dino18SF2  & ATTAATAGGGATAGTTGGGGGC & Sequencing &  \citep{zhang2008mitochondrial}\\
- \hline
- Dino18SR1    & GAGCCAGATRCDCACCCA & Sequencing &  \citep{zhang2008mitochondrial}\\ 
- \hline
-G10'F    & TGGAGGGCAAGTCTGGTG & Sequencing & \citep{nishimura2013genetic} \\
-\hline
-G18'R    & GCATCACAGACCTGTTATTG & Sequencing &  \citep{litaker2005reclassification} \\
- \hline
-\end{tabular}
-\end{table}
+
+
+
 
 \FloatBarrier
 \begin{longtable}{ | p{5cm} | p{2cm} | p{6cm} | p{2cm} |}
@@ -448,12 +468,7 @@ G18'R    & GCATCACAGACCTGTTATTG & Sequencing &  \citep{litaker2005reclassificati
 \end{longtable}
 \FloatBarrier
 
-\FloatBarrier 
-\begin{figure} 
-%\includegraphics[scale=.02]{lapillus-LM.png} 
-\caption{Light micrographs of \emph{Gambierdiscus lapillus}, strains HG4 (A); HG6 (B); HG7 (C); and HG26 (D). Scale bar equal 10 $\mu$m.​} 
-\label{fig:PetLM}
-\end{figure} 
+
 
 \FloatBarrier 
 \begin{figure} 
@@ -487,20 +502,6 @@ G18'R    & GCATCACAGACCTGTTATTG & Sequencing &  \citep{litaker2005reclassificati
 \end{figure} 
 
 
-\FloatBarrier 
-\begin{figure} 
-%\includegraphics[scale=.1]{SSU_complex_geo_merge-f.png} 
-\caption{Maximum likelihood phylogeny of \textit{Gambierdiscus} species/phylotypes of the SSU rDNA region. Nodal support are Bayesian posterior probability (PP) and bootstrap (BS) values obtained from Bayesian inference analysis and maximum likelihood analysis, respectively. Nodes with strong support (PP/BS = 1.00 / 100) are shown as thick lines.}
-\label{fig:HGSSU} 
-\end{figure} 
-\FloatBarrier 
-
-%\newpage
-\begin{figure} 
-%\includegraphics[scale=.1]{D8D10_complex_geo_merge-F.png} 
-\caption{Maximum likelihood phylogeny of \textit{Gambierdiscus} species/phylotypes of the LSU D8-D10 rDNA region. Nodal support are Bayesian posterior probability (PP) and bootstrap (BS) values obtained from Bayesian inference analysis and maximum likelihood analysis, respectively. Nodes with strong support (PP/BS = 1.00 / 100) are shown as thick lines.} 
-\label{fig:HGD8D10}
-\end{figure} 
 
 
 \FloatBarrier
